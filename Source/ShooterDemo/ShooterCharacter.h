@@ -20,6 +20,7 @@ protected:
 	virtual void BeginPlay() override;
 	void TurnAtRate(float Rate);
 	void LookUpAtRate(float Rate);
+	void FireWeapon();
 	
 public:	
 	// Called every frame
