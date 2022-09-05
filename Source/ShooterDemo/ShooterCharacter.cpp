@@ -6,6 +6,8 @@
 #include "Camera/CameraComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "Kismet/GameplayStatics.h"
+#include "Sound/SoundCue.h"
 
 // Sets default values
 AShooterCharacter::AShooterCharacter() :
@@ -95,7 +97,9 @@ void AShooterCharacter::LookUpAtRate(float Rate) {
 }
 
 void AShooterCharacter::FireWeapon() {
-	UE_LOG(LogTemp, Warning, TEXT("Fire Weapon"));
+	if (FireSound) {
+		UGameplayStatics::PlaySound2D(this, FireSound);
+	}
 }
 
 void AShooterCharacter::MoveRight(float Value) {
