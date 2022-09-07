@@ -25,6 +25,7 @@ AShooterCharacter::AShooterCharacter() :
 	CameraBoom->SetupAttachment(RootComponent);
 	CameraBoom->TargetArmLength = 300.f; //arm length / camera distance
 	CameraBoom->bUsePawnControlRotation = true; //rotate the arm based on the controller
+	CameraBoom->SocketOffset = FVector(0.f, 50.f, 50.f);
 
 	//Attach Camera to SpringArm
 	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
@@ -33,7 +34,7 @@ AShooterCharacter::AShooterCharacter() :
 
 	//don't rotate character with camera. rotate camera only instead
 	bUseControllerRotationPitch = false;
-	bUseControllerRotationYaw = false;
+	bUseControllerRotationYaw = true;
 	bUseControllerRotationRoll = false;
 
 	//Configure Character Movement
@@ -41,7 +42,7 @@ AShooterCharacter::AShooterCharacter() :
 	   check orient rotation ...
 	   in blueprints   */
 	
-	GetCharacterMovement()->bOrientRotationToMovement = true; //character moves in the direction of input
+	GetCharacterMovement()->bOrientRotationToMovement = false; //character moves in the direction of input
 	GetCharacterMovement()->RotationRate = FRotator(0.f, 540.f, 0.f); // ... at this rotation rate
 	GetCharacterMovement()->JumpZVelocity = 600.f;
 	GetCharacterMovement()->AirControl = 0.2f;
