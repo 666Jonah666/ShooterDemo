@@ -114,34 +114,64 @@ void AShooterCharacter::FireWeapon() {
 			UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), MuzzleFlash, SocketTransform);
 		}
 
-		FHitResult FireHit{};
-		const FVector Start{SocketTransform.GetLocation()};
-		const FQuat Rotation{SocketTransform.GetRotation()};
-		const FVector RotationAxis{Rotation.GetAxisX()};
-		const FVector End{Start + RotationAxis * 50'000.f};
 
-		FVector BeamEndPoint{End};
-		
-		GetWorld()->LineTraceSingleByChannel(FireHit, Start, End, ECollisionChannel::ECC_Visibility);
-
-		if (FireHit.bBlockingHit) {
-			
-			BeamEndPoint = FireHit.Location;
-			
-			if (ImpactParticles) {
-				UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactParticles, FireHit.Location);
-			}
+		//Get current size of the viewport
+		FVector2D ViewPortSize{FVector2D::ZeroVector};
+		if (GEngine && GEngine->GameViewport) {
+			GEngine->GameViewport->GetViewportSize(ViewPortSize);
 		}
 
-		if (BeamParticles) {
-			UParticleSystemComponent* Beam = UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), BeamParticles, SocketTransform);
-			//"Target" particle system for beam behaviour (vector) which we take from P_SmokeTrail
-			if (Beam) {
-				Beam->SetVectorParameter(FName("Target"), BeamEndPoint);
-			}
-		}
+		//get screen space location of crosshairs
+		FVector2D CrosshairLocation{ViewPortSize.X / 2.f, ViewPortSize.Y / 2.f};
+		//subtract because we move location of crosshair by 50 units
+		CrosshairLocation.Y -= 50.f;
 
-		
+		FVector CrosshairWorldPosition{FVector::ZeroVector};
+		FVector CrosshairWorldDirection{FVector::ZeroVector};
+
+		//get world position and direction of crosshairs
+		//having crosshairs position in the world and direction pointing outward away from the camera
+		bool bScreenToWorld = UGameplayStatics::DeprojectScreenToWorld(
+			UGameplayStatics::GetPlayerController(this, 0),
+			CrosshairLocation,
+			CrosshairWorldPosition,
+			CrosshairWorldDirection);
+
+		//performing linetrace from this position and direction across world direction
+		// was projection successful?
+		if (bScreenToWorld) {
+			FHitResult ScreenTraceHit{};
+			const FVector Start{CrosshairWorldPosition};
+			const FVector End{CrosshairWorldPosition + CrosshairWorldDirection * 50'000.f};
+
+			//Set beam end point to line end point so if bullet doesnt hit anywhere we particle will be till the end
+			FVector BeamEndPoint{End};
+
+			//trace outward from crosshairs world location
+			GetWorld()->LineTraceSingleByChannel(ScreenTraceHit, Start, End, ECC_Visibility);
+
+			// if hit smth
+			if(ScreenTraceHit.bBlockingHit) {
+				//smoke trail till end location
+				BeamEndPoint = ScreenTraceHit.Location;
+
+				if(ImpactParticles) {
+					UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactParticles, ScreenTraceHit.Location);
+				}
+				
+				if (BeamParticles) {
+					UParticleSystemComponent* Beam = UGameplayStatics::SpawnEmitterAtLocation(
+						GetWorld(),
+						BeamParticles,
+						SocketTransform);
+					
+					//"Target" particle system for beam behaviour (vector) which we take from P_SmokeTrail
+					if (Beam) {
+						Beam->SetVectorParameter(FName("Target"), BeamEndPoint);
+					}
+				}
+			}
+		}		
 		
 	}
 	UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
