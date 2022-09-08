@@ -34,7 +34,7 @@ AShooterCharacter::AShooterCharacter() :
 
 	//don't rotate character with camera. rotate camera only instead
 	bUseControllerRotationPitch = false;
-	bUseControllerRotationYaw = true;
+	bUseControllerRotationYaw = true; //might be overrited in blueprint 
 	bUseControllerRotationRoll = false;
 
 	//Configure Character Movement
