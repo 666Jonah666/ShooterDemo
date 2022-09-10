@@ -7,7 +7,7 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "Kismet/KismetMathLibrary.h"
 
-void UShooterAnimInstance::UpdateAnimationPropeties(float DeltaTime) {
+void UShooterAnimInstance::UpdateAnimationProperties(float DeltaTime) {
 	if (!ShooterCharacter) {
 		ShooterCharacter = Cast<AShooterCharacter>(TryGetPawnOwner());
 	}
@@ -35,6 +35,8 @@ void UShooterAnimInstance::UpdateAnimationPropeties(float DeltaTime) {
 		if(ShooterCharacter->GetVelocity().Size() > 0.f) {
 			LastMovementOffsetYaw = MovementOffsetYaw;
 		}
+
+		bAiming = ShooterCharacter->GetAiming();
 	}
 }
 

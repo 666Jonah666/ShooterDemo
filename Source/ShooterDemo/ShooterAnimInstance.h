@@ -16,7 +16,7 @@ class SHOOTERDEMO_API UShooterAnimInstance : public UAnimInstance
 
 public:
 	UFUNCTION(BlueprintCallable)
-	void UpdateAnimationPropeties(float DeltaTime);
+	void UpdateAnimationProperties(float DeltaTime);
 	
 	virtual void NativeInitializeAnimation() override;
 
@@ -41,4 +41,7 @@ private:
 	//the frame before we stop moving
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement", meta = (AllowPrivateAccess = "true"))
 	float LastMovementOffsetYaw{};
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Movement", meta = (AllowPrivateAccess = "true"))
+	bool bAiming;
 };
