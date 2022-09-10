@@ -79,6 +79,15 @@ private:
 
 	//field of view value when zoomed in
 	float CameraZoomedFOV;
+
+	//Curent fov this frame
+	float CameraCurrentFOV;
+
+	//speed of zooming
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat", meta = (AllowPrivateAccess = "true"))
+	float ZoomInterpSpeed;
+
+	void ChangeFOV(float DeltaTime);
 	
 public:
 	

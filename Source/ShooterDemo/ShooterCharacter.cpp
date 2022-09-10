@@ -18,7 +18,9 @@ AShooterCharacter::AShooterCharacter() :
 	BaseLookUpRate(45.f),
 	bAiming(false),
 	CameraDefaultFOV(0.f), //set in begin play
-	CameraZoomedFOV(60.f)
+	CameraZoomedFOV(35.f),
+	CameraCurrentFOV(0.f),
+	ZoomInterpSpeed(20.f)
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -26,9 +28,9 @@ AShooterCharacter::AShooterCharacter() :
 	//Attach SpringArm; pulls in towards a character if there is a collision
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
 	CameraBoom->SetupAttachment(RootComponent);
-	CameraBoom->TargetArmLength = 300.f; //arm length / camera distance
+	CameraBoom->TargetArmLength = 180.f; //arm length / camera distance
 	CameraBoom->bUsePawnControlRotation = true; //rotate the arm based on the controller
-	CameraBoom->SocketOffset = FVector(0.f, 50.f, 50.f);
+	CameraBoom->SocketOffset = FVector(0.f, 50.f, 70.f);
 
 	//Attach Camera to SpringArm
 	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
@@ -59,6 +61,7 @@ void AShooterCharacter::BeginPlay()
 
 	if (FollowCamera) {
 		CameraDefaultFOV = GetFollowCamera()->FieldOfView;
+		CameraCurrentFOV = CameraDefaultFOV;
 	}
 }
 
@@ -68,7 +71,22 @@ void AShooterCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	ChangeFOV(DeltaTime);
+	
 }
+
+void AShooterCharacter::ChangeFOV(float DeltaTime) {
+	//set current camera field of view depending on zooming
+	if(bAiming) {
+		CameraCurrentFOV = FMath::FInterpTo(CameraCurrentFOV, CameraZoomedFOV, DeltaTime, ZoomInterpSpeed);
+	} else {
+		CameraCurrentFOV = FMath::FInterpTo(CameraCurrentFOV, CameraDefaultFOV, DeltaTime, ZoomInterpSpeed);
+	}
+	
+	GetFollowCamera()->SetFieldOfView(CameraCurrentFOV);
+	
+}
+
 
 // Called to bind functionality to input
 
@@ -219,12 +237,10 @@ bool AShooterCharacter::GetBeamEndLocation(const FVector& MuzzleSocketLocation, 
 
 void AShooterCharacter::AimingButtonPressed() {
 	bAiming = true;
-	GetFollowCamera()->SetFieldOfView(CameraZoomedFOV);
 }
 
 void AShooterCharacter::AimingButtonReleased() {
 	bAiming = false;
-	GetFollowCamera()->SetFieldOfView(CameraDefaultFOV);
 }
 
 void AShooterCharacter::MoveRight(float Value) {
