@@ -35,6 +35,8 @@ protected:
 	void ChangeFOV(float DeltaTime);
 	//set based on aiming
 	void SetLookRates();
+
+	void CalculateCrosshairSpread(float DeltaTime);
 	
 public:	
 	// Called every frame
@@ -124,6 +126,26 @@ private:
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Camera", meta = (AllowPrivateAccess = "true"), meta = (ClampMin = "0.0", ClampMax = "1.0", UIMin = "0.0", UIMax = "1.0"))
 	float MouseAimingLookUpRate;
+
+	//determins the spread of the crosshairs
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Crosshairs", meta = (AllowPrivateAccess = "true"))
+	float CrosshairSpreadMultiplier{};
+
+	//veloctiry comp for crosshairs spread
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Crosshairs", meta = (AllowPrivateAccess = "true"))
+	float CrosshairVelocityFactor;
+
+	//in air component
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Crosshairs", meta = (AllowPrivateAccess = "true"))
+	float CrosshairInAirFactor;
+
+	//aim comp
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Crosshairs", meta = (AllowPrivateAccess = "true"))
+	float CrosshairAimFactor;	
+
+	//shooting comp
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Crosshairs", meta = (AllowPrivateAccess = "true"))
+	float CrosshairShootingFactor;
 	
 public:
 	
@@ -131,5 +153,8 @@ public:
 	FORCEINLINE UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 	FORCEINLINE bool GetAiming() const { return bAiming; }
 
+	//ufunctions can not be inline
+	UFUNCTION(BlueprintCallable)
+	float GetCrosshairSpreadMultiplier() const { return CrosshairSpreadMultiplier; };
 	
 };

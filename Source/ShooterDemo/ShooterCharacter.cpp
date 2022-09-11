@@ -90,6 +90,8 @@ void AShooterCharacter::Tick(float DeltaTime)
 	//change sensitivity if aiming
 	SetLookRates();
 	
+	CalculateCrosshairSpread(DeltaTime);
+	
 }
 
 void AShooterCharacter::SetLookRates() {
@@ -102,6 +104,18 @@ void AShooterCharacter::SetLookRates() {
 	}
 }
 
+void AShooterCharacter::CalculateCrosshairSpread(float DeltaTime) {
+
+	FVector2D WalkSpeedRange{0.f, 600.f};
+	FVector2D VelocityMultiplierRange{0.f, 1.f};
+	FVector Velocity{GetVelocity()};
+	Velocity.Z = 0.f;
+
+	CrosshairVelocityFactor = FMath::GetMappedRangeValueClamped(WalkSpeedRange, VelocityMultiplierRange, Velocity.Size());
+
+	CrosshairSpreadMultiplier = 0.5f + CrosshairVelocityFactor;
+
+}
 
 void AShooterCharacter::ChangeFOV(float DeltaTime) {
 	//set current camera field of view depending on zooming
