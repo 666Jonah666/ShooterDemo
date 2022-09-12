@@ -42,6 +42,14 @@ protected:
 	void FinishCrosshairBulletFire();
 
 	void StartCrosshairBulletFire();
+
+	void FireButtonPressed();
+	void FireButtonReleased();
+
+	void StartFireTimer();
+
+	UFUNCTION()
+	void AutoFireReset();
 	
 public:	
 	// Called every frame
@@ -155,6 +163,17 @@ private:
 	float ShootTimeDuration;
 	bool bFiringBullet;
 	FTimerHandle CrosshairShootTimer;
+	
+	bool bFireButtonPressed;
+
+	// true when we can can fire, false when waiting for the timer
+	bool bShouldFire;
+
+	//rate of gun fire
+	float AutomaticFireRate;
+
+	//sets a timer between gunshots
+	FTimerHandle AutoFireTimer;
 	
 public:
 	
