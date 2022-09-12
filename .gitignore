@@ -97,3 +97,12 @@ BuildingEscape.code-workspace
 Content/Dynamic/Levels/FirstPersonExampleMap_BuiltData.uasset
 .vs/S05_TestingGrounds/v15/ipch/
 
+/Content/Audio/
+/Content/Blueprints/
+/Content/Fx/
+/Content/Maps/
+/Content/Materials/
+/Content/Meshes/
+/Content/Sequences/
+/Content/Textures/
+/Content/_Game/Maps/Factory.umap
