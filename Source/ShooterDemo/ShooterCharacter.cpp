@@ -4,7 +4,9 @@
 #include "ShooterCharacter.h"
 
 #include "DrawDebugHelpers.h"
+#include "Item.h"
 #include "Camera/CameraComponent.h"
+#include "Components/WidgetComponent.h"
 #include "Engine/SkeletalMeshSocket.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/SpringArmComponent.h"
@@ -130,8 +132,46 @@ void AShooterCharacter::AutoFireReset() {
 	
 }
 
+bool AShooterCharacter::TraceUnderCrosshairs(FHitResult& OutHitResult) {
 
+	//GetViewPortSize
+	FVector2D ViewPortSize{FVector2D::ZeroVector};
+	if (GEngine && GEngine->GameViewport) {
+		GEngine->GameViewport->GetViewportSize(ViewPortSize);
+	}
 
+	//get screen space location of crosshairs
+	FVector2D CrosshairLocation{ViewPortSize.X / 2.f, ViewPortSize.Y / 2.f};
+	//subtract because we move location of crosshair by 50 units
+	// CrosshairLocation.Y -= 50.f;
+
+	FVector CrosshairWorldPosition{FVector::ZeroVector};
+	FVector CrosshairWorldDirection{FVector::ZeroVector};
+
+	bool bScreenToWorld = UGameplayStatics::DeprojectScreenToWorld(
+		UGameplayStatics::GetPlayerController(this, 0),
+		CrosshairLocation,
+		CrosshairWorldPosition,
+		CrosshairWorldDirection);
+
+	if (bScreenToWorld) {
+		//Trace from crosshair world location outworld
+		const FVector Start{CrosshairWorldPosition};
+		const FVector End{Start + CrosshairWorldDirection * 50'000.f};
+
+		GetWorld()->LineTraceSingleByChannel(
+			OutHitResult,
+			Start,
+			End,
+			ECC_Visibility);
+
+		if(OutHitResult.bBlockingHit) {
+			return true;
+		}
+	}
+	
+	return false;
+}
 
 // Called every frame
 void AShooterCharacter::Tick(float DeltaTime)
@@ -144,7 +184,19 @@ void AShooterCharacter::Tick(float DeltaTime)
 	SetLookRates();
 	
 	CalculateCrosshairSpread(DeltaTime);
-	
+
+	FHitResult ItemTraceResult;
+	TraceUnderCrosshairs(ItemTraceResult);
+
+	if (ItemTraceResult.bBlockingHit) {
+		//for ue5 use ItemTraceResult.GetActor()
+		AItem* HitItem = Cast<AItem>(ItemTraceResult.Actor);
+		if (HitItem && HitItem->GetPickupWidget()) {
+			//Show items pickup widget
+			HitItem->GetPickupWidget()->SetVisibility(true);
+		}
+	}
+
 }
 
 void AShooterCharacter::SetLookRates() {
