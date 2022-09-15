@@ -48,7 +48,9 @@ AShooterCharacter::AShooterCharacter() :
 	//Automatic gun fire rate
 	bFireButtonPressed(false),
 	bShouldFire(true),
-	AutomaticFireRate(0.1f)
+	AutomaticFireRate(0.1f),
+	//item trace variables
+	bShouldTraceForItems(false)
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -174,6 +176,23 @@ bool AShooterCharacter::TraceUnderCrosshairs(FHitResult& OutHitResult, FVector& 
 	return false;
 }
 
+void AShooterCharacter::TraceForItems() {
+	if(bShouldTraceForItems) {
+    		FHitResult ItemTraceResult;
+            	FVector HitLocation{FVector::ZeroVector};
+            	TraceUnderCrosshairs(ItemTraceResult, HitLocation);
+            
+            	if (ItemTraceResult.bBlockingHit) {
+            		//for ue5 use ItemTraceResult.GetActor()
+            		AItem* HitItem = Cast<AItem>(ItemTraceResult.Actor);
+            		if (HitItem && HitItem->GetPickupWidget()) {
+            			//Show items pickup widget
+            			HitItem->GetPickupWidget()->SetVisibility(true);
+            		}
+            	}
+    	}
+}
+
 // Called every frame
 void AShooterCharacter::Tick(float DeltaTime)
 {
@@ -186,18 +205,8 @@ void AShooterCharacter::Tick(float DeltaTime)
 	
 	CalculateCrosshairSpread(DeltaTime);
 
-	FHitResult ItemTraceResult;
-	FVector HitLocation{FVector::ZeroVector};
-	TraceUnderCrosshairs(ItemTraceResult, HitLocation);
-
-	if (ItemTraceResult.bBlockingHit) {
-		//for ue5 use ItemTraceResult.GetActor()
-		AItem* HitItem = Cast<AItem>(ItemTraceResult.Actor);
-		if (HitItem && HitItem->GetPickupWidget()) {
-			//Show items pickup widget
-			HitItem->GetPickupWidget()->SetVisibility(true);
-		}
-	}
+	//Check overlapped item count then trace for items
+	TraceForItems();
 
 }
 
@@ -432,6 +441,16 @@ void AShooterCharacter::MoveRight(float Value) {
 
 		const FVector Direction{FRotationMatrix{YawRotation}.GetUnitAxis(EAxis::Y)};
 		AddMovementInput(Direction, Value);
+	}
+}
+
+void AShooterCharacter::IncrementOverlappedItemCount(int8 Amount) {
+	if (OverlappedItemCount + Amount <= 0) {
+		OverlappedItemCount = 0;
+		bShouldTraceForItems = false;
+	} else {
+		OverlappedItemCount += Amount;
+		bShouldTraceForItems = true;
 	}
 }
 
