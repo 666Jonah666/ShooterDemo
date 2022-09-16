@@ -7,6 +7,8 @@
 #include "Item.h"
 #include "Weapon.h"
 #include "Camera/CameraComponent.h"
+#include "Components/BoxComponent.h"
+#include "Components/SphereComponent.h"
 #include "Components/WidgetComponent.h"
 #include "Engine/SkeletalMeshSocket.h"
 #include "GameFramework/CharacterMovementComponent.h"
@@ -95,8 +97,8 @@ void AShooterCharacter::BeginPlay()
 		CameraCurrentFOV = CameraDefaultFOV;
 	}
 
-	//Spawn default weapon and attach it to the mesh
-	SpawnDefaultWeapon();
+	//Spawn default weapon and equip it
+	EquipWeapon(SpawnDefaultWeapon());
 }
 
 void AShooterCharacter::StartCrosshairBulletFire() {
@@ -212,22 +214,34 @@ void AShooterCharacter::TraceForItems() {
 	}
 }
 
-void AShooterCharacter::SpawnDefaultWeapon() {
+AWeapon* AShooterCharacter::SpawnDefaultWeapon() {
 
 	//check default weapon class
 	if(DefaultWeaponClass) {
 		//spawn weapon
-		AWeapon* DefaultWeapon = GetWorld()->SpawnActor<AWeapon>(DefaultWeaponClass);
+		return GetWorld()->SpawnActor<AWeapon>(DefaultWeaponClass);
+	}
 
+	return nullptr;
+}
+
+void AShooterCharacter::EquipWeapon(AWeapon* WeaponToEquip) {
+	if (WeaponToEquip) {
+
+		//set area sphere to ignore all collision channels
+		WeaponToEquip->GetAreaSphere()->SetCollisionResponseToAllChannels(ECR_Ignore);
+		//set collision box to ignore all collisions
+		WeaponToEquip->GetCollisionBox()->SetCollisionResponseToAllChannels(ECR_Ignore);
+		
 		//get hand socket from skeletal mesh
 		const USkeletalMeshSocket* HandSocket = GetMesh()->GetSocketByName(FName("RightHandSocket"));
 
 		if (HandSocket) {
 			//attach weapon to the hand socket RightHandSocket
-			HandSocket->AttachActor(DefaultWeapon, GetMesh());
+			HandSocket->AttachActor(WeaponToEquip, GetMesh());
 		}
 		//set equipped weapon to the newly spawned weapon
-		EquippedWeapon = DefaultWeapon;
+		EquippedWeapon = WeaponToEquip;
 	}
 }
 
