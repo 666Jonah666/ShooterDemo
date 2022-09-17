@@ -51,6 +51,9 @@ protected:
 
 	//sets stars based on rarity
 	void SetActiveStars();
+
+	//sets properties of the item components based on state
+	void SetItemProperties(EItemState State);
 	
 public:	
 	// Called every frame
@@ -98,6 +101,7 @@ public:
 	FORCEINLINE USphereComponent* GetAreaSphere() const { return AreaSphere; }
 	FORCEINLINE UBoxComponent* GetCollisionBox() const { return CollisionBox; }
 	FORCEINLINE EItemState GetItemState() const { return ItemState; }
-	FORCEINLINE void SetItemState(EItemState State) { ItemState = State; }
+	void SetItemState(EItemState State);
+	
 	
 };
