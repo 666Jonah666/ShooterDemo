@@ -140,6 +140,8 @@ void AItem::SetItemProperties(EItemState State) {
 		break;
 	case EItemState::EIS_PickedUp: break;
 	case EItemState::EIS_Equipped:
+		PickupWidget->SetVisibility(false);
+		
 		//set mesh properties
 		ItemMesh->SetSimulatePhysics(false);
 		ItemMesh->SetEnableGravity(false);

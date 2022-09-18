@@ -190,22 +190,22 @@ void AShooterCharacter::TraceForItems() {
             
             	if (ItemTraceResult.bBlockingHit) {
             		//for ue5 use ItemTraceResult.GetActor()
-            		AItem* HitItem = Cast<AItem>(ItemTraceResult.Actor);
-            		if (HitItem && HitItem->GetPickupWidget()) {
+            		TraceHitItem = Cast<AItem>(ItemTraceResult.Actor);
+            		if (TraceHitItem && TraceHitItem->GetPickupWidget()) {
             			//Show items pickup widget
-            			HitItem->GetPickupWidget()->SetVisibility(true);
+            			TraceHitItem->GetPickupWidget()->SetVisibility(true);
             		}
 
             		//we hit an AItem last frame
                     if (TraceHitItemLastFrame) {
-	                    if (HitItem != TraceHitItemLastFrame) {
+	                    if (TraceHitItem != TraceHitItemLastFrame) {
 							//we are hitting different hit item then last frame or its null
 	                    	//then we need to make hit item last frame invisible
 	                    	TraceHitItemLastFrame->GetPickupWidget()->SetVisibility(false);
 	                    }
                     }
 
-            		TraceHitItemLastFrame = HitItem;
+            		TraceHitItemLastFrame = TraceHitItem;
 
             	} 
 	} else if (TraceHitItemLastFrame) {
@@ -254,11 +254,21 @@ void AShooterCharacter::DropWeapon() {
 }
 
 void AShooterCharacter::SelectButtonPressed() {
-	DropWeapon();
+	if(TraceHitItem) {
+		AWeapon* TraceHitWeapon = Cast<AWeapon>(TraceHitItem);
+		SwapWeapon(TraceHitWeapon);
+ 	} 
 }
 
 void AShooterCharacter::SelectButtonReleased() {
 	
+}
+
+void AShooterCharacter::SwapWeapon(AWeapon* WeaponToSwap) {
+	DropWeapon();
+	EquipWeapon(WeaponToSwap);
+	TraceHitItem = nullptr;
+	TraceHitItemLastFrame = nullptr;
 }
 
 // Called every frame
