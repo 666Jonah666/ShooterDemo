@@ -134,6 +134,10 @@ private:
 
 	//initial yaw offset between camera and interping item
 	float InterpInitialYawOffset;
+
+	//curve used to scale the item when interping
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Item Properties", meta = (AllowPrivateAccess = "true"))
+	UCurveFloat* ItemScaleCurve; 
 	
 public:
 
