@@ -131,6 +131,9 @@ private:
 	//x and y for interping state
 	float ItemInterpX;
 	float ItemInterpY;
+
+	//initial yaw offset between camera and interping item
+	float InterpInitialYawOffset;
 	
 public:
 
