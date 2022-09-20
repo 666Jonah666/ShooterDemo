@@ -258,8 +258,7 @@ void AShooterCharacter::DropWeapon() {
 
 void AShooterCharacter::SelectButtonPressed() {
 	if(TraceHitItem) {
-		AWeapon* TraceHitWeapon = Cast<AWeapon>(TraceHitItem);
-		SwapWeapon(TraceHitWeapon);
+		TraceHitItem->StartItemCurve(this);
  	} 
 }
 

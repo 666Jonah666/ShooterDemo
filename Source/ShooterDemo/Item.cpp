@@ -204,8 +204,35 @@ void AItem::SetItemProperties(EItemState State) {
 }
 
 void AItem::FinishInterping() {
+	bInterping = false;
 	if (Character) {
 		Character->GetPickupItem(this);
+	}
+}
+
+void AItem::ItemInterp(float DeltaTime) {
+	if (!bInterping) {
+		return;
+	}
+
+	if (Character && ItemZCurve) {
+		//elapsed time since we started item interp timer
+		const float ElapsedTime{GetWorldTimerManager().GetTimerElapsed(ItemInterpTimer)};
+		const float CurveValue = ItemZCurve->GetFloatValue(ElapsedTime);
+
+		//get the items initial location when curve started
+		FVector ItemLocation = ItemInterpStartLocation;
+		//get location in front of the camera
+		const FVector CameraInterpLocation = Character->GetCameraInterpLocation();
+
+		//vector from item to camera interp location (delta vector)
+		const FVector ItemToCamera{0.f, 0.f, (CameraInterpLocation - ItemLocation).Z};
+		//scale factor to multiply with curve value
+		const float DeltaZ{ItemToCamera.Size()};
+
+		//scaled by deltaz
+		ItemLocation.Z += CurveValue * DeltaZ;
+		SetActorLocation(ItemLocation, true, nullptr, ETeleportType::TeleportPhysics);
 	}
 }
 
@@ -213,7 +240,8 @@ void AItem::FinishInterping() {
 void AItem::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
+	//handle item interping
+	ItemInterp(DeltaTime);
 }
 
 void AItem::SetItemState(EItemState State) {

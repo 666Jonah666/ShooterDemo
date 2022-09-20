@@ -57,6 +57,9 @@ protected:
 
 	//called when item interping has finished
 	void FinishInterping();
+
+	//Handles item interpolation when in the eqip interp state
+	void ItemInterp(float DeltaTime);
 	
 public:	
 	// Called every frame
