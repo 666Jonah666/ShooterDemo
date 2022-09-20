@@ -19,7 +19,9 @@ AItem::AItem() :
 	ItemInterpStartLocation(FVector::ZeroVector),
 	CameraTargetLocation(FVector::ZeroVector),
 	bInterping(false),
-	ZCurveTime(0.7f)
+	ZCurveTime(0.7f),
+	ItemInterpX(0.f),
+	ItemInterpY(0.f)
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -229,6 +231,14 @@ void AItem::ItemInterp(float DeltaTime) {
 		const FVector ItemToCamera{0.f, 0.f, (CameraInterpLocation - ItemLocation).Z};
 		//scale factor to multiply with curve value
 		const float DeltaZ{ItemToCamera.Size()};
+
+		// interpolated x and y values
+		const FVector CurrentLocation{GetActorLocation()};
+		const float InterpXValue = FMath::FInterpTo(CurrentLocation.X, CameraInterpLocation.X, DeltaTime, 30.f);
+		const float InterpYValue = FMath::FInterpTo(CurrentLocation.Y, CameraInterpLocation.Y, DeltaTime, 30.f);
+
+		ItemLocation.X = InterpXValue;
+		ItemLocation.Y = InterpYValue;
 
 		//scaled by deltaz
 		ItemLocation.Z += CurveValue * DeltaZ;

@@ -127,6 +127,10 @@ private:
 	//duration of the curve and timer
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Item Properties", meta = (AllowPrivateAccess = "true"))
 	float ZCurveTime;
+
+	//x and y for interping state
+	float ItemInterpX;
+	float ItemInterpY;
 	
 public:
 
