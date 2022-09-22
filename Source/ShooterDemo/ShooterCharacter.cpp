@@ -120,8 +120,11 @@ void AShooterCharacter::StartCrosshairBulletFire() {
 
 
 void AShooterCharacter::FireButtonPressed() {
-	bFireButtonPressed = true;
-	StartFireTimer();
+	if (WeaponHasAmmo()) {
+		bFireButtonPressed = true;
+		StartFireTimer();
+	}
+	
 }
 
 void AShooterCharacter::FireButtonReleased() {
@@ -141,11 +144,12 @@ void AShooterCharacter::StartFireTimer() {
 }
 
 void AShooterCharacter::AutoFireReset() {
-	bShouldFire = true;
-	if(bFireButtonPressed) {
-		StartFireTimer();
+	if (WeaponHasAmmo()) {
+		bShouldFire = true;
+		if(bFireButtonPressed) {
+			StartFireTimer();
+		}	
 	}
-	
 }
 
 bool AShooterCharacter::TraceUnderCrosshairs(FHitResult& OutHitResult, FVector& OutHitLocation) {
@@ -282,6 +286,14 @@ void AShooterCharacter::InitializeAmmoMap() {
 	AmmoMap.Add(EAmmoType::EAT_9mm, Starting9mmAmmo);
 	AmmoMap.Add(EAmmoType::EAT_AR, StartingARAmmo);
 
+}
+
+bool AShooterCharacter::WeaponHasAmmo() {
+	if(!EquippedWeapon) {
+		return false;
+	}
+
+	return EquippedWeapon->GetAmmo() > 0;
 }
 
 // Called every frame
@@ -482,6 +494,11 @@ void AShooterCharacter::FireWeapon() {
 
 	//Start bullet fire timer for crosshairs
 	StartCrosshairBulletFire();
+
+	if (EquippedWeapon) {
+		//subtract 1 from ammo
+		EquippedWeapon->DecrementAmmo();
+	}
 }
 
 bool AShooterCharacter::GetBeamEndLocation(const FVector& MuzzleSocketLocation, FVector& OutBeamLocation) {

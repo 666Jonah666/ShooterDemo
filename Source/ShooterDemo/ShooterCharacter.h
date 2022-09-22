@@ -83,6 +83,9 @@ protected:
 	void SwapWeapon(AWeapon* WeaponToSwap);
 
 	void InitializeAmmoMap();
+
+	//Check to make sure our weapon has ammo
+	bool WeaponHasAmmo();
 	
 public:	
 	// Called every frame
