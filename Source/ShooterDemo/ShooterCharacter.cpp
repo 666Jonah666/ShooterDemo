@@ -375,9 +375,36 @@ void AShooterCharacter::ReloadWeapon() {
 }
 
 void AShooterCharacter::FinishReloading() {
-	// TODO: Update AmmoMap
 
+	//update combat state
 	CombatState = ECombatState::ECS_Unoccupied;
+
+	if(!EquippedWeapon) {
+		return;
+	}
+
+	const EAmmoType AmmoType{EquippedWeapon->GetAmmoType()};
+	
+	//UpdateAmmoMap	
+	if (AmmoMap.Contains(AmmoType)) {
+		//amount of ammo of carried weapon ammo type
+		int32 CarriedAmmo = AmmoMap[AmmoType];
+
+		//space left in the magazine of equipped weapon
+		const int32 MagEmptySpace{EquippedWeapon->GetMagazineCapacity() - EquippedWeapon->GetAmmo()};
+		if (MagEmptySpace > CarriedAmmo) {
+			//reload the magazine with all the ammo we are carrying, because ammo we have is less then max ammo in magazine
+			EquippedWeapon->ReloadAmmo(CarriedAmmo);
+			CarriedAmmo = 0;
+			AmmoMap.Add(AmmoType, CarriedAmmo);
+		} else {
+			//fill the magazine
+			EquippedWeapon->ReloadAmmo(MagEmptySpace);
+			CarriedAmmo -= MagEmptySpace;
+			AmmoMap.Add(AmmoType, CarriedAmmo);
+		}
+	}
+	
 }
 
 bool AShooterCharacter::CarryingAmmo() {
