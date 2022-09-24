@@ -95,6 +95,10 @@ protected:
 
 	//Check to make sure our weapon has ammo
 	bool WeaponHasAmmo();
+
+	void PlayFireSound();
+	void SendBullet();
+	void PlayGunFireMontage();
 	
 public:	
 	// Called every frame
@@ -260,6 +264,10 @@ private:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Items", meta = (AllowPrivateAccess = "true"))
 	int32 StartingARAmmo;
+
+	//Combat state can only fire or reload if unoccupied
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Combat", meta = (AllowPrivateAccess = "true"))
+	ECombatState CombatState;
 
 public:
 	
