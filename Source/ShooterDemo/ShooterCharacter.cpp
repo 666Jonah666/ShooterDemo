@@ -421,13 +421,37 @@ bool AShooterCharacter::CarryingAmmo() {
 	return false;
 }
 
+void AShooterCharacter::GrabClip() {
+	if (!EquippedWeapon) {
+		return;
+	}
+
+	//index for the clip bone on the equipped weapon
+	int32 ClipBoneIndex{EquippedWeapon->GetItemMesh()->GetBoneIndex(EquippedWeapon->GetClipBoneName())};
+	//store transform of the clip
+	ClipTransform = EquippedWeapon->GetItemMesh()->GetBoneTransform(ClipBoneIndex);
+
+	FAttachmentTransformRules AttachmentRules(EAttachmentRule::KeepRelative, true);
+	HandSceneComponent->AttachToComponent(GetMesh(), AttachmentRules, FName(TEXT("Hand_L")));
+	HandSceneComponent->SetWorldTransform(ClipTransform);
+
+	EquippedWeapon->SetMovingClip(true);
+	
+}
+
+void AShooterCharacter::ReleaseClip() {
+
+	EquippedWeapon->SetMovingClip(false);
+
+}
+
 // Called every frame
 void AShooterCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
 	ChangeFOV(DeltaTime);
-
+	
 	//change sensitivity if aiming
 	SetLookRates();
 	
