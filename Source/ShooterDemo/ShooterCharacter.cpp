@@ -92,7 +92,8 @@ AShooterCharacter::AShooterCharacter() :
 	GetCharacterMovement()->RotationRate = FRotator(0.f, 540.f, 0.f); // ... at this rotation rate
 	GetCharacterMovement()->JumpZVelocity = 600.f;
 	GetCharacterMovement()->AirControl = 0.2f;
-	
+
+	HandSceneComponent = CreateDefaultSubobject<USceneComponent>(TEXT("HandSceneComp"));
 }
 
 // Called when the game starts or when spawned
@@ -361,8 +362,8 @@ void AShooterCharacter::ReloadWeapon() {
 		return;
 	}
 
-	//do we have ammo of the correct type?
-	if (CarryingAmmo()) {
+	//do we have ammo of the correct type? && do we have empty space in the magazine?
+	if (CarryingAmmo() && EquippedWeapon->GetMagazineCapacity() - EquippedWeapon->GetAmmo() > 0) {
 		
 		CombatState = ECombatState::ECS_Reloading;
 		UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
@@ -422,7 +423,8 @@ bool AShooterCharacter::CarryingAmmo() {
 }
 
 void AShooterCharacter::GrabClip() {
-	if (!EquippedWeapon) {
+	
+	if (!EquippedWeapon || !HandSceneComponent) {
 		return;
 	}
 
@@ -432,6 +434,7 @@ void AShooterCharacter::GrabClip() {
 	ClipTransform = EquippedWeapon->GetItemMesh()->GetBoneTransform(ClipBoneIndex);
 
 	FAttachmentTransformRules AttachmentRules(EAttachmentRule::KeepRelative, true);
+	
 	HandSceneComponent->AttachToComponent(GetMesh(), AttachmentRules, FName(TEXT("Hand_L")));
 	HandSceneComponent->SetWorldTransform(ClipTransform);
 
