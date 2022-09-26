@@ -7,6 +7,20 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "Kismet/KismetMathLibrary.h"
 
+UShooterAnimInstance::UShooterAnimInstance() :
+	Speed(0.f),
+	bIsInAir(false),
+	bIsAccelerating(false),
+	MovementOffsetYaw(0.f),
+	LastMovementOffsetYaw(0.f),
+	bAiming(false),
+	CharacterYaw(0.f),
+	CharacterYawLastFrame(0.f),
+	RootYawOffset(0.f)
+{
+	
+}
+
 void UShooterAnimInstance::UpdateAnimationProperties(float DeltaTime) {
 	if (!ShooterCharacter) {
 		ShooterCharacter = Cast<AShooterCharacter>(TryGetPawnOwner());
@@ -38,11 +52,37 @@ void UShooterAnimInstance::UpdateAnimationProperties(float DeltaTime) {
 
 		bAiming = ShooterCharacter->GetAiming();
 	}
+
+	TurnInPlace();
+	
 }
 
 void UShooterAnimInstance::NativeInitializeAnimation() {
 	Super::NativeInitializeAnimation();
 	ShooterCharacter = Cast<AShooterCharacter>(TryGetPawnOwner());
+}
+
+void UShooterAnimInstance::TurnInPlace() {
+	if (!ShooterCharacter) {
+		return;
+	}
+
+	if(Speed > 0) {
+		//dont want to turn in place when character is moving
+	} else {
+		CharacterYawLastFrame = CharacterYaw;
+		CharacterYaw = ShooterCharacter->GetActorRotation().Yaw;
+		const float YawDelta { CharacterYaw - CharacterYawLastFrame };
+
+		RootYawOffset -= YawDelta;
+
+		if (GEngine) {
+			GEngine->AddOnScreenDebugMessage(1, -1, FColor::Blue, FString::Printf(TEXT("Character Yaw: %f"), CharacterYaw));
+			GEngine->AddOnScreenDebugMessage(2, -1, FColor::Red, FString::Printf(TEXT("Root Yaw Offset: %f"), RootYawOffset));
+		}
+	}
+
+	
 }
 
 
