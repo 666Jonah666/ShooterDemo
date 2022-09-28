@@ -74,12 +74,28 @@ void UShooterAnimInstance::TurnInPlace() {
 		CharacterYaw = ShooterCharacter->GetActorRotation().Yaw;
 		const float YawDelta { CharacterYaw - CharacterYawLastFrame };
 
-		RootYawOffset -= YawDelta;
+		//root yaw offset updated and clamped to [-180, 180]
+		RootYawOffset = UKismetMathLibrary::NormalizeAxis(RootYawOffset - YawDelta);
 
-		if (GEngine) {
-			GEngine->AddOnScreenDebugMessage(1, -1, FColor::Blue, FString::Printf(TEXT("Character Yaw: %f"), CharacterYaw));
-			GEngine->AddOnScreenDebugMessage(2, -1, FColor::Red, FString::Printf(TEXT("Root Yaw Offset: %f"), RootYawOffset));
+		const float Turning{ GetCurveValue(TEXT("Turning")) };
+
+		if (Turning > 0) {
+			RotationCurveLastFrame = RotationCurve;
+			RotationCurve = GetCurveValue(TEXT("CurveRotation"));
+			const float DeltaRotation{ RotationCurve - RotationCurveLastFrame };
+
+			//rootYawOffset> 0, -> turning left; root yaw offset < 0 -> turn right
+			(RootYawOffset > 0) ? RootYawOffset -= DeltaRotation : RootYawOffset += DeltaRotation;
+
+			const float ABSRootYawOffset { FMath::Abs(RootYawOffset) };
+			if(ABSRootYawOffset > 90.f) {
+				const float YawExcess{ ABSRootYawOffset - 90.f};
+				(RootYawOffset > 0) ? RootYawOffset -= YawExcess : RootYawOffset += YawExcess;
+			}
 		}
+		
+
+		
 	}
 
 	
