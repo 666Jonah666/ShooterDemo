@@ -69,6 +69,11 @@ void UShooterAnimInstance::TurnInPlace() {
 
 	if(Speed > 0) {
 		//dont want to turn in place when character is moving
+		RootYawOffset = 0.f;
+		CharacterYaw = ShooterCharacter->GetActorRotation().Yaw;
+		CharacterYawLastFrame = CharacterYaw;
+		RotationCurveLastFrame = 0.f;
+		RotationCurve = 0.f;
 	} else {
 		CharacterYawLastFrame = CharacterYaw;
 		CharacterYaw = ShooterCharacter->GetActorRotation().Yaw;
