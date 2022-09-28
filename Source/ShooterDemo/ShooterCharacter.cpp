@@ -367,7 +367,7 @@ void AShooterCharacter::ReloadWeapon() {
 	}
 
 	//do we have ammo of the correct type? && do we have empty space in the magazine?
-	if (CarryingAmmo() && EquippedWeapon->GetMagazineCapacity() - EquippedWeapon->GetAmmo() > 0) {
+	if (CarryingAmmo() && !EquippedWeapon->ClipIsFull()) {
 		
 		CombatState = ECombatState::ECS_Reloading;
 		UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
