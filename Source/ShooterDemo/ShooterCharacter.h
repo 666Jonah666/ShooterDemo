@@ -113,6 +113,8 @@ protected:
 	//called from anim blueprint with release clip notify
 	UFUNCTION(BlueprintCallable)
 	void ReleaseClip();
+
+	void CrouchButtonPressed();
 	
 public:	
 	// Called every frame
@@ -295,6 +297,10 @@ private:
 	UPROPERTY(VisibleAnywhere,  BlueprintReadOnly, Category = "Combat", meta = (AllowPrivateAccess = "true"))
 	USceneComponent* HandSceneComponent;
 
+	//true whe crouching
+	UPROPERTY(VisibleAnywhere,  BlueprintReadOnly, Category = "Movement", meta = (AllowPrivateAccess = "true"))
+	bool bCrouching;
+
 public:
 	
 	FORCEINLINE USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
@@ -302,6 +308,7 @@ public:
 	FORCEINLINE bool GetAiming() const { return bAiming; }
 	FORCEINLINE int8 GetOverlappedItemCount() const { return OverlappedItemCount; }
 	FORCEINLINE ECombatState GetCombatState() const { return CombatState; }
+	FORCEINLINE bool GetCrouching() const { return bCrouching; }
 	
 	//ufunctions can not be inline
 	UFUNCTION(BlueprintCallable)
