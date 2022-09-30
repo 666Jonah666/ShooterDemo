@@ -107,3 +107,16 @@ Content/Dynamic/Levels/FirstPersonExampleMap_BuiltData.uasset
 /Content/Textures/
 /Content/_Game/Maps/Factory.umap
 /Content/AnimStarterPack/
+/Content/_Game/Character/Animations/Crouching/MixamoCharacter/Ch10_1001_Diffuse.uasset
+/Content/_Game/Character/Animations/Crouching/MixamoCharacter/Ch10_1001_Glossiness.uasset
+/Content/_Game/Character/Animations/Crouching/MixamoCharacter/Ch10_1001_Normal.uasset
+/Content/_Game/Character/Animations/Crouching/MixamoCharacter/Ch10_1001_Specular.uasset
+/Content/_Game/Character/Animations/Crouching/MixamoCharacter/Ch10_1002_Diffuse.uasset
+/Content/_Game/Character/Animations/Crouching/MixamoCharacter/Ch10_1002_Glossiness.uasset
+/Content/_Game/Character/Animations/Crouching/MixamoCharacter/Ch10_1002_Normal.uasset
+/Content/_Game/Character/Animations/Crouching/MixamoCharacter/Ch10_1002_Specular.uasset
+/Content/_Game/Character/Animations/Crouching/MixamoCharacter/Ch10_body.uasset
+/Content/_Game/Character/Animations/Crouching/MixamoCharacter/Ch10_body1.uasset
+/Content/_Game/Character/Animations/Crouching/MixamoCharacter/Crouching_Turn_90_Right.uasset
+/Content/_Game/Character/Animations/Crouching/MixamoCharacter/Crouching_Turn_90_Right_Anim_Take_001.uasset
+/Content/_Game/Character/Animations/Crouching/MixamoCharacter/Crouching_Turn_90_Right_PhysicsAsset.uasset
