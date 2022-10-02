@@ -25,7 +25,7 @@ AShooterCharacter::AShooterCharacter() :
 	bAiming(false),
 	//camera field of view values
 	CameraDefaultFOV(0.f), //set in begin play
-	CameraZoomedFOV(35.f),
+	CameraZoomedFOV(25.f),
 	CameraCurrentFOV(0.f),
 	ZoomInterpSpeed(20.f),
 	// Turn rates for aiming/not aiming
@@ -36,8 +36,8 @@ AShooterCharacter::AShooterCharacter() :
 	//Mouse Look sensitivity scale factors
 	MouseHipTurnRate(1.f),
 	MouseHipLookUpRate(1.f),
-	MouseAimingTurnRate(0.2f),
-	MouseAimingLookUpRate(0.2f),
+	MouseAimingTurnRate(0.6f),
+	MouseAimingLookUpRate(0.6f),
 	//Crosshair spread factors
 	CrosshairSpreadMultiplier(0.f),
 	CrosshairVelocityFactor(0.f),
@@ -76,9 +76,9 @@ AShooterCharacter::AShooterCharacter() :
 	//Attach SpringArm; pulls in towards a character if there is a collision
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
 	CameraBoom->SetupAttachment(RootComponent);
-	CameraBoom->TargetArmLength = 180.f; //arm length / camera distance
+	CameraBoom->TargetArmLength = 240.f; //arm length / camera distance
 	CameraBoom->bUsePawnControlRotation = true; //rotate the arm based on the controller
-	CameraBoom->SocketOffset = FVector(0.f, 50.f, 45.f);
+	CameraBoom->SocketOffset = FVector(0.f, 50.f, 70.f);
 
 	//Attach Camera to SpringArm
 	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
