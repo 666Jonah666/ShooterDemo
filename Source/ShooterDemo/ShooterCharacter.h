@@ -120,6 +120,9 @@ protected:
 
 	//interps capsule half height when crouching / standing
 	void InterpCapsuleHalfHeight(float DeltaTime);
+
+	void Aim();
+	void StopAiming();
 	
 public:	
 	// Called every frame
@@ -332,6 +335,9 @@ private:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement", meta = (AllowPrivateAccess = "true"))
 	float CrouchingGroundFriction;
+
+	//used for knowing when the aiming button is pressed
+	bool bAimingButtonPressed;
 
 public:
 	

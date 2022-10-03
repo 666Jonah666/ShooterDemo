@@ -68,7 +68,8 @@ AShooterCharacter::AShooterCharacter() :
 	StandingCapsuleHalfHeight(88.f),
 	CrouchingCapsuleHalfHeight(44.f),
 	BaseGroundFriction(2.f),
-	CrouchingGroundFriction(100.f)
+	CrouchingGroundFriction(100.f),
+	bAimingButtonPressed(false)
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -377,7 +378,9 @@ void AShooterCharacter::ReloadWeapon() {
 
 	//do we have ammo of the correct type? && do we have empty space in the magazine?
 	if (CarryingAmmo() && !EquippedWeapon->ClipIsFull()) {
-		
+		if (bAiming) {
+			StopAiming();
+		}		
 		CombatState = ECombatState::ECS_Reloading;
 		UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
 		if (ReloadMontage && AnimInstance) {
@@ -393,6 +396,10 @@ void AShooterCharacter::FinishReloading() {
 	//update combat state
 	CombatState = ECombatState::ECS_Unoccupied;
 
+	if(bAimingButtonPressed) {
+		Aim();
+	}
+	
 	if(!EquippedWeapon) {
 		return;
 	}
@@ -501,6 +508,18 @@ void AShooterCharacter::InterpCapsuleHalfHeight(float DeltaTime) {
 	GetMesh()->AddLocalOffset(MeshOffset);
 	
 	GetCapsuleComponent()->SetCapsuleHalfHeight(InterpHalfHeight);
+}
+
+void AShooterCharacter::Aim() {
+	bAiming = true;
+	GetCharacterMovement()->MaxWalkSpeed = CrouchMovementSpeed;
+}
+
+void AShooterCharacter::StopAiming() {
+	bAiming = false;
+	if (!bCrouching) {
+		GetCharacterMovement()->MaxWalkSpeed = BaseMovementSpeed;	
+	}
 }
 
 void AShooterCharacter::Tick(float DeltaTime)
@@ -720,15 +739,15 @@ bool AShooterCharacter::GetBeamEndLocation(const FVector& MuzzleSocketLocation, 
 }
 
 void AShooterCharacter::AimingButtonPressed() {
-	bAiming = true;
-	GetCharacterMovement()->MaxWalkSpeed = CrouchMovementSpeed;
+	bAimingButtonPressed = true;
+	if(CombatState != ECombatState::ECS_Reloading) {
+		Aim();
+	}
 }
 
 void AShooterCharacter::AimingButtonReleased() {
-	bAiming = false;
-	if (!bCrouching) {
-		GetCharacterMovement()->MaxWalkSpeed = BaseMovementSpeed;	
-	}
+	bAimingButtonPressed = false;
+	StopAiming();
 }
 
 void AShooterCharacter::MoveRight(float Value) {
