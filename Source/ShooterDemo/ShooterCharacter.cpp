@@ -3,6 +3,7 @@
 
 #include "ShooterCharacter.h"
 
+#include "Ammo.h"
 #include "DrawDebugHelpers.h"
 #include "Item.h"
 #include "Weapon.h"
@@ -522,6 +523,8 @@ void AShooterCharacter::StopAiming() {
 	}
 }
 
+
+
 void AShooterCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
@@ -787,6 +790,33 @@ void AShooterCharacter::GetPickupItem(AItem* Item) {
 	if (Weapon) {
 		SwapWeapon(Weapon);
 	}
+
+	AAmmo* Ammo = Cast<AAmmo>(Item);
+	if (Ammo) {
+		PickupAmmo(Ammo);
+	}
+}
+
+
+void AShooterCharacter::PickupAmmo(AAmmo* Ammo) {
+
+	//check to see if ammo map contains ammo type
+	if(AmmoMap.Find(Ammo->GetAmmoType())) {
+		//get amount of ammo
+		int32 AmmoCount{ AmmoMap[Ammo->GetAmmoType()] };
+		AmmoCount += Ammo->GetItemCount();
+		//set the amount of ammo in the map for this type
+		AmmoMap[Ammo->GetAmmoType()] = AmmoCount;
+	}
+
+	if(EquippedWeapon->GetAmmoType() == Ammo->GetAmmoType()) {
+		//check to see if the gun is empty
+		if(EquippedWeapon->GetAmmo() == 0) {
+			ReloadWeapon();
+		}
+	}
+
+	Ammo->Destroy();
 	
 }
 
