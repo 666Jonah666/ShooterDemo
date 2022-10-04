@@ -127,8 +127,8 @@ void AItem::SetActiveStars() {
 }
 
 void AItem::SetItemProperties(EItemState State) {
-	switch (State) {
 
+	switch (State) {
 	case EItemState::EIS_Pickup:
 		//set mesh properties
 		ItemMesh->SetSimulatePhysics(false);

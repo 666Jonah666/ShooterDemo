@@ -22,6 +22,9 @@ public:
 protected:
 	virtual void BeginPlay() override;
 
+	//override of set item properties for ammo mesh properties
+	virtual void SetItemProperties(EItemState State) override;
+
 private:
 	//ammo mesh
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Ammo", meta = (AllowPrivateAccess = "true"))

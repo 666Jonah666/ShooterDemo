@@ -53,7 +53,7 @@ protected:
 	void SetActiveStars();
 
 	//sets properties of the item components based on state
-	void SetItemProperties(EItemState State);
+	virtual void SetItemProperties(EItemState State);
 
 	//called when item interping has finished
 	void FinishInterping();
