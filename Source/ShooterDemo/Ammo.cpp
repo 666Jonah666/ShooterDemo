@@ -2,19 +2,24 @@
 
 
 #include "Ammo.h"
+
+#include "ShooterCharacter.h"
 #include "Components/WidgetComponent.h"
 #include "Components/BoxComponent.h"
 #include "Components/SphereComponent.h"
 
 AAmmo::AAmmo() {
 	//construct the ammo mesh component and set it as the root
-	AmmoMesh = CreateDefaultSubobject<UStaticMeshComponent>("AmmoMesh");
+	AmmoMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("AmmoMesh"));
 	SetRootComponent(AmmoMesh);
 
 	GetCollisionBox()->SetupAttachment(GetRootComponent());
 	GetPickupWidget()->SetupAttachment(GetRootComponent());
 	GetAreaSphere()->SetupAttachment(GetRootComponent());
-	
+
+	AmmoCollisionSphere = CreateDefaultSubobject<USphereComponent>(TEXT("AmmoCollisionSphere"));
+	AmmoCollisionSphere->SetupAttachment(GetRootComponent());
+	AmmoCollisionSphere->SetSphereRadius(50.f);
 }
 
 void AAmmo::Tick(float DeltaSeconds) {
@@ -23,6 +28,8 @@ void AAmmo::Tick(float DeltaSeconds) {
 
 void AAmmo::BeginPlay() {
 	Super::BeginPlay();
+
+	AmmoCollisionSphere->OnComponentBeginOverlap.AddDynamic(this, &AAmmo::AAmmo::AmmoSphereOverlap);
 }
 
 void AAmmo::SetItemProperties(EItemState State) {
@@ -67,5 +74,16 @@ void AAmmo::SetItemProperties(EItemState State) {
 		break;
 	case EItemState::EIS_MAX: break;
 	default: ;
+	}
+}
+
+void AAmmo::AmmoSphereOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
+	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult) {
+	if (OtherActor) {
+		AShooterCharacter* OverlappedCharacter = Cast<AShooterCharacter>(OtherActor);
+		if (OverlappedCharacter) {
+			StartItemCurve(OverlappedCharacter);
+			AmmoCollisionSphere->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+		}
 	}
 }

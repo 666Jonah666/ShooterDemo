@@ -25,6 +25,9 @@ protected:
 	//override of set item properties for ammo mesh properties
 	virtual void SetItemProperties(EItemState State) override;
 
+	UFUNCTION()
+	void AmmoSphereOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+
 private:
 	//ammo mesh
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Ammo", meta = (AllowPrivateAccess = "true"))
@@ -37,6 +40,10 @@ private:
 	//the texture for the ammo icon
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Ammo", meta = (AllowPrivateAccess = "true"))
 	UTexture2D* AmmoIconTexture;
+
+	//overlap sphere for picking app the ammo
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Ammo", meta = (AllowPrivateAccess = "true"))
+	USphereComponent* AmmoCollisionSphere;
 	
 public:
 	FORCEINLINE UStaticMeshComponent* GetAmmoMesh() const { return AmmoMesh; }
