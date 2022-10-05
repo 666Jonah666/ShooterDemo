@@ -144,6 +144,9 @@ void AShooterCharacter::BeginPlay()
 	InitializeAmmoMap();
 
 	GetCharacterMovement()->MaxWalkSpeed = BaseMovementSpeed;
+
+	//create finterp locations struct for each interp location add to array
+	InitializeInterpLocations();
 }
 
 void AShooterCharacter::StartCrosshairBulletFire() {
@@ -660,6 +663,25 @@ void AShooterCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 
 }
 
+void AShooterCharacter::InitializeInterpLocations() {
+	FInterpLocation WeaponLocation{ WeaponInterpComp, 0 };
+	InterpLocations.Add(WeaponLocation);
+
+	FInterpLocation InterpLoc1{ InterpComp1, 0 };
+	InterpLocations.Add(InterpLoc1);
+	FInterpLocation InterpLoc2{ InterpComp2, 0 };
+	InterpLocations.Add(InterpLoc2);
+	FInterpLocation InterpLoc3{ InterpComp3, 0 };
+	InterpLocations.Add(InterpLoc3);
+	FInterpLocation InterpLoc4{ InterpComp4, 0 };
+	InterpLocations.Add(InterpLoc4);
+	FInterpLocation InterpLoc5{ InterpComp5, 0 };
+	InterpLocations.Add(InterpLoc5);
+	FInterpLocation InterpLoc6{ InterpComp6, 0 };
+	InterpLocations.Add(InterpLoc6);
+
+}
+
 void AShooterCharacter::MoveForward(float Value) {
 	if (Controller && Value != 0.f) {
 		const FRotator Rotation{Controller->GetControlRotation()};
@@ -816,6 +838,13 @@ void AShooterCharacter::GetPickupItem(AItem* Item) {
 	}
 }
 
+FInterpLocation AShooterCharacter::GetInterpLocation(int32 Index) {
+	if (Index <= InterpLocations.Num()) {
+		return InterpLocations[Index];
+	}
+
+	return FInterpLocation();
+}
 
 void AShooterCharacter::PickupAmmo(AAmmo* Ammo) {
 

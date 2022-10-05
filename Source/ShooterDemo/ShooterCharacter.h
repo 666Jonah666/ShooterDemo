@@ -19,6 +19,19 @@ enum class ECombatState: uint8
 	ECS_MAX UMETA(DisplayName = "DefaultMAX")
 };
 
+USTRUCT(BlueprintType)
+struct FInterpLocation {
+	GENERATED_BODY()
+
+	//Scene component to use for its location
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	USceneComponent* SceneComponent;
+
+	//number of items interping to/at this scene comp location
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	int32 ItemCount;
+};
+
 UCLASS()
 class SHOOTERDEMO_API AShooterCharacter : public ACharacter
 {
@@ -132,6 +145,8 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	void InitializeInterpLocations();
 	
 	
 private:
@@ -358,6 +373,8 @@ private:
 	USceneComponent* InterpComp6;
 	/*==============================================================*/
 
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	TArray<FInterpLocation> InterpLocations;
 
 
 public:
@@ -379,5 +396,7 @@ public:
 	FVector GetCameraInterpLocation();
 
 	void GetPickupItem(AItem* Item);
+
+	FInterpLocation GetInterpLocation(int32 Index);
 	
 };
