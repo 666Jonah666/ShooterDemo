@@ -68,6 +68,9 @@ protected:
 
 	//Handles item interpolation when in the eqip interp state
 	void ItemInterp(float DeltaTime);
+
+	//get interp location based on item type
+	FVector GetInterpLocation();
 	
 public:	
 	// Called every frame
@@ -158,6 +161,10 @@ private:
 	//enum for the type of item this item is
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item Properties", meta = (AllowPrivateAccess = "true"))
 	EItemType ItemType;
+
+	//index of the interp location this item is interping to
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Item Properties", meta = (AllowPrivateAccess = "true"))
+	int32 InterpLocIndex;
 	
 public:
 

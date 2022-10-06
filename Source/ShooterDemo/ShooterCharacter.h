@@ -138,7 +138,7 @@ protected:
 	void StopAiming();
 
 	void PickupAmmo(class AAmmo* Ammo);
-	
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -393,10 +393,16 @@ public:
 	//Adds/subtracts to/from overlapped item count and updates bShouldtraceforitems
 	void IncrementOverlappedItemCount(int8 Amount);
 
-	FVector GetCameraInterpLocation();
+	//no longer needed AItem has interp location
+	// FVector GetCameraInterpLocation();
 
 	void GetPickupItem(AItem* Item);
 
 	FInterpLocation GetInterpLocation(int32 Index);
+
+	//return the index in interp locations array with the lowest item count
+	int32 GetInterpLocationIndex();
+
+	void IncrementInterpLocItemCount(int32 Index, int32 Amount);
 	
 };
