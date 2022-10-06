@@ -45,6 +45,10 @@ public:
 	// Sets default values for this actor's properties
 	AItem();
 
+	//called in AShooterCharacter::GetPickupItem();
+	void PlayEquipSound();
+
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -71,6 +75,8 @@ protected:
 
 	//get interp location based on item type
 	FVector GetInterpLocation();
+
+	void PlayPickupSound();
 	
 public:	
 	// Called every frame
@@ -180,4 +186,5 @@ public:
 	void SetItemState(EItemState State);
 	//called from the shooter character class
 	void StartItemCurve(AShooterCharacter* Char);
+	
 };

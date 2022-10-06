@@ -285,6 +285,28 @@ FVector AItem::GetInterpLocation() {
 
 }
 
+void AItem::PlayPickupSound() {
+	if(Character) {
+		if(Character->ShouldPlayPickupSound()) {
+			Character->StartPickupSoundTimer();
+			if(PickupSound) {
+				UGameplayStatics::PlaySound2D(this, PickupSound);
+			}
+		}
+	}	
+}
+
+void AItem::PlayEquipSound() {
+	if(Character) {
+		if(Character->ShouldPlayEquipSound()) {
+			Character->StartEquipSoundTimer();
+			if(EquipSound) {
+				UGameplayStatics::PlaySound2D(this, EquipSound);
+			}
+		}
+	}
+}
+
 // Called every frame
 void AItem::Tick(float DeltaTime)
 {
@@ -306,10 +328,8 @@ void AItem::StartItemCurve(AShooterCharacter* Char) {
 	InterpLocIndex = Char->GetInterpLocationIndex();
 	//add 1 to the item count for this interp location struct
 	Character->IncrementInterpLocItemCount(InterpLocIndex, 1);
-	
-	if (PickupSound) {
-		UGameplayStatics::PlaySound2D(this, PickupSound);
-	}
+
+	PlayPickupSound();
 	
 	//Store initial location of the item
 	ItemInterpStartLocation = GetActorLocation();
