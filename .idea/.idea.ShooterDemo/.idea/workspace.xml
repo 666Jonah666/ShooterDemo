@@ -8,11 +8,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="interp to multiple locations">
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Item.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Item.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Item.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Item.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.h" afterDir="false" />
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -268,7 +265,7 @@
       <option name="presentableId" value="Default" />
       <updated>1665059346075</updated>
       <workItem from="1665059385232" duration="681000" />
-      <workItem from="1665077819071" duration="4743000" />
+      <workItem from="1665077819071" duration="5415000" />
     </task>
     <task id="LOCAL-00001" summary="interp to multiple locations">
       <created>1665080563356</created>
@@ -277,7 +274,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665080563356</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="limit for sounds">
+      <created>1665082714065</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665082714065</updated>
+    </task>
+    <task id="LOCAL-00003" summary="post process material">
+      <created>1665083502882</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665083502882</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,6 +310,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="interp to multiple locations" />
-    <option name="LAST_COMMIT_MESSAGE" value="interp to multiple locations" />
+    <MESSAGE value="limit for sounds" />
+    <MESSAGE value="post process material" />
+    <option name="LAST_COMMIT_MESSAGE" value="post process material" />
   </component>
 </project>
