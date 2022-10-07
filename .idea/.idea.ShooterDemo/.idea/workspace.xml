@@ -8,16 +8,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="custom depth">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Materials/PostProcess/PP_Highlight.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Materials/PostProcess/PP_Highlight.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Weapons/BaseWeapon/BP_BaseWeapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Weapons/BaseWeapon/BP_BaseWeapon.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock://D:/UEprojects/ShooterDemo/Source/ShooterDemo/Item.cpp" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -266,6 +266,7 @@
       <updated>1665059346075</updated>
       <workItem from="1665059385232" duration="681000" />
       <workItem from="1665077819071" duration="5415000" />
+      <workItem from="1665159452029" duration="604000" />
     </task>
     <task id="LOCAL-00001" summary="interp to multiple locations">
       <created>1665080563356</created>
@@ -288,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665083502882</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="custom depth">
+      <created>1665165303465</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665165303465</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,6 +320,7 @@
     <MESSAGE value="interp to multiple locations" />
     <MESSAGE value="limit for sounds" />
     <MESSAGE value="post process material" />
-    <option name="LAST_COMMIT_MESSAGE" value="post process material" />
+    <MESSAGE value="custom depth" />
+    <option name="LAST_COMMIT_MESSAGE" value="custom depth" />
   </component>
 </project>
