@@ -8,8 +8,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="adding border to the scene colour">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="change outline thickness">
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/_Game/Materials/PostProcess/PP_Highlight.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Materials/PostProcess/PP_Highlight.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -265,7 +265,7 @@
       <workItem from="1665059385232" duration="681000" />
       <workItem from="1665077819071" duration="5415000" />
       <workItem from="1665159452029" duration="2727000" />
-      <workItem from="1665259429607" duration="970000" />
+      <workItem from="1665259429607" duration="1542000" />
     </task>
     <task id="LOCAL-00001" summary="interp to multiple locations">
       <created>1665080563356</created>
@@ -323,7 +323,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665259930432</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="hide occluded pixels">
+      <created>1665260412299</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1665260412299</updated>
+    </task>
+    <task id="LOCAL-00010" summary="change outline thickness">
+      <created>1665260558005</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1665260558005</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,6 +366,8 @@
     <MESSAGE value="show interior pixels" />
     <MESSAGE value="getting border" />
     <MESSAGE value="adding border to the scene colour" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding border to the scene colour" />
+    <MESSAGE value="hide occluded pixels" />
+    <MESSAGE value="change outline thickness" />
+    <option name="LAST_COMMIT_MESSAGE" value="change outline thickness" />
   </component>
 </project>
