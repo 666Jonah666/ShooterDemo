@@ -8,9 +8,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="change outline thickness">
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" afterDir="false" />
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/_Game/Materials/PostProcess/PP_Highlight.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Materials/PostProcess/PP_Highlight.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Weapons/BaseWeapon/BP_BaseWeapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Weapons/BaseWeapon/BP_BaseWeapon.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -265,7 +267,8 @@
       <workItem from="1665059385232" duration="681000" />
       <workItem from="1665077819071" duration="5415000" />
       <workItem from="1665159452029" duration="2727000" />
-      <workItem from="1665259429607" duration="1542000" />
+      <workItem from="1665259429607" duration="1577000" />
+      <workItem from="1665334248171" duration="606000" />
     </task>
     <task id="LOCAL-00001" summary="interp to multiple locations">
       <created>1665080563356</created>
@@ -337,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665260558005</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="colour tinting effect">
+      <created>1665261000987</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1665261000987</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,6 +378,7 @@
     <MESSAGE value="adding border to the scene colour" />
     <MESSAGE value="hide occluded pixels" />
     <MESSAGE value="change outline thickness" />
-    <option name="LAST_COMMIT_MESSAGE" value="change outline thickness" />
+    <MESSAGE value="colour tinting effect" />
+    <option name="LAST_COMMIT_MESSAGE" value="colour tinting effect" />
   </component>
 </project>
