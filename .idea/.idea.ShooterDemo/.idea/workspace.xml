@@ -8,12 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Materials/PostProcess/PP_Highlight.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Materials/PostProcess/PP_Highlight.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Weapons/BaseWeapon/BP_BaseWeapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Weapons/BaseWeapon/BP_BaseWeapon.uasset" afterDir="false" />
-    </list>
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="fresnel effect" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -268,7 +263,7 @@
       <workItem from="1665077819071" duration="5415000" />
       <workItem from="1665159452029" duration="2727000" />
       <workItem from="1665259429607" duration="1577000" />
-      <workItem from="1665334248171" duration="606000" />
+      <workItem from="1665334248171" duration="1263000" />
     </task>
     <task id="LOCAL-00001" summary="interp to multiple locations">
       <created>1665080563356</created>
@@ -347,7 +342,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665261000987</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="multiple colors with custom depth stencil">
+      <created>1665335732874</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1665335732874</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fresnel effect">
+      <created>1665337463403</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1665337463403</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,6 +388,8 @@
     <MESSAGE value="hide occluded pixels" />
     <MESSAGE value="change outline thickness" />
     <MESSAGE value="colour tinting effect" />
-    <option name="LAST_COMMIT_MESSAGE" value="colour tinting effect" />
+    <MESSAGE value="multiple colors with custom depth stencil" />
+    <MESSAGE value="fresnel effect" />
+    <option name="LAST_COMMIT_MESSAGE" value="fresnel effect" />
   </component>
 </project>
