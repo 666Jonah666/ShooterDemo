@@ -8,7 +8,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="fresnel effect" />
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -263,7 +265,7 @@
       <workItem from="1665077819071" duration="5415000" />
       <workItem from="1665159452029" duration="2727000" />
       <workItem from="1665259429607" duration="1577000" />
-      <workItem from="1665334248171" duration="1263000" />
+      <workItem from="1665334248171" duration="1851000" />
     </task>
     <task id="LOCAL-00001" summary="interp to multiple locations">
       <created>1665080563356</created>
@@ -356,7 +358,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665337463403</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="material instance">
+      <created>1665338037871</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1665338037871</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,6 +399,7 @@
     <MESSAGE value="colour tinting effect" />
     <MESSAGE value="multiple colors with custom depth stencil" />
     <MESSAGE value="fresnel effect" />
-    <option name="LAST_COMMIT_MESSAGE" value="fresnel effect" />
+    <MESSAGE value="material instance" />
+    <option name="LAST_COMMIT_MESSAGE" value="material instance" />
   </component>
 </project>
