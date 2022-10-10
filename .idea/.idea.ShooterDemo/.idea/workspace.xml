@@ -8,8 +8,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="enable outline in code">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="dynamic material instances">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Item.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Item.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Item.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Item.h" afterDir="false" />
     </list>
@@ -268,7 +269,7 @@
       <workItem from="1665159452029" duration="2727000" />
       <workItem from="1665259429607" duration="1577000" />
       <workItem from="1665334248171" duration="1851000" />
-      <workItem from="1665436858069" duration="2094000" />
+      <workItem from="1665436858069" duration="2773000" />
     </task>
     <task id="LOCAL-00001" summary="interp to multiple locations">
       <created>1665080563356</created>
@@ -382,7 +383,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665438745091</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="dynamic material instances">
+      <created>1665439642289</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1665439642289</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,6 +427,7 @@
     <MESSAGE value="material instance" />
     <MESSAGE value="scrolling lines effect" />
     <MESSAGE value="enable outline in code" />
-    <option name="LAST_COMMIT_MESSAGE" value="enable outline in code" />
+    <MESSAGE value="dynamic material instances" />
+    <option name="LAST_COMMIT_MESSAGE" value="dynamic material instances" />
   </component>
 </project>
