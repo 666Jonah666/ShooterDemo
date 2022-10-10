@@ -67,6 +67,8 @@ void AItem::BeginPlay()
 
 	SetItemProperties(ItemState);
 
+	//set custom depth to disabled
+	InitializeCustomDepth();
 }
 
 void AItem::OnSphereOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
@@ -294,6 +296,17 @@ void AItem::PlayPickupSound() {
 			}
 		}
 	}	
+}
+
+void AItem::EnableCustomDepth() {
+	ItemMesh->SetRenderCustomDepth(true);
+}
+void AItem::DisableCustomDepth() {
+	ItemMesh->SetRenderCustomDepth(false);
+}
+
+void AItem::InitializeCustomDepth() {
+	DisableCustomDepth();
 }
 
 void AItem::PlayEquipSound() {

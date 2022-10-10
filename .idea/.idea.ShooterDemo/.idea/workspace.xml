@@ -8,8 +8,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="scrolling lines effect">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Ammo.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Ammo.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Ammo.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Ammo.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Item.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Item.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Item.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Item.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -266,6 +271,7 @@
       <workItem from="1665159452029" duration="2727000" />
       <workItem from="1665259429607" duration="1577000" />
       <workItem from="1665334248171" duration="1851000" />
+      <workItem from="1665436858069" duration="1196000" />
     </task>
     <task id="LOCAL-00001" summary="interp to multiple locations">
       <created>1665080563356</created>
@@ -365,7 +371,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665338037871</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="scrolling lines effect">
+      <created>1665437930922</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1665437930922</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,6 +413,7 @@
     <MESSAGE value="multiple colors with custom depth stencil" />
     <MESSAGE value="fresnel effect" />
     <MESSAGE value="material instance" />
-    <option name="LAST_COMMIT_MESSAGE" value="material instance" />
+    <MESSAGE value="scrolling lines effect" />
+    <option name="LAST_COMMIT_MESSAGE" value="scrolling lines effect" />
   </component>
 </project>
