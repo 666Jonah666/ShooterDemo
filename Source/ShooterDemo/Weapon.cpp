@@ -58,7 +58,7 @@ void AWeapon::DecrementAmmo() {
 }
 
 void AWeapon::ReloadAmmo(int32 Amount) {
-
+	
 	checkf(Ammo + Amount <= MagazineCapacity, TEXT("Attempted to reload with more then magazine capacity"));
 	Ammo += Amount;
 }
@@ -66,4 +66,5 @@ void AWeapon::ReloadAmmo(int32 Amount) {
 void AWeapon::StopFalling() {
 	bFalling = false;
 	SetItemState(EItemState::EIS_Pickup);
+	StartPulseTimer();
 }

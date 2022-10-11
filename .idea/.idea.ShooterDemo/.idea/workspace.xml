@@ -8,10 +8,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="show outline while interping">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Item.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Item.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Item.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Item.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -270,7 +271,7 @@
       <workItem from="1665259429607" duration="1577000" />
       <workItem from="1665334248171" duration="1851000" />
       <workItem from="1665436858069" duration="2817000" />
-      <workItem from="1665522352635" duration="444000" />
+      <workItem from="1665522352635" duration="2723000" />
     </task>
     <task id="LOCAL-00001" summary="interp to multiple locations">
       <created>1665080563356</created>
@@ -398,7 +399,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665440123297</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="show outline while interping">
+      <created>1665522854175</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1665522854175</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,6 +445,7 @@
     <MESSAGE value="enable outline in code" />
     <MESSAGE value="dynamic material instances" />
     <MESSAGE value="enable glow material" />
-    <option name="LAST_COMMIT_MESSAGE" value="enable glow material" />
+    <MESSAGE value="show outline while interping" />
+    <option name="LAST_COMMIT_MESSAGE" value="show outline while interping" />
   </component>
 </project>

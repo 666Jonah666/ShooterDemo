@@ -146,12 +146,16 @@ void AShooterCharacter::BeginPlay()
 	//Spawn default weapon and equip it
 	EquipWeapon(SpawnDefaultWeapon());
 
+	EquippedWeapon->DisableCustomDepth();
+	EquippedWeapon->DisableGlowMaterial();
+	
 	InitializeAmmoMap();
 
 	GetCharacterMovement()->MaxWalkSpeed = BaseMovementSpeed;
 
 	//create finterp locations struct for each interp location add to array
 	InitializeInterpLocations();
+
 }
 
 void AShooterCharacter::StartCrosshairBulletFire() {
