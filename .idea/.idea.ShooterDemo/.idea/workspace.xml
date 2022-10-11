@@ -8,12 +8,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="show outline while interping">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="curve vector for material parameters">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Item.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Item.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Item.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Item.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -271,7 +270,7 @@
       <workItem from="1665259429607" duration="1577000" />
       <workItem from="1665334248171" duration="1851000" />
       <workItem from="1665436858069" duration="2817000" />
-      <workItem from="1665522352635" duration="2723000" />
+      <workItem from="1665522352635" duration="4531000" />
     </task>
     <task id="LOCAL-00001" summary="interp to multiple locations">
       <created>1665080563356</created>
@@ -406,7 +405,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665522854175</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="curve vector for material parameters">
+      <created>1665525610830</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1665525610830</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -446,6 +452,7 @@
     <MESSAGE value="dynamic material instances" />
     <MESSAGE value="enable glow material" />
     <MESSAGE value="show outline while interping" />
-    <option name="LAST_COMMIT_MESSAGE" value="show outline while interping" />
+    <MESSAGE value="curve vector for material parameters" />
+    <option name="LAST_COMMIT_MESSAGE" value="curve vector for material parameters" />
   </component>
 </project>

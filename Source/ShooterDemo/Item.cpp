@@ -230,6 +230,7 @@ void AItem::FinishInterping() {
 		//subtract one from the icon count of the interp location struct
 		Character->IncrementInterpLocItemCount(InterpLocIndex, -1);
 		Character->GetPickupItem(this);
+		SetItemState(EItemState::EIS_PickedUp);
 	}
 	// set scale back to normal after scaling in interp func
 	SetActorScale3D(FVector(1.f));
@@ -345,18 +346,35 @@ void AItem::EnableGlowMaterial() {
 }
 
 void AItem::UpdatePulse() {
-	if (ItemState != EItemState::EIS_Pickup) {
-		return;
+
+	float ElapsedTime{};
+	FVector CurveValue{FVector::ZeroVector};
+	
+	switch (ItemState) {
+		case EItemState::EIS_Pickup:
+			if (PulseCurve) {
+				ElapsedTime = GetWorldTimerManager().GetTimerElapsed(PulseTimer);
+				CurveValue = PulseCurve->GetVectorValue(ElapsedTime);
+			}
+			break;
+		case EItemState::EIS_EquipInterping:
+			if (InterpPulseCurve) {
+				ElapsedTime = GetWorldTimerManager().GetTimerElapsed(ItemInterpTimer);
+				CurveValue = InterpPulseCurve->GetVectorValue(ElapsedTime);
+			}
+			break;
+		case EItemState::EIS_PickedUp: break;
+		case EItemState::EIS_Equipped: break;
+		case EItemState::EIS_Falling: break;
+		case EItemState::EIS_MAX: break;
+		default: ;
 	}
 
-	const float ElapsedTime{GetWorldTimerManager().GetTimerElapsed(PulseTimer)};
-
-	if (PulseCurve) {
-		const FVector CurveValue{PulseCurve->GetVectorValue(ElapsedTime)};
-
+	if (DynamicMaterialInstance) {
 		DynamicMaterialInstance->SetScalarParameterValue(TEXT("GlowAmount"), CurveValue.X * GlowAmount);
 		DynamicMaterialInstance->SetScalarParameterValue(TEXT("FresnelExponent"), CurveValue.Y * FresnelExponent);
 		DynamicMaterialInstance->SetScalarParameterValue(TEXT("FresnelReflectFraction"), CurveValue.Z * FresnelReflectFraction);
+		
 	}
 }
 
@@ -420,7 +438,8 @@ void AItem::StartItemCurve(AShooterCharacter* Char) {
 
 	bInterping = true;
 	SetItemState(EItemState::EIS_EquipInterping);
-
+	GetWorldTimerManager().ClearTimer(PulseTimer);
+	
 	GetWorldTimerManager().SetTimer(ItemInterpTimer, this, &AItem::FinishInterping, ZCurveTime);
 
 	//get initial yaw of the camera and item
@@ -430,5 +449,7 @@ void AItem::StartItemCurve(AShooterCharacter* Char) {
 	InterpInitialYawOffset = ItemRotationYaw - CameraRotationYaw;
 
 	bCanChangeCustomDepth = false;
+
+	
 }
 
