@@ -394,6 +394,12 @@ private:
 	//time to wait before we can play another equip sound
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Items", meta = (AllowPrivateAccess = "true"))
 	float EquipSoundResetTime;
+
+	//array of AItems for inventory
+	UPROPERTY(VisibleAnywhere,  BlueprintReadOnly, Category = "Inventory", meta = (AllowPrivateAccess = "true"))
+	TArray<AItem*> Inventory;
+
+	const int32 INVENTORY_CAPACITY{ 6 };
 	
 public:
 	

@@ -8,11 +8,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="inventory bar widget">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="add inventory bar to hud overlay">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/HUD/BP_PickupWidget.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/HUD/BP_PickupWidget.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/HUD/WBP_AmmoPickup.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/HUD/WBP_AmmoPickup.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/HUD/WBP_InventoryBar.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/HUD/WBP_InventoryBar.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/HUD/WBP_ShooterHUDOverlay.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/HUD/WBP_ShooterHUDOverlay.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/HUD/WBP_WeaponSlot.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/HUD/WBP_WeaponSlot.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,7 +273,7 @@
       <workItem from="1665334248171" duration="1851000" />
       <workItem from="1665436858069" duration="2817000" />
       <workItem from="1665522352635" duration="5814000" />
-      <workItem from="1665594531097" duration="1333000" />
+      <workItem from="1665594531097" duration="2735000" />
     </task>
     <task id="LOCAL-00001" summary="interp to multiple locations">
       <created>1665080563356</created>
@@ -435,7 +436,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665595582698</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="button icons at inventory bar">
+      <created>1665596164230</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1665596164230</updated>
+    </task>
+    <task id="LOCAL-00025" summary="add inventory bar to hud overlay">
+      <created>1665596438420</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1665596438420</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -479,6 +494,8 @@
     <MESSAGE value="material pulse when interping" />
     <MESSAGE value="WeaponInventorySlot widget" />
     <MESSAGE value="inventory bar widget" />
-    <option name="LAST_COMMIT_MESSAGE" value="inventory bar widget" />
+    <MESSAGE value="button icons at inventory bar" />
+    <MESSAGE value="add inventory bar to hud overlay" />
+    <option name="LAST_COMMIT_MESSAGE" value="add inventory bar to hud overlay" />
   </component>
 </project>
