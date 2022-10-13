@@ -8,7 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="binding background icon">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="binding item icon">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/_Game/HUD/WBP_WeaponSlot.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/HUD/WBP_WeaponSlot.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" afterDir="false" />
@@ -274,7 +274,7 @@
       <workItem from="1665436858069" duration="2817000" />
       <workItem from="1665522352635" duration="5814000" />
       <workItem from="1665594531097" duration="2966000" />
-      <workItem from="1665671874831" duration="2191000" />
+      <workItem from="1665671874831" duration="2824000" />
     </task>
     <task id="LOCAL-00001" summary="interp to multiple locations">
       <created>1665080563356</created>
@@ -472,7 +472,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665673231136</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="binding item icon">
+      <created>1665674680127</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1665674680127</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,7 +500,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="post process material" />
     <MESSAGE value="custom depth" />
     <MESSAGE value="texel position and size" />
     <MESSAGE value="show interior pixels" />
@@ -518,6 +524,7 @@
     <MESSAGE value="add inventory bar to hud overlay" />
     <MESSAGE value="inventory array" />
     <MESSAGE value="binding background icon" />
-    <option name="LAST_COMMIT_MESSAGE" value="binding background icon" />
+    <MESSAGE value="binding item icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="binding item icon" />
   </component>
 </project>
