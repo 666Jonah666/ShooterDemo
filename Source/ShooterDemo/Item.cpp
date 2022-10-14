@@ -35,7 +35,8 @@ AItem::AItem() :
 	PulseCurveTime(5.f),
 	GlowAmount(150.f),
 	FresnelExponent(3.f),
-	FresnelReflectFraction(4.f)
+	FresnelReflectFraction(4.f),
+	SlotIndex(0)
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -182,7 +183,25 @@ void AItem::SetItemProperties(EItemState State) {
 		CollisionBox->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 		
 		break;
-	case EItemState::EIS_PickedUp: break;
+	case EItemState::EIS_PickedUp:
+		PickupWidget->SetVisibility(false);
+		
+		//set mesh properties
+		ItemMesh->SetSimulatePhysics(false);
+		ItemMesh->SetEnableGravity(false);
+		ItemMesh->SetVisibility(false);
+		ItemMesh->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
+		ItemMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+
+		//Set area sphere properties
+		AreaSphere->SetCollisionResponseToAllChannels(ECR_Ignore);
+		AreaSphere->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+
+		//set collision box properties
+		CollisionBox->SetCollisionResponseToAllChannels(ECR_Ignore);
+		CollisionBox->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+		
+		break;
 	case EItemState::EIS_Equipped:
 		PickupWidget->SetVisibility(false);
 		
