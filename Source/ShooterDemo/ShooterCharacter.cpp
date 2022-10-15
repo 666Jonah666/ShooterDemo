@@ -331,8 +331,13 @@ void AShooterCharacter::DropWeapon() {
 }
 
 void AShooterCharacter::SelectButtonPressed() {
+	if (CombatState != ECombatState::ECS_Unoccupied) {
+		return;
+	}
+	
 	if(TraceHitItem) {
 		TraceHitItem->StartItemCurve(this);
+		//making trace hit item nullptr to prevent multiple curve interpings
 		TraceHitItem = nullptr;
 	} 
 }
@@ -973,7 +978,7 @@ void AShooterCharacter::FiveKeyPressed() {
 }
 
 void AShooterCharacter::ExchangeInventoryItems(int32 CurrentItemIndex, int32 NewItemIndex) {
-	if(CurrentItemIndex == NewItemIndex || NewItemIndex >= Inventory.Num()) {
+	if(CurrentItemIndex == NewItemIndex || NewItemIndex >= Inventory.Num() || CombatState != ECombatState::ECS_Unoccupied) {
 		return;
 	}
 
