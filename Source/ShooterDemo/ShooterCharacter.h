@@ -141,7 +141,14 @@ protected:
 
 	void PickupAmmo(class AAmmo* Ammo);
 
-	
+	void FKeyPressed();
+	void OneKeyPressed();
+	void TwoKeyPressed();
+	void ThreeKeyPressed();
+	void FourKeyPressed();
+	void FiveKeyPressed();
+
+	void ExchangeInventoryItems(int32 CurrentItemIndex, int32 NewItemIndex);
 
 public:	
 	// Called every frame
