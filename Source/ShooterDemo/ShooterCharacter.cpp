@@ -252,6 +252,11 @@ void AShooterCharacter::TraceForItems() {
             	if (ItemTraceResult.bBlockingHit) {
             		//for ue5 use ItemTraceResult.GetActor()
             		TraceHitItem = Cast<AItem>(ItemTraceResult.Actor);
+
+                    if (TraceHitItem && TraceHitItem->GetItemState() == EItemState::EIS_EquipInterping) {
+	                    TraceHitItem = nullptr;
+                    }
+
             		if (TraceHitItem && TraceHitItem->GetPickupWidget()) {
             			//Show items pickup widget
             			TraceHitItem->GetPickupWidget()->SetVisibility(true);
@@ -328,7 +333,8 @@ void AShooterCharacter::DropWeapon() {
 void AShooterCharacter::SelectButtonPressed() {
 	if(TraceHitItem) {
 		TraceHitItem->StartItemCurve(this);
- 	} 
+		TraceHitItem = nullptr;
+	} 
 }
 
 void AShooterCharacter::SelectButtonReleased() {
@@ -339,6 +345,7 @@ void AShooterCharacter::SwapWeapon(AWeapon* WeaponToSwap) {
 
 	if (Inventory.Num() - 1 >= EquippedWeapon->GetSlotIndex()) {
 		Inventory[EquippedWeapon->GetSlotIndex()] = WeaponToSwap;
+		WeaponToSwap->SetSlotIndex(EquippedWeapon->GetSlotIndex());
 	}
 	
 	DropWeapon();
