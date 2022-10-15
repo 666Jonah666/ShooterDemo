@@ -10,9 +10,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Item.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Item.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Item.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Item.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/HUD/WBP_InventoryBar.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/HUD/WBP_InventoryBar.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,7 +274,8 @@
       <workItem from="1665522352635" duration="5814000" />
       <workItem from="1665594531097" duration="2966000" />
       <workItem from="1665671874831" duration="3163000" />
-      <workItem from="1665781098463" duration="873000" />
+      <workItem from="1665781098463" duration="924000" />
+      <workItem from="1665844239498" duration="895000" />
     </task>
     <task id="LOCAL-00001" summary="interp to multiple locations">
       <created>1665080563356</created>
@@ -493,7 +494,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665675614817</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="set item state for picked up">
+      <created>1665782019164</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1665782019164</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -514,7 +522,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="show interior pixels" />
     <MESSAGE value="getting border" />
     <MESSAGE value="adding border to the scene colour" />
     <MESSAGE value="hide occluded pixels" />
@@ -539,6 +546,7 @@
     <MESSAGE value="binding item icon" />
     <MESSAGE value="binding the ammo icon" />
     <MESSAGE value="binding ammo count to weapon array widget" />
-    <option name="LAST_COMMIT_MESSAGE" value="binding ammo count to weapon array widget" />
+    <MESSAGE value="set item state for picked up" />
+    <option name="LAST_COMMIT_MESSAGE" value="set item state for picked up" />
   </component>
 </project>
