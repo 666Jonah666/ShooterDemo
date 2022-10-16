@@ -235,6 +235,10 @@ private:
 	//slot in the inventory array
 	UPROPERTY(VisibleAnywhere, Category = "Inventory", meta = (AllowPrivateAccess = "true"))
 	int32 SlotIndex;
+
+	//true when the character's inventory is full
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Inventory", meta = (AllowPrivateAccess = "true"))
+	bool bCharacterInventoryFull;
 	
 public:
 	FORCEINLINE int32 GetSlotIndex() const { return SlotIndex; }
@@ -248,6 +252,7 @@ public:
 	FORCEINLINE USoundCue* GetEquipSound() const { return EquipSound; }
 	FORCEINLINE int32 GetItemCount() const { return ItemCount; }
 	FORCEINLINE void SetCharacter(AShooterCharacter* Char) { Character = Char; }
+	FORCEINLINE void SetCharacterInventoryFull(bool bFull) { bCharacterInventoryFull = bFull; }
 	
 	void SetItemState(EItemState State);
 	//called from the shooter character class
