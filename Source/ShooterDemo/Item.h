@@ -46,7 +46,7 @@ public:
 	AItem();
 
 	//called in AShooterCharacter::GetPickupItem();
-	void PlayEquipSound();
+	void PlayEquipSound(bool bForcePlaySound = false);
 
 
 protected:
@@ -76,7 +76,7 @@ protected:
 	//get interp location based on item type
 	FVector GetInterpLocation();
 
-	void PlayPickupSound();
+	void PlayPickupSound(bool bForcePlaySound = false);
 	
 	virtual void InitializeCustomDepth();
 
@@ -247,10 +247,11 @@ public:
 	FORCEINLINE USoundCue* GetPickupSound() const { return PickupSound; }
 	FORCEINLINE USoundCue* GetEquipSound() const { return EquipSound; }
 	FORCEINLINE int32 GetItemCount() const { return ItemCount; }
+	FORCEINLINE void SetCharacter(AShooterCharacter* Char) { Character = Char; }
 	
 	void SetItemState(EItemState State);
 	//called from the shooter character class
-	void StartItemCurve(AShooterCharacter* Char);
+	void StartItemCurve(AShooterCharacter* Char, bool bForcePlaySound = false);
 
 	virtual void EnableCustomDepth();
 	virtual void DisableCustomDepth();
