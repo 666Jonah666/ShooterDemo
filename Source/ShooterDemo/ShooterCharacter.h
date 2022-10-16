@@ -90,7 +90,7 @@ protected:
 	class AWeapon* SpawnDefaultWeapon();
 
 	//takes a weapon and attaches it to the mesh
-	void EquipWeapon(AWeapon* WeaponToEquip);
+	void EquipWeapon(AWeapon* WeaponToEquip, bool bSwapping = false);
 
 	//detach weapon and make it fall on the ground
 	void DropWeapon();
