@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+ // Fill out your copyright notice in the Description page of Project Settings.
 
 
 #include "ShooterAnimInstance.h"
@@ -37,6 +37,7 @@ void UShooterAnimInstance::UpdateAnimationProperties(float DeltaTime) {
 	if(ShooterCharacter) {
 		bCrouching = ShooterCharacter->GetCrouching();
 		bReloading = ShooterCharacter->GetCombatState() == ECombatState::ECS_Reloading;
+		bEquipping = ShooterCharacter->GetCombatState() == ECombatState::ECS_Equipping;
 		
 		//Get the lateral speed of character from velocity
 		FVector Velocity{ShooterCharacter->GetVelocity()};
@@ -130,20 +131,20 @@ void UShooterAnimInstance::TurnInPlace() {
 
 	//set the recoil weight
 	if (bTurningInPlace) {
-		if (bReloading) {
+		if (bReloading || bEquipping) {
 			RecoilWeight = 1.f;
 		} else {
 			RecoilWeight = 0.f;
 		}
 	} else { // not turning in place
 		if(bCrouching) {
-			if (bReloading) {
+			if (bReloading || bEquipping) {
 				RecoilWeight = 1.f;
 			} else {
 				RecoilWeight = 0.1f;
 			}
 		} else {
-			if(bAiming || bReloading) {
+			if(bAiming || bReloading || bEquipping) {
 				RecoilWeight = 1.f;
 			} else {
 				RecoilWeight = 0.5f;

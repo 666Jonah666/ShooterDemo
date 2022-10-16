@@ -15,6 +15,7 @@ enum class ECombatState: uint8
 	ECS_Unoccupied UMETA(DisplayName = "Unoccupied"),
 	ECS_FireTimerInProgress UMETA(DisplayName = "FireTimerInProgress"),
 	ECS_Reloading UMETA(DisplayName = "Reloading"),
+	ECS_Equipping UMETA(DisplayName = "Equipping"),
 	
 	ECS_MAX UMETA(DisplayName = "DefaultMAX")
 };
@@ -118,6 +119,9 @@ protected:
 	UFUNCTION(BlueprintCallable)
 	void FinishReloading();
 
+	UFUNCTION(BlueprintCallable)
+	void FinishEquipping();
+	
 	//checks to see if we have ammo of the equipped ammo type
 	bool CarryingAmmo();
 
@@ -325,6 +329,10 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat", meta = (AllowPrivateAccess = "true"))
 	UAnimMontage* ReloadMontage;
 
+	//montage for equip animations
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat", meta = (AllowPrivateAccess = "true"))
+	UAnimMontage* EquipMontage;
+	
 	//transfrom of the clip when we first grab cip during reloading
 	UPROPERTY(VisibleAnywhere,  BlueprintReadOnly, Category = "Combat", meta = (AllowPrivateAccess = "true"))
 	FTransform ClipTransform;
