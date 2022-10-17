@@ -100,6 +100,8 @@ void AItem::OnSphereEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor*
 		AShooterCharacter* ShooterCharacter = Cast<AShooterCharacter>(OtherActor);
 		if (ShooterCharacter) {
 			ShooterCharacter->IncrementOverlappedItemCount(-1);
+			//unhighlight inventory slot when we no longer can pick it up (too far away)
+			ShooterCharacter->UnHighlightInventorySlot();
 		}
 	}
 }
@@ -251,6 +253,8 @@ void AItem::FinishInterping() {
 		//subtract one from the icon count of the interp location struct
 		Character->IncrementInterpLocItemCount(InterpLocIndex, -1);
 		Character->GetPickupItem(this);
+
+		Character->UnHighlightInventorySlot();
 	}
 	// set scale back to normal after scaling in interp func
 	SetActorScale3D(FVector(1.f));

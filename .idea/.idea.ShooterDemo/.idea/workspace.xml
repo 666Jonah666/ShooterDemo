@@ -8,8 +8,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="icon highlight delegate">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="broadcast functions">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Item.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Item.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.h" afterDir="false" />
     </list>
@@ -279,7 +280,7 @@
       <workItem from="1665781098463" duration="924000" />
       <workItem from="1665844239498" duration="4402000" />
       <workItem from="1665922558749" duration="4331000" />
-      <workItem from="1666033504123" duration="1687000" />
+      <workItem from="1666033504123" duration="2162000" />
     </task>
     <task id="LOCAL-00001" summary="interp to multiple locations">
       <created>1665080563356</created>
@@ -582,7 +583,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666035307159</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="broadcast functions">
+      <created>1666035675753</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1666035675753</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -603,7 +611,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="enable glow material" />
     <MESSAGE value="show outline while interping" />
     <MESSAGE value="curve vector for material parameters" />
     <MESSAGE value="material pulse when interping" />
@@ -628,6 +635,7 @@
     <MESSAGE value="swap limitations" />
     <MESSAGE value="icon animation" />
     <MESSAGE value="icon highlight delegate" />
-    <option name="LAST_COMMIT_MESSAGE" value="icon highlight delegate" />
+    <MESSAGE value="broadcast functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="broadcast functions" />
   </component>
 </project>

@@ -255,7 +255,21 @@ void AShooterCharacter::TraceForItems() {
             	if (ItemTraceResult.bBlockingHit) {
             		//for ue5 use ItemTraceResult.GetActor()
             		TraceHitItem = Cast<AItem>(ItemTraceResult.Actor);
-
+					const AWeapon* TraceHitWeapon = Cast<AWeapon>(TraceHitItem);
+            		
+                    if (TraceHitWeapon) {
+	                    if (HighlightedSlot == -1) {
+	                    	//not currently highlighting slot; highlight ont
+		                    HighlightInventorySlot();
+	                    }    
+                    } else {
+	                    //make sure that one slot being highlighted
+                    	if(HighlightedSlot != -1) {
+                    		//unhighlight slot
+                    		UnHighlightInventorySlot();
+                    	}
+                    }
+            		
                     if (TraceHitItem && TraceHitItem->GetItemState() == EItemState::EIS_EquipInterping) {
 	                    TraceHitItem = nullptr;
                     }
