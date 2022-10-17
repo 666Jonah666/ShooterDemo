@@ -8,13 +8,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="icon animation">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="icon highlight delegate">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://D:/UEprojects/ShooterDemo/Source/ShooterDemo/ShooterCharacter.h" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -274,7 +279,7 @@
       <workItem from="1665781098463" duration="924000" />
       <workItem from="1665844239498" duration="4402000" />
       <workItem from="1665922558749" duration="4331000" />
-      <workItem from="1666033504123" duration="1331000" />
+      <workItem from="1666033504123" duration="1687000" />
     </task>
     <task id="LOCAL-00001" summary="interp to multiple locations">
       <created>1665080563356</created>
@@ -570,7 +575,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666035060282</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="icon highlight delegate">
+      <created>1666035307159</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1666035307159</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -591,7 +603,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="dynamic material instances" />
     <MESSAGE value="enable glow material" />
     <MESSAGE value="show outline while interping" />
     <MESSAGE value="curve vector for material parameters" />
@@ -616,6 +627,7 @@
     <MESSAGE value="swap pickup text" />
     <MESSAGE value="swap limitations" />
     <MESSAGE value="icon animation" />
-    <option name="LAST_COMMIT_MESSAGE" value="icon animation" />
+    <MESSAGE value="icon highlight delegate" />
+    <option name="LAST_COMMIT_MESSAGE" value="icon highlight delegate" />
   </component>
 </project>
