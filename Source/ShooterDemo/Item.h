@@ -141,7 +141,7 @@ private:
 	int32 ItemCount;
 
 	//Determines number of stars
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Item Properties", meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Rarity", meta = (AllowPrivateAccess = "true"))
 	EItemRarity ItemRarity;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Item Properties", meta = (AllowPrivateAccess = "true"))
@@ -241,10 +241,6 @@ private:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Item Properties", meta = (AllowPrivateAccess = "true"))
 	UCurveVector* InterpPulseCurve;
 
-	//background for this item in the inventory
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Inventory", meta = (AllowPrivateAccess = "true"))
-	UTexture2D* ItemBackground;
-
 	//icon for this item in the inventory	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Inventory", meta = (AllowPrivateAccess = "true"))
 	UTexture2D* IconItem;
@@ -264,7 +260,27 @@ private:
 	//item rarity data table
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "DataTable", meta = (AllowPrivateAccess = "true"))
 	UDataTable* ItemRarityDataTable;
-	
+
+	//colour in the glow material
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Rarity", meta = (AllowPrivateAccess = "true"))
+	FLinearColor GlowColour;
+
+	//light colour in the pickup widget
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Rarity", meta = (AllowPrivateAccess = "true"))
+	FLinearColor LightColour;
+
+	//Dark colour in the pickup widget
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Rarity", meta = (AllowPrivateAccess = "true"))
+	FLinearColor DarkColour;
+
+	//NumberOfStarsInThePickupWidget
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Rarity", meta = (AllowPrivateAccess = "true"))
+	int32 NumberOfStars;
+
+	//background icon for the inventory
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Rarity", meta = (AllowPrivateAccess = "true"))
+	UTexture2D* ItemBackground;
+
 public:
 	FORCEINLINE int32 GetSlotIndex() const { return SlotIndex; }
 	FORCEINLINE void SetSlotIndex(int32 Index) { SlotIndex = Index; }
