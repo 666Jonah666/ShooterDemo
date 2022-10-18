@@ -8,9 +8,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="assigning the icon delegete">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/HUD/WBP_InventoryBar.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/HUD/WBP_InventoryBar.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Item.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Item.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Item.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Item.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -276,7 +277,7 @@
       <workItem from="1665844239498" duration="4402000" />
       <workItem from="1665922558749" duration="4331000" />
       <workItem from="1666033504123" duration="2305000" />
-      <workItem from="1666119068443" duration="1349000" />
+      <workItem from="1666119068443" duration="3162000" />
     </task>
     <task id="LOCAL-00001" summary="interp to multiple locations">
       <created>1665080563356</created>
@@ -593,7 +594,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666036206213</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="assigning the icon delegete">
+      <created>1666121714896</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1666121714897</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -614,7 +622,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="curve vector for material parameters" />
     <MESSAGE value="material pulse when interping" />
     <MESSAGE value="WeaponInventorySlot widget" />
     <MESSAGE value="inventory bar widget" />
@@ -639,6 +646,7 @@
     <MESSAGE value="icon highlight delegate" />
     <MESSAGE value="broadcast functions" />
     <MESSAGE value="highlighting &amp; unhighlighting delegate slot" />
-    <option name="LAST_COMMIT_MESSAGE" value="highlighting &amp; unhighlighting delegate slot" />
+    <MESSAGE value="assigning the icon delegete" />
+    <option name="LAST_COMMIT_MESSAGE" value="assigning the icon delegete" />
   </component>
 </project>
