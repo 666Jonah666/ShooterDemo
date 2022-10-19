@@ -360,11 +360,7 @@ void AItem::InitializeCustomDepth() {
 void AItem::OnConstruction(const FTransform& Transform) {
 	Super::OnConstruction(Transform);
 
-	if (MaterialInstance) {
-		DynamicMaterialInstance = UMaterialInstanceDynamic::Create(MaterialInstance, this);
-		ItemMesh->SetMaterial(MaterialIndex, DynamicMaterialInstance);
-	}
-	EnableGlowMaterial();
+	
 
 	//load the data in the item rarity data table
 	//path
@@ -403,6 +399,14 @@ void AItem::OnConstruction(const FTransform& Transform) {
 			ItemBackground = RarityRow->IconBackground;
 		}
 	}
+	
+	if (MaterialInstance) {
+		DynamicMaterialInstance = UMaterialInstanceDynamic::Create(MaterialInstance, this);
+		DynamicMaterialInstance->SetVectorParameterValue(TEXT("FersnelColour"), GlowColour);
+		ItemMesh->SetMaterial(MaterialIndex, DynamicMaterialInstance);
+		EnableGlowMaterial();
+	}
+
 }
 
 void AItem::EnableGlowMaterial() {
