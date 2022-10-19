@@ -297,8 +297,16 @@ public:
 	FORCEINLINE int32 GetItemCount() const { return ItemCount; }
 	FORCEINLINE void SetCharacter(AShooterCharacter* Char) { Character = Char; }
 	FORCEINLINE void SetCharacterInventoryFull(bool bFull) { bCharacterInventoryFull = bFull; }
+	FORCEINLINE void SetPickupSound(USoundCue* Sound){ PickupSound = Sound; }
+	FORCEINLINE void SetEquipSound(USoundCue* Sound){ EquipSound = Sound; }
+	FORCEINLINE void SetItemName(FString Name) { ItemName = Name; }
+	//set item icon for the inventory
+	FORCEINLINE void SetIconItem(UTexture2D* Icon) {IconItem = Icon; }
+	//set ammo icon for the pickup widget
+	FORCEINLINE void SetAmmoIcon(UTexture2D* Icon) { AmmoIcon = Icon; }
 	
 	void SetItemState(EItemState State);
+	
 	//called from the shooter character class
 	void StartItemCurve(AShooterCharacter* Char, bool bForcePlaySound = false);
 
