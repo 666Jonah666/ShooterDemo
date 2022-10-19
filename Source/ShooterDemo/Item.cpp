@@ -360,8 +360,6 @@ void AItem::InitializeCustomDepth() {
 void AItem::OnConstruction(const FTransform& Transform) {
 	Super::OnConstruction(Transform);
 
-	
-
 	//load the data in the item rarity data table
 	//path
 	FString RarityTablePath{TEXT("DataTable'/Game/_Game/DataTable/ItemRarityDataTable.ItemRarityDataTable'")};
@@ -397,6 +395,9 @@ void AItem::OnConstruction(const FTransform& Transform) {
 			DarkColour = RarityRow->DarkColour;
 			NumberOfStars = RarityRow->NumberOfStars;
 			ItemBackground = RarityRow->IconBackground;
+			if(GetItemMesh()) {
+				GetItemMesh()->SetCustomDepthStencilValue(RarityRow->CustomDepthStencil);
+			}
 		}
 	}
 	
