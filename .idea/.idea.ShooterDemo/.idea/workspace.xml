@@ -8,14 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="weapon DT">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/HUD/BP_PickupWidget.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/HUD/BP_PickupWidget.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Item.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Item.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.h" afterDir="false" />
-    </list>
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -282,14 +275,7 @@
       <workItem from="1666033504123" duration="2305000" />
       <workItem from="1666119068443" duration="5236000" />
       <workItem from="1666200101362" duration="2469000" />
-      <workItem from="1666208022355" duration="2864000" />
-    </task>
-    <task id="LOCAL-00005" summary="texel position and size">
-      <created>1665166210666</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1665166210666</updated>
+      <workItem from="1666208022355" duration="2950000" />
     </task>
     <task id="LOCAL-00006" summary="show interior pixels">
       <created>1665167526022</created>
@@ -627,7 +613,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666209384504</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="switching on weapon DT">
+      <created>1666211232380</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1666211232380</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -648,7 +641,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="binding background icon" />
     <MESSAGE value="binding item icon" />
     <MESSAGE value="binding the ammo icon" />
     <MESSAGE value="binding ammo count to weapon array widget" />
@@ -673,6 +665,7 @@
     <MESSAGE value="setting glow colour from DT" />
     <MESSAGE value="highlighting colour from DT" />
     <MESSAGE value="weapon DT" />
-    <option name="LAST_COMMIT_MESSAGE" value="weapon DT" />
+    <MESSAGE value="switching on weapon DT" />
+    <option name="LAST_COMMIT_MESSAGE" value="switching on weapon DT" />
   </component>
 </project>
