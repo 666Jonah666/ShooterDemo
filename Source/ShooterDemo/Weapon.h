@@ -46,6 +46,12 @@ struct FWeaponDataTable : public FTableRowBase {
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	UTexture2D* AmmoIcon;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UMaterialInstance* MaterialInstance;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int32 MaterialIndex;
 };
 
 /**
@@ -102,6 +108,8 @@ private:
 	//data table for weapon properties
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Data Table", meta = (AllowPrivateAccess = "true"))
 	UDataTable* WeaponDataTable;
+	
+	int32 PreviousMaterialIndex;
 	
 public:
 	FORCEINLINE int32 GetAmmo() const { return Ammo; }
