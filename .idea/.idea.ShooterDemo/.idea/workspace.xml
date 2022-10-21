@@ -8,15 +8,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="update .gitignore">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="updating .gitignore">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterAnimInstance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterAnimInstance.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterAnimInstance.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterAnimInstance.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/DataTable/WeaponDataTable.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/DataTable/WeaponDataTable.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://D:/UEprojects/ShooterDemo/Source/ShooterDemo/Weapon.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/UEprojects/ShooterDemo/Source/ShooterDemo/Weapon.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/UEprojects/ShooterDemo/Source/ShooterDemo/Weapon.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/UEprojects/ShooterDemo/Source/ShooterDemo/Weapon.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/UEprojects/ShooterDemo/Source/ShooterDemo/Weapon.h" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -281,28 +289,7 @@
       <workItem from="1666200101362" duration="2469000" />
       <workItem from="1666208022355" duration="2950000" />
       <workItem from="1666292270167" duration="4143000" />
-      <workItem from="1666382249758" duration="1910000" />
-    </task>
-    <task id="LOCAL-00012" summary="multiple colors with custom depth stencil">
-      <created>1665335732874</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1665335732874</updated>
-    </task>
-    <task id="LOCAL-00013" summary="fresnel effect">
-      <created>1665337463403</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1665337463403</updated>
-    </task>
-    <task id="LOCAL-00014" summary="material instance">
-      <created>1665338037871</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1665338037871</updated>
+      <workItem from="1666382249758" duration="2814000" />
     </task>
     <task id="LOCAL-00015" summary="scrolling lines effect">
       <created>1665437930922</created>
@@ -626,7 +613,28 @@
       <option name="project" value="LOCAL" />
       <updated>1666383959101</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="disable FABRIK IK when reloading">
+      <created>1666384376822</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1666384376823</updated>
+    </task>
+    <task id="LOCAL-00062" summary="updating .gitignore">
+      <created>1666384744116</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1666384744116</updated>
+    </task>
+    <task id="LOCAL-00063" summary="updating .gitignore">
+      <created>1666384787777</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1666384787777</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -647,8 +655,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="exchange inventory items" />
-    <MESSAGE value="disable trace while interping" />
     <MESSAGE value="prevent swapping while reloading" />
     <MESSAGE value="equip montage" />
     <MESSAGE value="play equip sound when swapping" />
@@ -672,6 +678,8 @@
     <MESSAGE value="FABRIK IK" />
     <MESSAGE value="switch FABRIK on weapon type" />
     <MESSAGE value="update .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="update .gitignore" />
+    <MESSAGE value="disable FABRIK IK when reloading" />
+    <MESSAGE value="updating .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating .gitignore" />
   </component>
 </project>
