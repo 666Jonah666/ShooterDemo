@@ -8,9 +8,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="switch FABRIK on weapon type">
       <change afterPath="$PROJECT_DIR$/Source/ShooterDemo/WeaponType.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Character/ABP_ShooterAnim.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/ABP_ShooterAnim.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterAnimInstance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterAnimInstance.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterAnimInstance.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterAnimInstance.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.h" afterDir="false" />
@@ -284,14 +285,7 @@
       <workItem from="1666200101362" duration="2469000" />
       <workItem from="1666208022355" duration="2950000" />
       <workItem from="1666292270167" duration="4143000" />
-      <workItem from="1666382249758" duration="989000" />
-    </task>
-    <task id="LOCAL-00010" summary="change outline thickness">
-      <created>1665260558005</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1665260558005</updated>
+      <workItem from="1666382249758" duration="1460000" />
     </task>
     <task id="LOCAL-00011" summary="colour tinting effect">
       <created>1665261000987</created>
@@ -629,7 +623,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666297523974</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="switch FABRIK on weapon type">
+      <created>1666383721841</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1666383721842</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -650,7 +651,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="send slot index with a delegate" />
     <MESSAGE value="play widget slot animation" />
     <MESSAGE value="exchange inventory items" />
     <MESSAGE value="disable trace while interping" />
@@ -675,6 +675,7 @@
     <MESSAGE value="set material instance at index with DT" />
     <MESSAGE value="adding barrel socket to AR" />
     <MESSAGE value="FABRIK IK" />
-    <option name="LAST_COMMIT_MESSAGE" value="FABRIK IK" />
+    <MESSAGE value="switch FABRIK on weapon type" />
+    <option name="LAST_COMMIT_MESSAGE" value="switch FABRIK on weapon type" />
   </component>
 </project>
