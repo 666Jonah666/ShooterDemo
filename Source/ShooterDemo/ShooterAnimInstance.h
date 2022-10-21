@@ -122,5 +122,7 @@ private:
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Combat", meta = (AllowPrivateAccess = "true"))
 	EWeaponType EquippedWeaponType;
 
-	
+	//true when not reloading or equipping
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Combat", meta = (AllowPrivateAccess = "true"))
+	bool bShouldUseFABRIK;
 };
