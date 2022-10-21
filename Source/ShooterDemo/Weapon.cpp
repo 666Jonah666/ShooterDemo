@@ -109,6 +109,7 @@ void AWeapon::OnConstruction(const FTransform& Transform) {
 
 			//set clip bone name
 			SetClipBoneName(WeaponDataRow->ClipBoneName);
+			SetReloadMontageSection(WeaponDataRow->ReloadMontageSection); 
 		}
 
 		if (GetMaterialInstance()) {
