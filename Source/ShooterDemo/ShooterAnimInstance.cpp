@@ -4,6 +4,7 @@
 #include "ShooterAnimInstance.h"
 
 #include "ShooterCharacter.h"
+#include "Weapon.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "Kismet/KismetMathLibrary.h"
 
@@ -73,6 +74,10 @@ void UShooterAnimInstance::UpdateAnimationProperties(float DeltaTime) {
 			OffsetState = EOffsetState::EOS_Aiming;
 		} else {
 			OffsetState = EOffsetState::EOS_Hip;
+		}
+		//check if shooter character has a valid equipped weapon
+		if (ShooterCharacter->GetEquippedWeapon()) {
+			EquippedWeaponType = ShooterCharacter->GetEquippedWeapon()->GetWeaponType();
 		}
 	}
 
