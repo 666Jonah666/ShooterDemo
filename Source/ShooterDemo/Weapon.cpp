@@ -109,7 +109,10 @@ void AWeapon::OnConstruction(const FTransform& Transform) {
 
 			//set clip bone name
 			SetClipBoneName(WeaponDataRow->ClipBoneName);
-			SetReloadMontageSection(WeaponDataRow->ReloadMontageSection); 
+			SetReloadMontageSection(WeaponDataRow->ReloadMontageSection);
+
+			//set anim bp
+			GetItemMesh()->SetAnimInstanceClass(WeaponDataRow->AnimBP);
 		}
 
 		if (GetMaterialInstance()) {
