@@ -8,26 +8,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="AR reload anim">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/_Game/Character/Animations/RealoadMontage.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/Animations/RealoadMontage.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/DataTable/WeaponDataTable.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/DataTable/WeaponDataTable.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Weapons/BaseWeapon/BP_BaseWeapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Weapons/BaseWeapon/BP_BaseWeapon.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock://D:/UEprojects/ShooterDemo/Source/ShooterDemo/Weapon.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/UEprojects/ShooterDemo/Source/ShooterDemo/Weapon.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/UEprojects/ShooterDemo/Source/ShooterDemo/Weapon.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/UEprojects/ShooterDemo/Source/ShooterDemo/Weapon.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/UEprojects/ShooterDemo/Source/ShooterDemo/Weapon.h" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -292,21 +280,8 @@
       <workItem from="1666200101362" duration="2469000" />
       <workItem from="1666208022355" duration="2950000" />
       <workItem from="1666292270167" duration="4143000" />
-      <workItem from="1666382249758" duration="3945000" />
-    </task>
-    <task id="LOCAL-00016" summary="enable outline in code">
-      <created>1665438745091</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1665438745091</updated>
-    </task>
-    <task id="LOCAL-00017" summary="dynamic material instances">
-      <created>1665439642289</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1665439642289</updated>
+      <workItem from="1666382249758" duration="4021000" />
+      <workItem from="1666449968313" duration="1108000" />
     </task>
     <task id="LOCAL-00018" summary="enable glow material">
       <created>1665440123297</created>
@@ -637,7 +612,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666385105104</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="reload montage section in DT">
+      <created>1666386272999</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1666386272999</updated>
+    </task>
+    <task id="LOCAL-00066" summary="reload montage section in DT">
+      <created>1666386283136</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1666386283136</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -658,7 +647,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="equip montage" />
     <MESSAGE value="play equip sound when swapping" />
     <MESSAGE value="swap pickup text" />
     <MESSAGE value="swap limitations" />
@@ -683,6 +671,7 @@
     <MESSAGE value="disable FABRIK IK when reloading" />
     <MESSAGE value="updating .gitignore" />
     <MESSAGE value="AR reload anim" />
-    <option name="LAST_COMMIT_MESSAGE" value="AR reload anim" />
+    <MESSAGE value="reload montage section in DT" />
+    <option name="LAST_COMMIT_MESSAGE" value="reload montage section in DT" />
   </component>
 </project>
