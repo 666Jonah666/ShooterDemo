@@ -8,11 +8,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="AR anim bp">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="different crosshairs for each weapon">
       <change beforePath="$PROJECT_DIR$/Content/_Game/DataTable/WeaponDataTable.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/DataTable/WeaponDataTable.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/HUD/BP_ShooterHUD.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/HUD/BP_ShooterHUD.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -283,21 +282,7 @@
       <workItem from="1666208022355" duration="2950000" />
       <workItem from="1666292270167" duration="4143000" />
       <workItem from="1666382249758" duration="4021000" />
-      <workItem from="1666449968313" duration="1586000" />
-    </task>
-    <task id="LOCAL-00019" summary="show outline while interping">
-      <created>1665522854175</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1665522854175</updated>
-    </task>
-    <task id="LOCAL-00020" summary="curve vector for material parameters">
-      <created>1665525610830</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1665525610830</updated>
+      <workItem from="1666449968313" duration="3003000" />
     </task>
     <task id="LOCAL-00021" summary="material pulse when interping">
       <created>1665527646800</created>
@@ -628,7 +613,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666451445024</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="set anim bp for weapon from DT">
+      <created>1666452213089</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1666452213089</updated>
+    </task>
+    <task id="LOCAL-00069" summary="different crosshairs for each weapon">
+      <created>1666452874071</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1666452874071</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -649,8 +648,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="swap pickup text" />
-    <MESSAGE value="swap limitations" />
     <MESSAGE value="icon animation" />
     <MESSAGE value="icon highlight delegate" />
     <MESSAGE value="broadcast functions" />
@@ -674,6 +671,8 @@
     <MESSAGE value="AR reload anim" />
     <MESSAGE value="reload montage section in DT" />
     <MESSAGE value="AR anim bp" />
-    <option name="LAST_COMMIT_MESSAGE" value="AR anim bp" />
+    <MESSAGE value="set anim bp for weapon from DT" />
+    <MESSAGE value="different crosshairs for each weapon" />
+    <option name="LAST_COMMIT_MESSAGE" value="different crosshairs for each weapon" />
   </component>
 </project>

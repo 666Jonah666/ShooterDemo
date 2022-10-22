@@ -113,6 +113,13 @@ void AWeapon::OnConstruction(const FTransform& Transform) {
 
 			//set anim bp
 			GetItemMesh()->SetAnimInstanceClass(WeaponDataRow->AnimBP);
+
+			//setting crosshairs
+			CrosshairsMiddle = WeaponDataRow->CrosshairsMiddle;
+			CrosshairsLeft = WeaponDataRow->CrosshairsLeft;
+			CrosshairsRight = WeaponDataRow->CrosshairsRight;
+			CrosshairsTop = WeaponDataRow->CrosshairsTop;
+			CrosshairsBottom = WeaponDataRow->CrosshairsBottom;
 		}
 
 		if (GetMaterialInstance()) {
