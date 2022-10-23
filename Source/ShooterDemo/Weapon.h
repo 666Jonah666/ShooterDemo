@@ -69,7 +69,15 @@ struct FWeaponDataTable : public FTableRowBase {
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	UTexture2D* CrosshairsTop;
-	
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float AutoFireRate;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UParticleSystem* MuzzleFlash;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	USoundCue* FireSound;
 };
 
 /**
@@ -144,6 +152,18 @@ private:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Data Table", meta = (AllowPrivateAccess = "true"))
 	UTexture2D* CrosshairsTop;
+
+	//the speed at which automatic fire happens
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Data Table", meta = (AllowPrivateAccess = "true"))
+	float AutoFireRate;
+
+	//particle system spawned at the barrel socket
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Data Table", meta = (AllowPrivateAccess = "true"))
+	UParticleSystem* MuzzleFlash;
+
+	//sound played when the weapon is fired
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Data Table", meta = (AllowPrivateAccess = "true"))
+	USoundCue* FireSound;
 	
 
 public:
@@ -155,6 +175,10 @@ public:
 	FORCEINLINE void SetReloadMontageSection(FName Name) { ReloadMontageSection = Name; }
 	FORCEINLINE FName GetClipBoneName() const { return ClipBoneName; }
 	FORCEINLINE void SetClipBoneName(FName Name) { ClipBoneName = Name; }
+	FORCEINLINE float GetAutoFireRate() const { return AutoFireRate; }
+	FORCEINLINE UParticleSystem* GetMuzzleFlash() const { return MuzzleFlash; }; 
+	FORCEINLINE USoundCue* GetFireSound() const { return FireSound; }
+	
 	bool ClipIsFull();
 	
 	//Adds an impulse to the weapon

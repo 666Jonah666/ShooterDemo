@@ -8,10 +8,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="different crosshairs for each weapon">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/_Game/DataTable/WeaponDataTable.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/DataTable/WeaponDataTable.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/HUD/BP_ShooterHUD.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/HUD/BP_ShooterHUD.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,14 +285,8 @@
       <workItem from="1666208022355" duration="2950000" />
       <workItem from="1666292270167" duration="4143000" />
       <workItem from="1666382249758" duration="4021000" />
-      <workItem from="1666449968313" duration="3003000" />
-    </task>
-    <task id="LOCAL-00021" summary="material pulse when interping">
-      <created>1665527646800</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1665527646800</updated>
+      <workItem from="1666449968313" duration="3598000" />
+      <workItem from="1666532188142" duration="1500000" />
     </task>
     <task id="LOCAL-00022" summary="WeaponInventorySlot widget">
       <created>1665528358332</created>
@@ -627,7 +624,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666452874071</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="different crosshairs for each weapon">
+      <created>1666453354995</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1666453354995</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

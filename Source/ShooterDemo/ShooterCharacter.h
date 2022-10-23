@@ -186,13 +186,6 @@ private:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera", meta = (AllowPrivateAccess = "true"))
 	float BaseLookUpRate{0.f};
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat", meta = (AllowPrivateAccess = "true"))
-	class USoundCue* FireSound{nullptr};
-
-	//flash particle effect
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat", meta = (AllowPrivateAccess = "true"))
-	UParticleSystem* MuzzleFlash{nullptr};
-
 	//montage for firing the weapon
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat", meta = (AllowPrivateAccess = "true"))
 	UAnimMontage* HipFireMontage{nullptr};
@@ -278,9 +271,6 @@ private:
 
 	// true when we can can fire, false when waiting for the timer
 	bool bShouldFire;
-
-	//rate of gun fire
-	float AutomaticFireRate;
 
 	//sets a timer between gunshots
 	FTimerHandle AutoFireTimer;
