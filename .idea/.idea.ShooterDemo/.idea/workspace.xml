@@ -8,13 +8,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="set sound &amp; effect properties from DT">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/DataTable/WeaponDataTable.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/DataTable/WeaponDataTable.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/WeaponType.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/WeaponType.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,14 +284,7 @@
       <workItem from="1666292270167" duration="4143000" />
       <workItem from="1666382249758" duration="4021000" />
       <workItem from="1666449968313" duration="3598000" />
-      <workItem from="1666532188142" duration="1500000" />
-    </task>
-    <task id="LOCAL-00022" summary="WeaponInventorySlot widget">
-      <created>1665528358332</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1665528358332</updated>
+      <workItem from="1666532188142" duration="2894000" />
     </task>
     <task id="LOCAL-00023" summary="inventory bar widget">
       <created>1665595582698</created>
@@ -631,7 +622,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666453354995</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="set sound &amp; effect properties from DT">
+      <created>1666534309228</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1666534309228</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -652,7 +650,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="icon animation" />
     <MESSAGE value="icon highlight delegate" />
     <MESSAGE value="broadcast functions" />
     <MESSAGE value="highlighting &amp; unhighlighting delegate slot" />
@@ -677,6 +674,7 @@
     <MESSAGE value="AR anim bp" />
     <MESSAGE value="set anim bp for weapon from DT" />
     <MESSAGE value="different crosshairs for each weapon" />
-    <option name="LAST_COMMIT_MESSAGE" value="different crosshairs for each weapon" />
+    <MESSAGE value="set sound &amp; effect properties from DT" />
+    <option name="LAST_COMMIT_MESSAGE" value="set sound &amp; effect properties from DT" />
   </component>
 </project>
