@@ -8,9 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="pistol DT properties">
-      <change beforePath="$PROJECT_DIR$/Content/_Game/BelicaGuns/BelicaPistol.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/BelicaGuns/BelicaPistol.uasset" afterDir="false" />
-    </list>
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="pistol reload anim" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -282,28 +280,7 @@
       <workItem from="1666382249758" duration="4021000" />
       <workItem from="1666449968313" duration="3598000" />
       <workItem from="1666532188142" duration="3183000" />
-      <workItem from="1666645469344" duration="1583000" />
-    </task>
-    <task id="LOCAL-00026" summary="inventory array">
-      <created>1665597583463</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1665597583463</updated>
-    </task>
-    <task id="LOCAL-00027" summary="inventory array">
-      <created>1665597617192</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1665597617192</updated>
-    </task>
-    <task id="LOCAL-00028" summary="binding background icon">
-      <created>1665673231136</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1665673231136</updated>
+      <workItem from="1666645469344" duration="2210000" />
     </task>
     <task id="LOCAL-00029" summary="binding item icon">
       <created>1665674680127</created>
@@ -627,7 +604,28 @@
       <option name="project" value="LOCAL" />
       <updated>1666646838986</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="barrel socket on the pistol">
+      <created>1666647219584</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1666647219584</updated>
+    </task>
+    <task id="LOCAL-00076" summary="pistol reload anim">
+      <created>1666648033079</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1666648033079</updated>
+    </task>
+    <task id="LOCAL-00077" summary="pistol reload anim">
+      <created>1666648039581</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1666648039581</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -648,8 +646,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="assigning the icon delegete" />
-    <MESSAGE value="creating data table" />
     <MESSAGE value="switch on item rarity" />
     <MESSAGE value="setting widget colours from DT values" />
     <MESSAGE value="setting glow colour from DT" />
@@ -673,6 +669,8 @@
     <MESSAGE value="hide bone by name" />
     <MESSAGE value="pistol icons" />
     <MESSAGE value="pistol DT properties" />
-    <option name="LAST_COMMIT_MESSAGE" value="pistol DT properties" />
+    <MESSAGE value="barrel socket on the pistol" />
+    <MESSAGE value="pistol reload anim" />
+    <option name="LAST_COMMIT_MESSAGE" value="pistol reload anim" />
   </component>
 </project>
