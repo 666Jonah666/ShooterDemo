@@ -8,14 +8,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="" />
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="pistol icons">
+      <change beforePath="$PROJECT_DIR$/Content/_Game/DataTable/WeaponDataTable.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/DataTable/WeaponDataTable.uasset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock://D:/UEprojects/ShooterDemo/Source/ShooterDemo/Weapon.cpp" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -283,13 +282,7 @@
       <workItem from="1666382249758" duration="4021000" />
       <workItem from="1666449968313" duration="3598000" />
       <workItem from="1666532188142" duration="3183000" />
-    </task>
-    <task id="LOCAL-00024" summary="button icons at inventory bar">
-      <created>1665596164230</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1665596164230</updated>
+      <workItem from="1666645469344" duration="1206000" />
     </task>
     <task id="LOCAL-00025" summary="add inventory bar to hud overlay">
       <created>1665596438420</created>
@@ -627,7 +620,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666535374243</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="pistol icons">
+      <created>1666646088786</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1666646088787</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -648,7 +648,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="broadcast functions" />
     <MESSAGE value="highlighting &amp; unhighlighting delegate slot" />
     <MESSAGE value="assigning the icon delegete" />
     <MESSAGE value="creating data table" />
@@ -673,6 +672,7 @@
     <MESSAGE value="different crosshairs for each weapon" />
     <MESSAGE value="set sound &amp; effect properties from DT" />
     <MESSAGE value="hide bone by name" />
-    <option name="LAST_COMMIT_MESSAGE" value="hide bone by name" />
+    <MESSAGE value="pistol icons" />
+    <option name="LAST_COMMIT_MESSAGE" value="pistol icons" />
   </component>
 </project>
