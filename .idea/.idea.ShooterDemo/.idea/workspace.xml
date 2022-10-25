@@ -8,7 +8,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="pistol reload anim" />
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Character/ABP_ShooterAnim.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/ABP_ShooterAnim.uasset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -280,14 +283,8 @@
       <workItem from="1666382249758" duration="4021000" />
       <workItem from="1666449968313" duration="3598000" />
       <workItem from="1666532188142" duration="3183000" />
-      <workItem from="1666645469344" duration="2210000" />
-    </task>
-    <task id="LOCAL-00029" summary="binding item icon">
-      <created>1665674680127</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1665674680127</updated>
+      <workItem from="1666645469344" duration="2358000" />
+      <workItem from="1666727552597" duration="594000" />
     </task>
     <task id="LOCAL-00030" summary="binding the ammo icon">
       <created>1665675310820</created>
@@ -625,7 +622,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666648039581</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="pistol reload anim">
+      <created>1666648065999</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1666648065999</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
