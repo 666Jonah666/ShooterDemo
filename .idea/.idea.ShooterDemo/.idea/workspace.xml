@@ -8,9 +8,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="pistol aiming pose">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Character/ABP_ShooterAnim.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/ABP_ShooterAnim.uasset" afterDir="false" />
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="aiming pose for each weapon">
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -284,14 +284,7 @@
       <workItem from="1666449968313" duration="3598000" />
       <workItem from="1666532188142" duration="3183000" />
       <workItem from="1666645469344" duration="2358000" />
-      <workItem from="1666727552597" duration="1884000" />
-    </task>
-    <task id="LOCAL-00032" summary="set item state for picked up">
-      <created>1665782019164</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1665782019164</updated>
+      <workItem from="1666727552597" duration="2208000" />
     </task>
     <task id="LOCAL-00033" summary="send slot index with a delegate">
       <created>1665845144416</created>
@@ -629,7 +622,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666731368509</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="aiming pose for each weapon">
+      <created>1666732366796</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1666732366796</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -650,7 +650,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="setting glow colour from DT" />
     <MESSAGE value="highlighting colour from DT" />
     <MESSAGE value="weapon DT" />
     <MESSAGE value="switching on weapon DT" />
@@ -675,6 +674,7 @@
     <MESSAGE value="pistol reload anim" />
     <MESSAGE value="pistol FABRIK IK" />
     <MESSAGE value="pistol aiming pose" />
-    <option name="LAST_COMMIT_MESSAGE" value="pistol aiming pose" />
+    <MESSAGE value="aiming pose for each weapon" />
+    <option name="LAST_COMMIT_MESSAGE" value="aiming pose for each weapon" />
   </component>
 </project>

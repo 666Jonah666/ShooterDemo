@@ -173,7 +173,14 @@ private:
 	//name of the bone to hide on the weapon mesh
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Data Table", meta = (AllowPrivateAccess = "true"))
 	FName BoneToHide;
-	
+
+	//amount that the slide pushed back during pistol fire
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Pistol", meta = (AllowPrivateAccess = "true"))
+	float SlideDisplacement;
+
+	//curve for the slide displacement
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Pistol", meta = (AllowPrivateAccess = "true"))
+	UCurveFloat* SlideDisplacementCurve;
 
 public:
 	FORCEINLINE int32 GetAmmo() const { return Ammo; }
