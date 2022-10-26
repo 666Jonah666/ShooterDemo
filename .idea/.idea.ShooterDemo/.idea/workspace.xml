@@ -8,8 +8,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="pistol slide timer">
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.h" afterDir="false" />
     </list>
@@ -17,6 +17,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://D:/UEprojects/ShooterDemo/Source/ShooterDemo/Weapon.cpp" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -286,14 +289,7 @@
       <workItem from="1666532188142" duration="3183000" />
       <workItem from="1666645469344" duration="2358000" />
       <workItem from="1666727552597" duration="2530000" />
-      <workItem from="1666821032926" duration="265000" />
-    </task>
-    <task id="LOCAL-00034" summary="play widget slot animation">
-      <created>1665846312332</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1665846312332</updated>
+      <workItem from="1666821032926" duration="565000" />
     </task>
     <task id="LOCAL-00035" summary="exchange inventory items">
       <created>1665847426637</created>
@@ -631,7 +627,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666732965556</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="pistol slide timer">
+      <created>1666821457229</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1666821457230</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -652,7 +655,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="weapon DT" />
     <MESSAGE value="switching on weapon DT" />
     <MESSAGE value="assault rifle glow material" />
     <MESSAGE value="set material instance at index with DT" />
@@ -677,6 +679,7 @@
     <MESSAGE value="pistol aiming pose" />
     <MESSAGE value="aiming pose for each weapon" />
     <MESSAGE value="pistol slide curve" />
-    <option name="LAST_COMMIT_MESSAGE" value="pistol slide curve" />
+    <MESSAGE value="pistol slide timer" />
+    <option name="LAST_COMMIT_MESSAGE" value="pistol slide timer" />
   </component>
 </project>

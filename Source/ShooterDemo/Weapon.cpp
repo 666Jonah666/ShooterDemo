@@ -27,6 +27,14 @@ void AWeapon::Tick(float DeltaSeconds) {
 		const FRotator MeshRotation{0.f, GetItemMesh()->GetComponentRotation().Yaw, 0.f};
 		GetItemMesh()->SetWorldRotation(MeshRotation, false, nullptr, ETeleportType::TeleportPhysics);
 	}
+
+	//update slide on pistol
+	UpdateSlideDisplacement();
+}
+
+void AWeapon::StartSlideTimer() {
+	bMovingSlide = true;
+	GetWorldTimerManager().SetTimer(SlideTimer, this, &AWeapon::FinishMovingSlide, SlideDisplacementTime);
 }
 
 bool AWeapon::ClipIsFull() {
@@ -156,4 +164,12 @@ void AWeapon::BeginPlay() {
 
 void AWeapon::FinishMovingSlide() {
 	bMovingSlide = false;
+}
+
+void AWeapon::UpdateSlideDisplacement() {
+	if (SlideDisplacementCurve && bMovingSlide) {
+		const float ElapsedTime{ GetWorldTimerManager().GetTimerElapsed(SlideTimer) };
+		const float CurveValue{ SlideDisplacementCurve->GetFloatValue(ElapsedTime) };
+		SlideDisplacement = CurveValue * MaxSlideDisplacement;
+	}
 }

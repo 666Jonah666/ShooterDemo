@@ -104,6 +104,8 @@ protected:
 	virtual void BeginPlay() override;
 
 	void FinishMovingSlide();
+
+	void UpdateSlideDisplacement();
 	
 private:
 	FTimerHandle ThrowWeaponTimer;
@@ -210,6 +212,8 @@ public:
 	FORCEINLINE float GetAutoFireRate() const { return AutoFireRate; }
 	FORCEINLINE UParticleSystem* GetMuzzleFlash() const { return MuzzleFlash; }; 
 	FORCEINLINE USoundCue* GetFireSound() const { return FireSound; }
+
+	void StartSlideTimer();
 	
 	bool ClipIsFull();
 	
