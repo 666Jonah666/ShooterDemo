@@ -12,7 +12,10 @@ AWeapon::AWeapon() :
 	AmmoType(EAmmoType::EAT_9mm),
 	ReloadMontageSection(FName(TEXT("ReloadSMG"))),
 	ClipBoneName(TEXT("smg_clip")),
-	SlideDisplacement(0.f)
+	SlideDisplacement(0.f),
+	SlideDisplacementTime(0.1f),
+	bMovingSlide(false),
+	MaxSlideDisplacement(4.f)
 {
 	PrimaryActorTick.bCanEverTick = true;
 }
@@ -149,4 +152,8 @@ void AWeapon::BeginPlay() {
 	if(BoneToHide != FName("")) {
 		GetItemMesh()->HideBoneByName(BoneToHide, EPhysBodyOp::PBO_None);
 	}
+}
+
+void AWeapon::FinishMovingSlide() {
+	bMovingSlide = false;
 }

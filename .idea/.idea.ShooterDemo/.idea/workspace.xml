@@ -8,7 +8,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="aiming pose for each weapon">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.h" afterDir="false" />
     </list>
@@ -284,14 +285,8 @@
       <workItem from="1666449968313" duration="3598000" />
       <workItem from="1666532188142" duration="3183000" />
       <workItem from="1666645469344" duration="2358000" />
-      <workItem from="1666727552597" duration="2208000" />
-    </task>
-    <task id="LOCAL-00033" summary="send slot index with a delegate">
-      <created>1665845144416</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1665845144416</updated>
+      <workItem from="1666727552597" duration="2530000" />
+      <workItem from="1666821032926" duration="265000" />
     </task>
     <task id="LOCAL-00034" summary="play widget slot animation">
       <created>1665846312332</created>
@@ -629,7 +624,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666732366796</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="pistol slide curve">
+      <created>1666732965556</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1666732965556</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -650,7 +652,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="highlighting colour from DT" />
     <MESSAGE value="weapon DT" />
     <MESSAGE value="switching on weapon DT" />
     <MESSAGE value="assault rifle glow material" />
@@ -675,6 +676,7 @@
     <MESSAGE value="pistol FABRIK IK" />
     <MESSAGE value="pistol aiming pose" />
     <MESSAGE value="aiming pose for each weapon" />
-    <option name="LAST_COMMIT_MESSAGE" value="aiming pose for each weapon" />
+    <MESSAGE value="pistol slide curve" />
+    <option name="LAST_COMMIT_MESSAGE" value="pistol slide curve" />
   </component>
 </project>

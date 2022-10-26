@@ -102,6 +102,8 @@ protected:
 	virtual void OnConstruction(const FTransform& Transform) override;
 
 	virtual void BeginPlay() override;
+
+	void FinishMovingSlide();
 	
 private:
 	FTimerHandle ThrowWeaponTimer;
@@ -181,6 +183,20 @@ private:
 	//curve for the slide displacement
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Pistol", meta = (AllowPrivateAccess = "true"))
 	UCurveFloat* SlideDisplacementCurve;
+
+	//timer handle for updating slide displacement
+	FTimerHandle SlideTimer;
+
+	//time for displacing the slide during pistol fire
+	float SlideDisplacementTime;
+
+	//true when moving the pistol slide
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Pistol", meta = (AllowPrivateAccess = "true"))
+	bool bMovingSlide;
+
+	//ma distance for the slide on the pistol
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Pistol", meta = (AllowPrivateAccess = "true"))
+	float MaxSlideDisplacement;
 
 public:
 	FORCEINLINE int32 GetAmmo() const { return Ammo; }
