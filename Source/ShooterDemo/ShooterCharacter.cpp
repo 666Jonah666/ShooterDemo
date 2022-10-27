@@ -196,9 +196,12 @@ void AShooterCharacter::StartFireTimer() {
 
 void AShooterCharacter::AutoFireReset() {
 	CombatState = ECombatState::ECS_Unoccupied;
+	if (!EquippedWeapon) {
+		return;
+	}
 
 	if (WeaponHasAmmo()) {
-		if(bFireButtonPressed) {
+		if(bFireButtonPressed && EquippedWeapon->GetAutomatic()) {
 			FireWeapon();
 		}
 	} else {

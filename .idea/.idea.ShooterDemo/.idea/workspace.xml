@@ -8,12 +8,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="pistol glow material">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Curves/SlideDisplacementCurve.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Curves/SlideDisplacementCurve.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/DataTable/WeaponDataTable.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/DataTable/WeaponDataTable.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Weapons/BaseWeapon/BP_BaseWeapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Weapons/BaseWeapon/BP_BaseWeapon.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Materials/Pistol_Materials/M_PistolMat_Inst.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Materials/Pistol_Materials/M_PistolMat_Inst.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.h" afterDir="false" />
     </list>
@@ -291,21 +289,7 @@
       <workItem from="1666645469344" duration="2358000" />
       <workItem from="1666727552597" duration="2530000" />
       <workItem from="1666821032926" duration="1449000" />
-      <workItem from="1666889972970" duration="2376000" />
-    </task>
-    <task id="LOCAL-00036" summary="disable trace while interping">
-      <created>1665848737842</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1665848737842</updated>
-    </task>
-    <task id="LOCAL-00037" summary="prevent swapping while reloading">
-      <created>1665849135068</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1665849135068</updated>
+      <workItem from="1666889972970" duration="3420000" />
     </task>
     <task id="LOCAL-00038" summary="equip montage">
       <created>1665924183299</created>
@@ -636,7 +620,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666821889678</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="transform pistol side bone">
+      <created>1666893783064</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1666893783065</updated>
+    </task>
+    <task id="LOCAL-00086" summary="pistol glow material">
+      <created>1666894650198</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1666894650198</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -657,8 +655,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="assault rifle glow material" />
-    <MESSAGE value="set material instance at index with DT" />
     <MESSAGE value="adding barrel socket to AR" />
     <MESSAGE value="FABRIK IK" />
     <MESSAGE value="switch FABRIK on weapon type" />
@@ -682,6 +678,8 @@
     <MESSAGE value="pistol slide curve" />
     <MESSAGE value="pistol slide timer" />
     <MESSAGE value="update slide displacement" />
-    <option name="LAST_COMMIT_MESSAGE" value="update slide displacement" />
+    <MESSAGE value="transform pistol side bone" />
+    <MESSAGE value="pistol glow material" />
+    <option name="LAST_COMMIT_MESSAGE" value="pistol glow material" />
   </component>
 </project>
