@@ -121,5 +121,10 @@ Content/Dynamic/Levels/FirstPersonExampleMap_BuiltData.uasset
 /Content/_Game/Character/Animations/Crouching/MixamoCharacter/Crouching_Turn_90_Right_Anim_Take_001.uasset
 /Content/_Game/Character/Animations/Crouching/MixamoCharacter/Crouching_Turn_90_Right_PhysicsAsset.uasset
 /Content/FPS_Weapon_Bundle/
+/Content/A_Surface_Footstep/
+/Content/ParagonProps/
+/Content/KiteDemo/
+/Content/SampleMap/
+/Content/Lighting/
 
 /.idea/.idea.ShooterDemo/.idea/
