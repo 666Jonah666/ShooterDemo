@@ -8,12 +8,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="pistol glow material">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="semi automatic fire">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Materials/Pistol_Materials/M_PistolMat_Inst.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Materials/Pistol_Materials/M_PistolMat_Inst.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -289,14 +286,7 @@
       <workItem from="1666645469344" duration="2358000" />
       <workItem from="1666727552597" duration="2530000" />
       <workItem from="1666821032926" duration="1449000" />
-      <workItem from="1666889972970" duration="3420000" />
-    </task>
-    <task id="LOCAL-00038" summary="equip montage">
-      <created>1665924183299</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1665924183299</updated>
+      <workItem from="1666889972970" duration="4121000" />
     </task>
     <task id="LOCAL-00039" summary="play equip sound when swapping">
       <created>1665925286622</created>
@@ -634,7 +624,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666894650198</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="semi automatic fire">
+      <created>1666895329054</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1666895329054</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -655,7 +652,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="adding barrel socket to AR" />
     <MESSAGE value="FABRIK IK" />
     <MESSAGE value="switch FABRIK on weapon type" />
     <MESSAGE value="update .gitignore" />
@@ -680,6 +676,7 @@
     <MESSAGE value="update slide displacement" />
     <MESSAGE value="transform pistol side bone" />
     <MESSAGE value="pistol glow material" />
-    <option name="LAST_COMMIT_MESSAGE" value="pistol glow material" />
+    <MESSAGE value="semi automatic fire" />
+    <option name="LAST_COMMIT_MESSAGE" value="semi automatic fire" />
   </component>
 </project>

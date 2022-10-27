@@ -521,6 +521,9 @@ void AShooterCharacter::FinishReloading() {
 
 void AShooterCharacter::FinishEquipping() {
 	CombatState = ECombatState::ECS_Unoccupied;
+	if (bAimingButtonPressed) {
+		Aim();
+	}
 }
 
 bool AShooterCharacter::CarryingAmmo() {
@@ -869,7 +872,7 @@ bool AShooterCharacter::GetBeamEndLocation(const FVector& MuzzleSocketLocation, 
 
 void AShooterCharacter::AimingButtonPressed() {
 	bAimingButtonPressed = true;
-	if(CombatState != ECombatState::ECS_Reloading) {
+	if(CombatState != ECombatState::ECS_Reloading && CombatState != ECombatState::ECS_Equipping) {
 		Aim();
 	}
 }
@@ -1019,6 +1022,11 @@ void AShooterCharacter::FiveKeyPressed() {
 void AShooterCharacter::ExchangeInventoryItems(int32 CurrentItemIndex, int32 NewItemIndex) {
 
 	if (CurrentItemIndex != NewItemIndex && NewItemIndex < Inventory.Num() && (CombatState == ECombatState::ECS_Unoccupied || CombatState == ECombatState::ECS_Equipping)) {
+
+		if(bAiming) {
+			StopAiming();
+		}
+		
 		AWeapon* OldEquippedWeapon = EquippedWeapon;
 		AWeapon* NewWeapon = Cast<AWeapon>(Inventory[NewItemIndex]);
 		EquipWeapon(NewWeapon);
