@@ -8,9 +8,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="semi automatic fire">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterDemo.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterDemo.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,28 +287,8 @@
       <workItem from="1666645469344" duration="2358000" />
       <workItem from="1666727552597" duration="2530000" />
       <workItem from="1666821032926" duration="1449000" />
-      <workItem from="1666889972970" duration="4121000" />
-    </task>
-    <task id="LOCAL-00039" summary="play equip sound when swapping">
-      <created>1665925286622</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1665925286622</updated>
-    </task>
-    <task id="LOCAL-00040" summary="swap pickup text">
-      <created>1665926048946</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1665926048946</updated>
-    </task>
-    <task id="LOCAL-00041" summary="swap limitations">
-      <created>1665926989242</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1665926989242</updated>
+      <workItem from="1666889972970" duration="6127000" />
+      <workItem from="1666991356796" duration="432000" />
     </task>
     <task id="LOCAL-00042" summary="icon animation">
       <created>1666035060282</created>
@@ -631,7 +612,28 @@
       <option name="project" value="LOCAL" />
       <updated>1666895329054</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="stop aiming when exchanging items">
+      <created>1666895929664</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1666895929665</updated>
+    </task>
+    <task id="LOCAL-00089" summary="updating .gitignore">
+      <created>1666897370029</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1666897370029</updated>
+    </task>
+    <task id="LOCAL-00090" summary="adding test surfaces">
+      <created>1666898570856</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1666898570856</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -652,11 +654,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="FABRIK IK" />
-    <MESSAGE value="switch FABRIK on weapon type" />
     <MESSAGE value="update .gitignore" />
     <MESSAGE value="disable FABRIK IK when reloading" />
-    <MESSAGE value="updating .gitignore" />
     <MESSAGE value="AR reload anim" />
     <MESSAGE value="reload montage section in DT" />
     <MESSAGE value="AR anim bp" />
@@ -677,6 +676,9 @@
     <MESSAGE value="transform pistol side bone" />
     <MESSAGE value="pistol glow material" />
     <MESSAGE value="semi automatic fire" />
-    <option name="LAST_COMMIT_MESSAGE" value="semi automatic fire" />
+    <MESSAGE value="stop aiming when exchanging items" />
+    <MESSAGE value="updating .gitignore" />
+    <MESSAGE value="adding test surfaces" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding test surfaces" />
   </component>
 </project>
