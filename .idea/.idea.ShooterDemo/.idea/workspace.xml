@@ -8,11 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterDemo.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterDemo.h" afterDir="false" />
-    </list>
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="define surface types" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -288,14 +284,7 @@
       <workItem from="1666727552597" duration="2530000" />
       <workItem from="1666821032926" duration="1449000" />
       <workItem from="1666889972970" duration="6127000" />
-      <workItem from="1666991356796" duration="432000" />
-    </task>
-    <task id="LOCAL-00042" summary="icon animation">
-      <created>1666035060282</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1666035060282</updated>
+      <workItem from="1666991356796" duration="922000" />
     </task>
     <task id="LOCAL-00043" summary="icon highlight delegate">
       <created>1666035307159</created>
@@ -633,7 +622,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666898570856</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="define surface types">
+      <created>1666991844514</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1666991844514</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -654,7 +650,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="update .gitignore" />
     <MESSAGE value="disable FABRIK IK when reloading" />
     <MESSAGE value="AR reload anim" />
     <MESSAGE value="reload montage section in DT" />
@@ -679,6 +674,7 @@
     <MESSAGE value="stop aiming when exchanging items" />
     <MESSAGE value="updating .gitignore" />
     <MESSAGE value="adding test surfaces" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding test surfaces" />
+    <MESSAGE value="define surface types" />
+    <option name="LAST_COMMIT_MESSAGE" value="define surface types" />
   </component>
 </project>
