@@ -8,7 +8,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="define surface types" />
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Character/Animations/AimWalk_BlendSpace.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/Animations/AimWalk_BlendSpace.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Character/Animations/CrouchBlendSpace.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/Animations/CrouchBlendSpace.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Character/Animations/Crouch_Walk_Bwd_Rifle_Hip.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/Animations/Crouch_Walk_Bwd_Rifle_Hip.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Character/Animations/Crouch_Walk_Fwd_Rifle_Hip.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/Animations/Crouch_Walk_Fwd_Rifle_Hip.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Character/Animations/Crouch_Walk_Lt_Rifle_Hip.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/Animations/Crouch_Walk_Lt_Rifle_Hip.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Character/Animations/Crouch_Walk_Rt_Rifle_Hip.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/Animations/Crouch_Walk_Rt_Rifle_Hip.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Character/Animations/Crouching/Crouching_Turn_90_Left.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/Animations/Crouching/Crouching_Turn_90_Left.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Character/Animations/Crouching/Crouching_Turn_90_Right.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/Animations/Crouching/Crouching_Turn_90_Right.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Character/Animations/Idle_Turn_90_Left_Trimmed.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/Animations/Idle_Turn_90_Left_Trimmed.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Character/Animations/Idle_Turn_90_Right_Trimmed.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/Animations/Idle_Turn_90_Right_Trimmed.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Character/Animations/JogStart_BlendSpace.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/Animations/JogStart_BlendSpace.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Character/Animations/JogStop_BlendSpace.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/Animations/JogStop_BlendSpace.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Character/Animations/Jog_Bwd_Start_Trimmed.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/Animations/Jog_Bwd_Start_Trimmed.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Character/Animations/Jog_Bwd_Stop_Trimmed.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/Animations/Jog_Bwd_Stop_Trimmed.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Character/Animations/Jog_Fwd_Start_Trimmed.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/Animations/Jog_Fwd_Start_Trimmed.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Character/Animations/Jog_Fwd_Stop_Trimmed.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/Animations/Jog_Fwd_Stop_Trimmed.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Character/Animations/Jog_Left_Start_Trimmed.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/Animations/Jog_Left_Start_Trimmed.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Character/Animations/Jog_Left_Stop_Trimmed.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/Animations/Jog_Left_Stop_Trimmed.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Character/Animations/Jog_Right_Start_Trimmed.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/Animations/Jog_Right_Start_Trimmed.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Character/Animations/Jog_Right_Stop_Trimmed.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/Animations/Jog_Right_Stop_Trimmed.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Character/Animations/Running_BlendSpace.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/Animations/Running_BlendSpace.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Character/Animations/Walk_Bwd_Rifle_Ironsights.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/Animations/Walk_Bwd_Rifle_Ironsights.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Character/Animations/Walk_Fwd_Rifle_Ironsights.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/Animations/Walk_Fwd_Rifle_Ironsights.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Character/Animations/Walk_Lt_Rifle_Ironsights.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/Animations/Walk_Lt_Rifle_Ironsights.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Character/Animations/Walk_Rt_Rifle_Ironsights.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/Animations/Walk_Rt_Rifle_Ironsights.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -284,21 +312,8 @@
       <workItem from="1666727552597" duration="2530000" />
       <workItem from="1666821032926" duration="1449000" />
       <workItem from="1666889972970" duration="6127000" />
-      <workItem from="1666991356796" duration="922000" />
-    </task>
-    <task id="LOCAL-00043" summary="icon highlight delegate">
-      <created>1666035307159</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1666035307159</updated>
-    </task>
-    <task id="LOCAL-00044" summary="broadcast functions">
-      <created>1666035675753</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1666035675753</updated>
+      <workItem from="1666991356796" duration="1769000" />
+      <workItem from="1667075172877" duration="603000" />
     </task>
     <task id="LOCAL-00045" summary="highlighting &amp; unhighlighting delegate slot">
       <created>1666036206213</created>
@@ -629,7 +644,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666991844514</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="phys materials">
+      <created>1666992470678</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1666992470678</updated>
+    </task>
+    <task id="LOCAL-00093" summary="custom anim notify">
+      <created>1666994298271</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1666994298271</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -650,8 +679,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="disable FABRIK IK when reloading" />
-    <MESSAGE value="AR reload anim" />
     <MESSAGE value="reload montage section in DT" />
     <MESSAGE value="AR anim bp" />
     <MESSAGE value="set anim bp for weapon from DT" />
@@ -675,6 +702,8 @@
     <MESSAGE value="updating .gitignore" />
     <MESSAGE value="adding test surfaces" />
     <MESSAGE value="define surface types" />
-    <option name="LAST_COMMIT_MESSAGE" value="define surface types" />
+    <MESSAGE value="phys materials" />
+    <MESSAGE value="custom anim notify" />
+    <option name="LAST_COMMIT_MESSAGE" value="custom anim notify" />
   </component>
 </project>
