@@ -8,8 +8,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="play sound with anim notify">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -288,13 +290,7 @@
       <workItem from="1666889972970" duration="6127000" />
       <workItem from="1666991356796" duration="1769000" />
       <workItem from="1667075172877" duration="1313000" />
-    </task>
-    <task id="LOCAL-00047" summary="creating data table">
-      <created>1666123514627</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1666123514627</updated>
+      <workItem from="1667162831519" duration="1050000" />
     </task>
     <task id="LOCAL-00048" summary="switch on item rarity">
       <created>1666124567516</created>
@@ -632,7 +628,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667079994318</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="play sound with anim notify">
+      <created>1667168683701</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1667168683701</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -653,7 +656,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="set anim bp for weapon from DT" />
     <MESSAGE value="different crosshairs for each weapon" />
     <MESSAGE value="set sound &amp; effect properties from DT" />
     <MESSAGE value="hide bone by name" />
@@ -678,6 +680,7 @@
     <MESSAGE value="custom anim notify" />
     <MESSAGE value="anim notifies" />
     <MESSAGE value="setting bone name in notifies" />
-    <option name="LAST_COMMIT_MESSAGE" value="setting bone name in notifies" />
+    <MESSAGE value="play sound with anim notify" />
+    <option name="LAST_COMMIT_MESSAGE" value="play sound with anim notify" />
   </component>
 </project>
