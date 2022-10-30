@@ -15,6 +15,8 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "Particles/ParticleSystemComponent.h"
+#include "PhysicalMaterials/PhysicalMaterial.h"
+#include "ShooterDemo.h"
 #include "Sound/SoundCue.h"
 
 // Sets default values
@@ -1076,9 +1078,9 @@ void AShooterCharacter::Footstep() {
 	
 	GetWorld()->LineTraceSingleByChannel(HitResult, Start, End, ECC_Visibility, QueryParams);
 
-	if (HitResult.GetActor()) {
-		//ue 5 GetActor
-		UE_LOG(LogTemp, Warning, TEXT("HitActor: %s"), *HitResult.Actor->GetName());
+	EPhysicalSurface HitSurface = HitResult.PhysMaterial->SurfaceType;
+	if (HitSurface == EPS_GRASS) {
+		UE_LOG(LogTemp, Warning, TEXT("Hit grass")); 
 	}
 }
 
