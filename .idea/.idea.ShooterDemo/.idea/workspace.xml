@@ -8,20 +8,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="grass surface type">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/_Game/AnimNotifies/FootstepsNotify.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/AnimNotifies/FootstepsNotify.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterDemo.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterDemo.Build.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock://D:/UEprojects/ShooterDemo/Source/ShooterDemo/ShooterCharacter.cpp" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -295,14 +289,8 @@
       <workItem from="1666889972970" duration="6127000" />
       <workItem from="1666991356796" duration="1769000" />
       <workItem from="1667075172877" duration="1313000" />
-      <workItem from="1667162831519" duration="3066000" />
-    </task>
-    <task id="LOCAL-00050" summary="setting widget colours from DT values">
-      <created>1666124933429</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1666124933430</updated>
+      <workItem from="1667162831519" duration="3269000" />
+      <workItem from="1667243047196" duration="606000" />
     </task>
     <task id="LOCAL-00051" summary="setting glow colour from DT">
       <created>1666201050372</created>
@@ -640,7 +628,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667170312558</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="determine surface type">
+      <created>1667171222551</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1667171222551</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -661,7 +656,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="hide bone by name" />
     <MESSAGE value="pistol icons" />
     <MESSAGE value="pistol DT properties" />
     <MESSAGE value="barrel socket on the pistol" />
@@ -686,6 +680,7 @@
     <MESSAGE value="play sound with anim notify" />
     <MESSAGE value="line trace for physical surface type" />
     <MESSAGE value="grass surface type" />
-    <option name="LAST_COMMIT_MESSAGE" value="grass surface type" />
+    <MESSAGE value="determine surface type" />
+    <option name="LAST_COMMIT_MESSAGE" value="determine surface type" />
   </component>
 </project>
