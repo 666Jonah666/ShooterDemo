@@ -8,8 +8,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="jump &amp; land sounds">
+      <change afterPath="$PROJECT_DIR$/Content/_Game/AnimNotifies/JumpLandNotify.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/_Game/AnimNotifies/FootstepsNotify.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/AnimNotifies/FootstepsNotify.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -290,21 +290,7 @@
       <workItem from="1666991356796" duration="1769000" />
       <workItem from="1667075172877" duration="1313000" />
       <workItem from="1667162831519" duration="3269000" />
-      <workItem from="1667243047196" duration="606000" />
-    </task>
-    <task id="LOCAL-00051" summary="setting glow colour from DT">
-      <created>1666201050372</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1666201050372</updated>
-    </task>
-    <task id="LOCAL-00052" summary="highlighting colour from DT">
-      <created>1666202120527</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1666202120527</updated>
+      <workItem from="1667243047196" duration="1305000" />
     </task>
     <task id="LOCAL-00053" summary="weapon DT">
       <created>1666209384504</created>
@@ -635,7 +621,21 @@
       <option name="project" value="LOCAL" />
       <updated>1667171222551</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="implement footstep notify">
+      <created>1667244541302</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1667244541303</updated>
+    </task>
+    <task id="LOCAL-00101" summary="jump &amp; land sounds">
+      <created>1667245829070</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1667245829070</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -656,8 +656,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="pistol icons" />
-    <MESSAGE value="pistol DT properties" />
     <MESSAGE value="barrel socket on the pistol" />
     <MESSAGE value="pistol reload anim" />
     <MESSAGE value="pistol FABRIK IK" />
@@ -681,6 +679,8 @@
     <MESSAGE value="line trace for physical surface type" />
     <MESSAGE value="grass surface type" />
     <MESSAGE value="determine surface type" />
-    <option name="LAST_COMMIT_MESSAGE" value="determine surface type" />
+    <MESSAGE value="implement footstep notify" />
+    <MESSAGE value="jump &amp; land sounds" />
+    <option name="LAST_COMMIT_MESSAGE" value="jump &amp; land sounds" />
   </component>
 </project>
