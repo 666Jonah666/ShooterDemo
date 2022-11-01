@@ -8,9 +8,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="jump &amp; land sounds">
-      <change afterPath="$PROJECT_DIR$/Content/_Game/AnimNotifies/JumpLandNotify.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/AnimNotifies/FootstepsNotify.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/AnimNotifies/FootstepsNotify.uasset" afterDir="false" />
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Character/ABP_ShooterAnim.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/ABP_ShooterAnim.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -290,14 +290,7 @@
       <workItem from="1666991356796" duration="1769000" />
       <workItem from="1667075172877" duration="1313000" />
       <workItem from="1667162831519" duration="3269000" />
-      <workItem from="1667243047196" duration="1305000" />
-    </task>
-    <task id="LOCAL-00053" summary="weapon DT">
-      <created>1666209384504</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1666209384504</updated>
+      <workItem from="1667243047196" duration="2315000" />
     </task>
     <task id="LOCAL-00054" summary="switching on weapon DT">
       <created>1666211232380</created>
@@ -635,7 +628,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667245829070</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="turning hips while running">
+      <created>1667247291720</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1667247291720</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -656,7 +656,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="barrel socket on the pistol" />
     <MESSAGE value="pistol reload anim" />
     <MESSAGE value="pistol FABRIK IK" />
     <MESSAGE value="pistol aiming pose" />
@@ -681,6 +680,7 @@
     <MESSAGE value="determine surface type" />
     <MESSAGE value="implement footstep notify" />
     <MESSAGE value="jump &amp; land sounds" />
-    <option name="LAST_COMMIT_MESSAGE" value="jump &amp; land sounds" />
+    <MESSAGE value="turning hips while running" />
+    <option name="LAST_COMMIT_MESSAGE" value="turning hips while running" />
   </component>
 </project>
