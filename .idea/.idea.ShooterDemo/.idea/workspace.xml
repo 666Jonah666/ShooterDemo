@@ -8,9 +8,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="fixing turning issue">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="ignore new assets">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/_Game/Character/ABP_ShooterAnim.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/ABP_ShooterAnim.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Character/Animations/Running_BlendSpace.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/Animations/Running_BlendSpace.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -291,21 +292,7 @@
       <workItem from="1667075172877" duration="1313000" />
       <workItem from="1667162831519" duration="3269000" />
       <workItem from="1667243047196" duration="2315000" />
-      <workItem from="1667321557372" duration="625000" />
-    </task>
-    <task id="LOCAL-00055" summary="assault rifle glow material">
-      <created>1666293475324</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1666293475325</updated>
-    </task>
-    <task id="LOCAL-00056" summary="set material instance at index with DT">
-      <created>1666294956381</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1666294956381</updated>
+      <workItem from="1667321557372" duration="1850000" />
     </task>
     <task id="LOCAL-00057" summary="adding barrel socket to AR">
       <created>1666296507458</created>
@@ -636,7 +623,21 @@
       <option name="project" value="LOCAL" />
       <updated>1667321578399</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="turn hips while running bwd">
+      <created>1667322933743</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1667322933743</updated>
+    </task>
+    <task id="LOCAL-00105" summary="ignore new assets">
+      <created>1667323510023</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1667323510023</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -657,8 +658,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="pistol FABRIK IK" />
-    <MESSAGE value="pistol aiming pose" />
     <MESSAGE value="aiming pose for each weapon" />
     <MESSAGE value="pistol slide curve" />
     <MESSAGE value="pistol slide timer" />
@@ -682,6 +681,8 @@
     <MESSAGE value="jump &amp; land sounds" />
     <MESSAGE value="turning hips while running" />
     <MESSAGE value="fixing turning issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing turning issue" />
+    <MESSAGE value="turn hips while running bwd" />
+    <MESSAGE value="ignore new assets" />
+    <option name="LAST_COMMIT_MESSAGE" value="ignore new assets" />
   </component>
 </project>
