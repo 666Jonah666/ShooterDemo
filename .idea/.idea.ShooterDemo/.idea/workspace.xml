@@ -8,9 +8,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="fixing turning issue">
       <change beforePath="$PROJECT_DIR$/Content/_Game/Character/ABP_ShooterAnim.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/ABP_ShooterAnim.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Character/Animations/Running_BlendSpace.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/Animations/Running_BlendSpace.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -291,13 +291,7 @@
       <workItem from="1667075172877" duration="1313000" />
       <workItem from="1667162831519" duration="3269000" />
       <workItem from="1667243047196" duration="2315000" />
-    </task>
-    <task id="LOCAL-00054" summary="switching on weapon DT">
-      <created>1666211232380</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1666211232380</updated>
+      <workItem from="1667321557372" duration="625000" />
     </task>
     <task id="LOCAL-00055" summary="assault rifle glow material">
       <created>1666293475324</created>
@@ -635,7 +629,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667247291720</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="fixing turning issue">
+      <created>1667321578398</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1667321578399</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -656,7 +657,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="pistol reload anim" />
     <MESSAGE value="pistol FABRIK IK" />
     <MESSAGE value="pistol aiming pose" />
     <MESSAGE value="aiming pose for each weapon" />
@@ -681,6 +681,7 @@
     <MESSAGE value="implement footstep notify" />
     <MESSAGE value="jump &amp; land sounds" />
     <MESSAGE value="turning hips while running" />
-    <option name="LAST_COMMIT_MESSAGE" value="turning hips while running" />
+    <MESSAGE value="fixing turning issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing turning issue" />
   </component>
 </project>
