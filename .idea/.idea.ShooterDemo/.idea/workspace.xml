@@ -8,7 +8,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="retargeting anim &amp; setting new character bp" />
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -288,21 +291,7 @@
       <workItem from="1667075172877" duration="1313000" />
       <workItem from="1667162831519" duration="3269000" />
       <workItem from="1667243047196" duration="2315000" />
-      <workItem from="1667321557372" duration="2702000" />
-    </task>
-    <task id="LOCAL-00058" summary="FABRIK IK">
-      <created>1666297523974</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1666297523974</updated>
-    </task>
-    <task id="LOCAL-00059" summary="switch FABRIK on weapon type">
-      <created>1666383721841</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1666383721842</updated>
+      <workItem from="1667321557372" duration="4405000" />
     </task>
     <task id="LOCAL-00060" summary="update .gitignore">
       <created>1666383959101</created>
@@ -633,7 +622,21 @@
       <option name="project" value="LOCAL" />
       <updated>1667325305438</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary=" tweaking twin blast">
+      <created>1667327961297</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1667327961297</updated>
+    </task>
+    <task id="LOCAL-00108" summary="ignore grux">
+      <created>1667328717596</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1667328717596</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -654,8 +657,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="pistol slide curve" />
-    <MESSAGE value="pistol slide timer" />
     <MESSAGE value="update slide displacement" />
     <MESSAGE value="transform pistol side bone" />
     <MESSAGE value="pistol glow material" />
@@ -679,6 +680,8 @@
     <MESSAGE value="turn hips while running bwd" />
     <MESSAGE value="ignore new assets" />
     <MESSAGE value="retargeting anim &amp; setting new character bp" />
-    <option name="LAST_COMMIT_MESSAGE" value="retargeting anim &amp; setting new character bp" />
+    <MESSAGE value=" tweaking twin blast" />
+    <MESSAGE value="ignore grux" />
+    <option name="LAST_COMMIT_MESSAGE" value="ignore grux" />
   </component>
 </project>
