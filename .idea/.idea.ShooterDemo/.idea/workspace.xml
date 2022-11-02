@@ -8,11 +8,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="BulletHit interface">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="implementing bullet hit">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -294,14 +291,7 @@
       <workItem from="1667162831519" duration="3269000" />
       <workItem from="1667243047196" duration="2315000" />
       <workItem from="1667321557372" duration="4405000" />
-      <workItem from="1667429364753" duration="2366000" />
-    </task>
-    <task id="LOCAL-00064" summary="AR reload anim">
-      <created>1666385105104</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1666385105104</updated>
+      <workItem from="1667429364753" duration="3669000" />
     </task>
     <task id="LOCAL-00065" summary="reload montage section in DT">
       <created>1666386272999</created>
@@ -639,7 +629,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667430625484</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="implementing bullet hit">
+      <created>1667432020359</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1667432020359</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -660,7 +657,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="semi automatic fire" />
     <MESSAGE value="stop aiming when exchanging items" />
     <MESSAGE value="updating .gitignore" />
     <MESSAGE value="adding test surfaces" />
@@ -685,6 +681,7 @@
     <MESSAGE value="enemy class" />
     <MESSAGE value="BulletHit interface class" />
     <MESSAGE value="BulletHit interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="BulletHit interface" />
+    <MESSAGE value="implementing bullet hit" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementing bullet hit" />
   </component>
 </project>
