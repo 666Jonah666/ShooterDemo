@@ -56,7 +56,7 @@ protected:
 	void LookUp(float Value);
 	
 	void FireWeapon();
-	bool GetBeamEndLocation(const FVector& MuzzleSocketLocation, FVector& OutBeamLocation);
+	bool GetBeamEndLocation(const FVector& MuzzleSocketLocation, FHitResult& OutHitResult);
 
 	//Set bAiming to true or false with button press
 	void AimingButtonPressed();

@@ -8,10 +8,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="enemy class">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="BulletHit interface">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -293,28 +294,7 @@
       <workItem from="1667162831519" duration="3269000" />
       <workItem from="1667243047196" duration="2315000" />
       <workItem from="1667321557372" duration="4405000" />
-      <workItem from="1667429364753" duration="1021000" />
-    </task>
-    <task id="LOCAL-00061" summary="disable FABRIK IK when reloading">
-      <created>1666384376822</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1666384376823</updated>
-    </task>
-    <task id="LOCAL-00062" summary="updating .gitignore">
-      <created>1666384744116</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1666384744116</updated>
-    </task>
-    <task id="LOCAL-00063" summary="updating .gitignore">
-      <created>1666384787777</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1666384787777</updated>
+      <workItem from="1667429364753" duration="2366000" />
     </task>
     <task id="LOCAL-00064" summary="AR reload anim">
       <created>1666385105104</created>
@@ -638,7 +618,28 @@
       <option name="project" value="LOCAL" />
       <updated>1667429713993</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="BulletHit interface">
+      <created>1667430560049</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1667430560049</updated>
+    </task>
+    <task id="LOCAL-00111" summary="BulletHit interface class">
+      <created>1667430590546</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1667430590546</updated>
+    </task>
+    <task id="LOCAL-00112" summary="BulletHit interface">
+      <created>1667430625484</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1667430625484</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -659,8 +660,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="transform pistol side bone" />
-    <MESSAGE value="pistol glow material" />
     <MESSAGE value="semi automatic fire" />
     <MESSAGE value="stop aiming when exchanging items" />
     <MESSAGE value="updating .gitignore" />
@@ -684,6 +683,8 @@
     <MESSAGE value=" tweaking twin blast" />
     <MESSAGE value="ignore grux" />
     <MESSAGE value="enemy class" />
-    <option name="LAST_COMMIT_MESSAGE" value="enemy class" />
+    <MESSAGE value="BulletHit interface class" />
+    <MESSAGE value="BulletHit interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="BulletHit interface" />
   </component>
 </project>

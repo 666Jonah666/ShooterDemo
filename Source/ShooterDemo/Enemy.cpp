@@ -3,6 +3,9 @@
 
 #include "Enemy.h"
 
+#include "Kismet/GameplayStatics.h"
+#include "Sound/SoundCue.h"
+
 // Sets default values
 AEnemy::AEnemy()
 {
@@ -36,5 +39,13 @@ void AEnemy::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 void AEnemy::BulletHit_Implementation(FHitResult HitResult) {
 	IBulletHitInterface::BulletHit_Implementation(HitResult);
+
+	if(ImpactSound) {
+		UGameplayStatics::PlaySoundAtLocation(this, ImpactSound, GetActorLocation());
+	}
+
+	if(ImpactParticles) {
+		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactParticles, HitResult.Location, FRotator::ZeroRotator, true);
+	}
 }
 
