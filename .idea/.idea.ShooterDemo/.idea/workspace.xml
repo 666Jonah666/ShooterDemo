@@ -8,9 +8,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="enemy class">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -292,13 +293,7 @@
       <workItem from="1667162831519" duration="3269000" />
       <workItem from="1667243047196" duration="2315000" />
       <workItem from="1667321557372" duration="4405000" />
-    </task>
-    <task id="LOCAL-00060" summary="update .gitignore">
-      <created>1666383959101</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1666383959101</updated>
+      <workItem from="1667429364753" duration="1021000" />
     </task>
     <task id="LOCAL-00061" summary="disable FABRIK IK when reloading">
       <created>1666384376822</created>
@@ -636,7 +631,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667328717596</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="enemy class">
+      <created>1667429713993</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1667429713993</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -657,7 +659,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="update slide displacement" />
     <MESSAGE value="transform pistol side bone" />
     <MESSAGE value="pistol glow material" />
     <MESSAGE value="semi automatic fire" />
@@ -682,6 +683,7 @@
     <MESSAGE value="retargeting anim &amp; setting new character bp" />
     <MESSAGE value=" tweaking twin blast" />
     <MESSAGE value="ignore grux" />
-    <option name="LAST_COMMIT_MESSAGE" value="ignore grux" />
+    <MESSAGE value="enemy class" />
+    <option name="LAST_COMMIT_MESSAGE" value="enemy class" />
   </component>
 </project>
