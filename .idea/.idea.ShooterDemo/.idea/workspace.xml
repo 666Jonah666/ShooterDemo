@@ -8,13 +8,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="implementing bullet hit">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/DataTable/WeaponDataTable.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/DataTable/WeaponDataTable.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Weapon.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://D:/UEprojects/ShooterDemo/Source/ShooterDemo/Enemy.cpp" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -291,14 +300,8 @@
       <workItem from="1667162831519" duration="3269000" />
       <workItem from="1667243047196" duration="2315000" />
       <workItem from="1667321557372" duration="4405000" />
-      <workItem from="1667429364753" duration="3669000" />
-    </task>
-    <task id="LOCAL-00065" summary="reload montage section in DT">
-      <created>1666386272999</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1666386272999</updated>
+      <workItem from="1667429364753" duration="3824000" />
+      <workItem from="1667501701849" duration="1825000" />
     </task>
     <task id="LOCAL-00066" summary="reload montage section in DT">
       <created>1666386283136</created>
@@ -636,7 +639,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667432020359</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="explosive">
+      <created>1667433083120</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1667433083120</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -657,7 +667,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="stop aiming when exchanging items" />
     <MESSAGE value="updating .gitignore" />
     <MESSAGE value="adding test surfaces" />
     <MESSAGE value="define surface types" />
@@ -682,6 +691,7 @@
     <MESSAGE value="BulletHit interface class" />
     <MESSAGE value="BulletHit interface" />
     <MESSAGE value="implementing bullet hit" />
-    <option name="LAST_COMMIT_MESSAGE" value="implementing bullet hit" />
+    <MESSAGE value="explosive" />
+    <option name="LAST_COMMIT_MESSAGE" value="explosive" />
   </component>
 </project>

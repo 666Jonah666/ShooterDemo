@@ -7,7 +7,9 @@
 #include "Sound/SoundCue.h"
 
 // Sets default values
-AEnemy::AEnemy()
+AEnemy::AEnemy() :
+	Health(100.f),
+	MaxHealth(100.f)
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -47,5 +49,18 @@ void AEnemy::BulletHit_Implementation(FHitResult HitResult) {
 	if(ImpactParticles) {
 		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactParticles, HitResult.Location, FRotator::ZeroRotator, true);
 	}
+}
+
+float AEnemy::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AController* EventInstigator,
+	AActor* DamageCauser) {
+	Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
+
+	if (Health - DamageAmount <= 0.f) {
+		Health = 0;
+	} else {
+		Health -= DamageAmount;
+	}
+
+	return DamageAmount;
 }
 

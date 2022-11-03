@@ -145,7 +145,10 @@ void AWeapon::OnConstruction(const FTransform& Transform) {
 
 			//set fire type
 			bAutomatic = WeaponDataRow->bAutomatic;
-			
+
+			//set damage
+			Damage = WeaponDataRow->Damage;
+			HeadShotDamage = WeaponDataRow->HeadShotDamage;
 		}
 
 		if (GetMaterialInstance()) {

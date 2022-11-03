@@ -6,6 +6,7 @@
 #include "Ammo.h"
 #include "BulletHitInterface.h"
 #include "DrawDebugHelpers.h"
+#include "Enemy.h"
 #include "Item.h"
 #include "Weapon.h"
 #include "Camera/CameraComponent.h"
@@ -435,6 +436,10 @@ void AShooterCharacter::SendBullet() {
 				if (BulletHitInterface) {
 					//if it is not null, then hit actor implements interface, call override function
 					BulletHitInterface->BulletHit_Implementation(BeamHitResult);
+				}
+				AEnemy* HitEnemy = Cast<AEnemy>(BeamHitResult.Actor.Get());
+				if (HitEnemy) {
+					UGameplayStatics::ApplyDamage(BeamHitResult.Actor.Get(), EquippedWeapon->GetDamage(), GetController(), this, UDamageType::StaticClass());
 				}
 			} else { //no interface, spawn default particles
 				//spawn impact particles after updating beam end point
