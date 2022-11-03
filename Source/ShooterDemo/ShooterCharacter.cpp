@@ -439,7 +439,13 @@ void AShooterCharacter::SendBullet() {
 				}
 				AEnemy* HitEnemy = Cast<AEnemy>(BeamHitResult.Actor.Get());
 				if (HitEnemy) {
-					UGameplayStatics::ApplyDamage(BeamHitResult.Actor.Get(), EquippedWeapon->GetDamage(), GetController(), this, UDamageType::StaticClass());
+					if (BeamHitResult.BoneName.ToString() == HitEnemy->GetHeadBone()) {
+						//headshot
+						UGameplayStatics::ApplyDamage(BeamHitResult.Actor.Get(), EquippedWeapon->GetHeadShotDamage(), GetController(), this, UDamageType::StaticClass());
+					} else {
+						//body shot
+						UGameplayStatics::ApplyDamage(BeamHitResult.Actor.Get(), EquippedWeapon->GetDamage(), GetController(), this, UDamageType::StaticClass());
+					}
 				}
 			} else { //no interface, spawn default particles
 				//spawn impact particles after updating beam end point
