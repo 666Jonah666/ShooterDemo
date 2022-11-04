@@ -8,9 +8,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="enemy health bar">
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" afterDir="false" />
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -296,14 +295,7 @@
       <workItem from="1667243047196" duration="2315000" />
       <workItem from="1667321557372" duration="4405000" />
       <workItem from="1667429364753" duration="3824000" />
-      <workItem from="1667501701849" duration="3362000" />
-    </task>
-    <task id="LOCAL-00069" summary="different crosshairs for each weapon">
-      <created>1666452874071</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1666452874071</updated>
+      <workItem from="1667501701849" duration="3737000" />
     </task>
     <task id="LOCAL-00070" summary="different crosshairs for each weapon">
       <created>1666453354995</created>
@@ -641,7 +633,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667505238067</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="hide health bar">
+      <created>1667505807594</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1667505807594</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -662,7 +661,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="phys materials" />
     <MESSAGE value="custom anim notify" />
     <MESSAGE value="anim notifies" />
     <MESSAGE value="setting bone name in notifies" />
@@ -687,6 +685,7 @@
     <MESSAGE value="regular shot damage" />
     <MESSAGE value="headshot damage" />
     <MESSAGE value="enemy health bar" />
-    <option name="LAST_COMMIT_MESSAGE" value="enemy health bar" />
+    <MESSAGE value="hide health bar" />
+    <option name="LAST_COMMIT_MESSAGE" value="hide health bar" />
   </component>
 </project>

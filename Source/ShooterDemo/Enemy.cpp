@@ -31,6 +31,10 @@ void AEnemy::ShowHealthBar_Implementation() {
 	GetWorldTimerManager().SetTimer(HealthBarTimer, this, &AEnemy::HideHealthBar, HealthBarDisplayTime);
 }
 
+void AEnemy::Die() {
+	HideHealthBar();
+}
+
 // Called every frame
 void AEnemy::Tick(float DeltaTime)
 {
@@ -65,6 +69,7 @@ float AEnemy::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AC
 
 	if (Health - DamageAmount <= 0.f) {
 		Health = 0;
+		Die();
 	} else {
 		Health -= DamageAmount;
 	}
