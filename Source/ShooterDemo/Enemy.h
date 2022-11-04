@@ -28,6 +28,8 @@ protected:
 	void HideHealthBar();
 
 	void Die();
+
+	void PlayHitMontage(FName Section, float PlayRate = 1.f);
 	
 private:
 
@@ -56,6 +58,10 @@ private:
 	float HealthBarDisplayTime;
 	
 	FTimerHandle HealthBarTimer;
+
+	//montage containing hit and death animations
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat", meta = (AllowPrivateAccess = "true"))
+	UAnimMontage* HitMontage;
 
 public:	
 	// Called every frame

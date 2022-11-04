@@ -8,7 +8,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="death function" />
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="enemy anim instance">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Enemies/ABP_Grux.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Enemies/ABP_Grux.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -294,14 +299,7 @@
       <workItem from="1667321557372" duration="4405000" />
       <workItem from="1667429364753" duration="3824000" />
       <workItem from="1667501701849" duration="3737000" />
-      <workItem from="1667598681880" duration="287000" />
-    </task>
-    <task id="LOCAL-00071" summary="set sound &amp; effect properties from DT">
-      <created>1666534309228</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1666534309228</updated>
+      <workItem from="1667598681880" duration="1492000" />
     </task>
     <task id="LOCAL-00072" summary="hide bone by name">
       <created>1666535374243</created>
@@ -639,7 +637,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667598906260</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="enemy anim instance">
+      <created>1667599275081</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1667599275081</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -660,7 +665,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="anim notifies" />
     <MESSAGE value="setting bone name in notifies" />
     <MESSAGE value="play sound with anim notify" />
     <MESSAGE value="line trace for physical surface type" />
@@ -685,6 +689,7 @@
     <MESSAGE value="enemy health bar" />
     <MESSAGE value="hide health bar" />
     <MESSAGE value="death function" />
-    <option name="LAST_COMMIT_MESSAGE" value="death function" />
+    <MESSAGE value="enemy anim instance" />
+    <option name="LAST_COMMIT_MESSAGE" value="enemy anim instance" />
   </component>
 </project>
