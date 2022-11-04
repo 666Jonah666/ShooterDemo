@@ -8,9 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="death function" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -296,13 +294,7 @@
       <workItem from="1667321557372" duration="4405000" />
       <workItem from="1667429364753" duration="3824000" />
       <workItem from="1667501701849" duration="3737000" />
-    </task>
-    <task id="LOCAL-00070" summary="different crosshairs for each weapon">
-      <created>1666453354995</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1666453354995</updated>
+      <workItem from="1667598681880" duration="287000" />
     </task>
     <task id="LOCAL-00071" summary="set sound &amp; effect properties from DT">
       <created>1666534309228</created>
@@ -640,7 +632,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667505807594</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="death function">
+      <created>1667598906260</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1667598906260</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -661,7 +660,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="custom anim notify" />
     <MESSAGE value="anim notifies" />
     <MESSAGE value="setting bone name in notifies" />
     <MESSAGE value="play sound with anim notify" />
@@ -686,6 +684,7 @@
     <MESSAGE value="headshot damage" />
     <MESSAGE value="enemy health bar" />
     <MESSAGE value="hide health bar" />
-    <option name="LAST_COMMIT_MESSAGE" value="hide health bar" />
+    <MESSAGE value="death function" />
+    <option name="LAST_COMMIT_MESSAGE" value="death function" />
   </component>
 </project>
