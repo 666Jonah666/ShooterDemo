@@ -30,6 +30,8 @@ protected:
 	void Die();
 
 	void PlayHitMontage(FName Section, float PlayRate = 1.f);
+
+	void ResetHitReactTimer();
 	
 private:
 
@@ -62,6 +64,16 @@ private:
 	//montage containing hit and death animations
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat", meta = (AllowPrivateAccess = "true"))
 	UAnimMontage* HitMontage;
+
+	FTimerHandle HitReactTimer;
+
+	bool bCanHitReact;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat", meta = (AllowPrivateAccess = "true"))
+	float HitReactTimeMin;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat", meta = (AllowPrivateAccess = "true"))
+	float HitReactTimeMax;
 
 public:	
 	// Called every frame

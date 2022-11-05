@@ -8,9 +8,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="enemy anim instance">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Enemies/ABP_Grux.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Enemies/ABP_Grux.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" afterDir="false" />
     </list>
@@ -18,9 +17,6 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock://D:/UEprojects/ShooterDemo/Source/ShooterDemo/Enemy.cpp" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -299,14 +295,8 @@
       <workItem from="1667321557372" duration="4405000" />
       <workItem from="1667429364753" duration="3824000" />
       <workItem from="1667501701849" duration="3737000" />
-      <workItem from="1667598681880" duration="1492000" />
-    </task>
-    <task id="LOCAL-00072" summary="hide bone by name">
-      <created>1666535374243</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1666535374243</updated>
+      <workItem from="1667598681880" duration="1703000" />
+      <workItem from="1667683455787" duration="907000" />
     </task>
     <task id="LOCAL-00073" summary="pistol icons">
       <created>1666646088786</created>
@@ -644,7 +634,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667599275081</updated>
     </task>
-    <option name="localTasksCounter" value="121" />
+    <task id="LOCAL-00121" summary="hit montage">
+      <created>1667600372294</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1667600372294</updated>
+    </task>
+    <option name="localTasksCounter" value="122" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -665,7 +662,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="setting bone name in notifies" />
     <MESSAGE value="play sound with anim notify" />
     <MESSAGE value="line trace for physical surface type" />
     <MESSAGE value="grass surface type" />
@@ -690,6 +686,7 @@
     <MESSAGE value="hide health bar" />
     <MESSAGE value="death function" />
     <MESSAGE value="enemy anim instance" />
-    <option name="LAST_COMMIT_MESSAGE" value="enemy anim instance" />
+    <MESSAGE value="hit montage" />
+    <option name="LAST_COMMIT_MESSAGE" value="hit montage" />
   </component>
 </project>
