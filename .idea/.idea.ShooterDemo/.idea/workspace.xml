@@ -8,10 +8,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="hit react delay">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -296,14 +296,7 @@
       <workItem from="1667429364753" duration="3824000" />
       <workItem from="1667501701849" duration="3737000" />
       <workItem from="1667598681880" duration="1703000" />
-      <workItem from="1667683455787" duration="907000" />
-    </task>
-    <task id="LOCAL-00073" summary="pistol icons">
-      <created>1666646088786</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1666646088787</updated>
+      <workItem from="1667683455787" duration="1577000" />
     </task>
     <task id="LOCAL-00074" summary="pistol DT properties">
       <created>1666646838986</created>
@@ -641,7 +634,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667600372294</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="hit react delay">
+      <created>1667684685515</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1667684685516</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -662,7 +662,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="play sound with anim notify" />
     <MESSAGE value="line trace for physical surface type" />
     <MESSAGE value="grass surface type" />
     <MESSAGE value="determine surface type" />
@@ -687,6 +686,7 @@
     <MESSAGE value="death function" />
     <MESSAGE value="enemy anim instance" />
     <MESSAGE value="hit montage" />
-    <option name="LAST_COMMIT_MESSAGE" value="hit montage" />
+    <MESSAGE value="hit react delay" />
+    <option name="LAST_COMMIT_MESSAGE" value="hit react delay" />
   </component>
 </project>
