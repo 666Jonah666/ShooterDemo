@@ -32,6 +32,9 @@ protected:
 	void PlayHitMontage(FName Section, float PlayRate = 1.f);
 
 	void ResetHitReactTimer();
+
+	UFUNCTION(BlueprintCallable)
+	void StoreHitNumber(UUserWidget* HitNumber, FVector Location);
 	
 private:
 
@@ -74,6 +77,10 @@ private:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat", meta = (AllowPrivateAccess = "true"))
 	float HitReactTimeMax;
+
+	//map to store hit number widgets and their hit locations
+	UPROPERTY(VisibleAnywhere, Category = "Combat", meta = (AllowPrivateAccess = "true"))
+	TMap<UUserWidget*, FVector> HitNumbers;
 
 public:	
 	// Called every frame
