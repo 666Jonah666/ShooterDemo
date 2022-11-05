@@ -8,10 +8,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="show hit numbers">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="store hit number locations">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Enemies/BP_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Enemies/BP_Enemy.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" afterDir="false" />
     </list>
@@ -298,14 +296,7 @@
       <workItem from="1667429364753" duration="3824000" />
       <workItem from="1667501701849" duration="3737000" />
       <workItem from="1667598681880" duration="1703000" />
-      <workItem from="1667683455787" duration="2418000" />
-    </task>
-    <task id="LOCAL-00075" summary="barrel socket on the pistol">
-      <created>1666647219584</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1666647219584</updated>
+      <workItem from="1667683455787" duration="2949000" />
     </task>
     <task id="LOCAL-00076" summary="pistol reload anim">
       <created>1666648033079</created>
@@ -643,7 +634,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667685570389</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="store hit number locations">
+      <created>1667686142338</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1667686142338</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -664,7 +662,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="grass surface type" />
     <MESSAGE value="determine surface type" />
     <MESSAGE value="implement footstep notify" />
     <MESSAGE value="jump &amp; land sounds" />
@@ -689,6 +686,7 @@
     <MESSAGE value="hit montage" />
     <MESSAGE value="hit react delay" />
     <MESSAGE value="show hit numbers" />
-    <option name="LAST_COMMIT_MESSAGE" value="show hit numbers" />
+    <MESSAGE value="store hit number locations" />
+    <option name="LAST_COMMIT_MESSAGE" value="store hit number locations" />
   </component>
 </project>

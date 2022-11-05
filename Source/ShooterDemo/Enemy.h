@@ -35,6 +35,9 @@ protected:
 
 	UFUNCTION(BlueprintCallable)
 	void StoreHitNumber(UUserWidget* HitNumber, FVector Location);
+
+	UFUNCTION()
+	void DestroyHitNumber(UUserWidget* HitNumber);
 	
 private:
 
@@ -82,6 +85,10 @@ private:
 	UPROPERTY(VisibleAnywhere, Category = "Combat", meta = (AllowPrivateAccess = "true"))
 	TMap<UUserWidget*, FVector> HitNumbers;
 
+	//time before hit number is removed from the screen
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat", meta = (AllowPrivateAccess = "true"))
+	float HitNumberDestroyTime;
+	
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
