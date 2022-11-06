@@ -8,10 +8,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="update hit number location">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="binding damage text to wbp">
       <change beforePath="$PROJECT_DIR$/Content/_Game/Enemies/BP_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Enemies/BP_Enemy.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/_Game/HUD/WBP_HitNumber.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/HUD/WBP_HitNumber.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -297,14 +296,7 @@
       <workItem from="1667501701849" duration="3737000" />
       <workItem from="1667598681880" duration="1703000" />
       <workItem from="1667683455787" duration="3076000" />
-      <workItem from="1667768478816" duration="963000" />
-    </task>
-    <task id="LOCAL-00078" summary="pistol reload anim">
-      <created>1666648065999</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1666648065999</updated>
+      <workItem from="1667768478816" duration="1403000" />
     </task>
     <task id="LOCAL-00079" summary="pistol FABRIK IK">
       <created>1666729754016</created>
@@ -642,7 +634,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667769259431</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="binding damage text to wbp">
+      <created>1667769470499</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1667769470499</updated>
+    </task>
+    <option name="localTasksCounter" value="128" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -663,7 +662,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="jump &amp; land sounds" />
     <MESSAGE value="turning hips while running" />
     <MESSAGE value="fixing turning issue" />
     <MESSAGE value="turn hips while running bwd" />
@@ -688,6 +686,7 @@
     <MESSAGE value="store hit number locations" />
     <MESSAGE value="remove hit number with timer" />
     <MESSAGE value="update hit number location" />
-    <option name="LAST_COMMIT_MESSAGE" value="update hit number location" />
+    <MESSAGE value="binding damage text to wbp" />
+    <option name="LAST_COMMIT_MESSAGE" value="binding damage text to wbp" />
   </component>
 </project>
