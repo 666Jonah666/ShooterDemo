@@ -8,9 +8,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="animate hit numbers">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterDemo.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterDemo.Build.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -296,14 +297,8 @@
       <workItem from="1667501701849" duration="3737000" />
       <workItem from="1667598681880" duration="1703000" />
       <workItem from="1667683455787" duration="3076000" />
-      <workItem from="1667768478816" duration="1567000" />
-    </task>
-    <task id="LOCAL-00080" summary="pistol aiming pose">
-      <created>1666731368509</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1666731368509</updated>
+      <workItem from="1667768478816" duration="2596000" />
+      <workItem from="1667859574023" duration="1459000" />
     </task>
     <task id="LOCAL-00081" summary="aiming pose for each weapon">
       <created>1666732366796</created>
@@ -641,7 +636,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667769900841</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <task id="LOCAL-00129" summary="change text colour for headshot">
+      <created>1667770478749</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1667770478749</updated>
+    </task>
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -662,7 +664,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="fixing turning issue" />
     <MESSAGE value="turn hips while running bwd" />
     <MESSAGE value="ignore new assets" />
     <MESSAGE value="retargeting anim &amp; setting new character bp" />
@@ -687,6 +688,7 @@
     <MESSAGE value="update hit number location" />
     <MESSAGE value="binding damage text to wbp" />
     <MESSAGE value="animate hit numbers" />
-    <option name="LAST_COMMIT_MESSAGE" value="animate hit numbers" />
+    <MESSAGE value="change text colour for headshot" />
+    <option name="LAST_COMMIT_MESSAGE" value="change text colour for headshot" />
   </component>
 </project>
