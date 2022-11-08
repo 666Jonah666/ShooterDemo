@@ -8,8 +8,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="blackboard and behaviour tree uassets">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -297,14 +299,7 @@
       <workItem from="1667683455787" duration="3076000" />
       <workItem from="1667768478816" duration="2596000" />
       <workItem from="1667859574023" duration="3246000" />
-      <workItem from="1667936386960" duration="610000" />
-    </task>
-    <task id="LOCAL-00083" summary="pistol slide timer">
-      <created>1666821457229</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1666821457230</updated>
+      <workItem from="1667936386960" duration="1076000" />
     </task>
     <task id="LOCAL-00084" summary="update slide displacement">
       <created>1666821889678</created>
@@ -642,7 +637,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667862983973</updated>
     </task>
-    <option name="localTasksCounter" value="132" />
+    <task id="LOCAL-00132" summary="blackboard and behaviour tree uassets">
+      <created>1667937615363</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1667937615364</updated>
+    </task>
+    <option name="localTasksCounter" value="133" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -663,7 +665,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="retargeting anim &amp; setting new character bp" />
     <MESSAGE value=" tweaking twin blast" />
     <MESSAGE value="ignore grux" />
     <MESSAGE value="enemy class" />
@@ -688,6 +689,7 @@
     <MESSAGE value="change text colour for headshot" />
     <MESSAGE value="adding AI module" />
     <MESSAGE value="initial AI controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial AI controller" />
+    <MESSAGE value="blackboard and behaviour tree uassets" />
+    <option name="LAST_COMMIT_MESSAGE" value="blackboard and behaviour tree uassets" />
   </component>
 </project>
