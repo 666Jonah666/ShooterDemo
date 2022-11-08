@@ -8,14 +8,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="patrol point">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Enemies/BP_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Enemies/BP_Enemy.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/EnemyController/BB_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/EnemyController/BB_Enemy.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/EnemyController/BT_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/EnemyController/BT_Enemy.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" afterDir="false" />
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="task sequence -&gt; move to">
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/GruxAnimInstance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/GruxAnimInstance.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/GruxAnimInstance.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/GruxAnimInstance.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -303,14 +298,7 @@
       <workItem from="1667683455787" duration="3076000" />
       <workItem from="1667768478816" duration="2596000" />
       <workItem from="1667859574023" duration="3246000" />
-      <workItem from="1667936386960" duration="2351000" />
-    </task>
-    <task id="LOCAL-00085" summary="transform pistol side bone">
-      <created>1666893783064</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1666893783065</updated>
+      <workItem from="1667936386960" duration="2665000" />
     </task>
     <task id="LOCAL-00086" summary="pistol glow material">
       <created>1666894650198</created>
@@ -648,7 +636,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667938235920</updated>
     </task>
-    <option name="localTasksCounter" value="134" />
+    <task id="LOCAL-00134" summary="task sequence -&gt; move to">
+      <created>1667939378509</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1667939378509</updated>
+    </task>
+    <option name="localTasksCounter" value="135" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -669,7 +664,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="ignore grux" />
     <MESSAGE value="enemy class" />
     <MESSAGE value="BulletHit interface class" />
     <MESSAGE value="BulletHit interface" />
@@ -694,6 +688,7 @@
     <MESSAGE value="initial AI controller" />
     <MESSAGE value="blackboard and behaviour tree uassets" />
     <MESSAGE value="patrol point" />
-    <option name="LAST_COMMIT_MESSAGE" value="patrol point" />
+    <MESSAGE value="task sequence -&gt; move to" />
+    <option name="LAST_COMMIT_MESSAGE" value="task sequence -&gt; move to" />
   </component>
 </project>
