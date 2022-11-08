@@ -8,8 +8,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="blackboard and behaviour tree uassets">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="patrol point">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Enemies/BP_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Enemies/BP_Enemy.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/EnemyController/BB_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/EnemyController/BB_Enemy.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/EnemyController/BT_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/EnemyController/BT_Enemy.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" afterDir="false" />
     </list>
@@ -299,14 +303,7 @@
       <workItem from="1667683455787" duration="3076000" />
       <workItem from="1667768478816" duration="2596000" />
       <workItem from="1667859574023" duration="3246000" />
-      <workItem from="1667936386960" duration="1076000" />
-    </task>
-    <task id="LOCAL-00084" summary="update slide displacement">
-      <created>1666821889678</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1666821889678</updated>
+      <workItem from="1667936386960" duration="2351000" />
     </task>
     <task id="LOCAL-00085" summary="transform pistol side bone">
       <created>1666893783064</created>
@@ -644,7 +641,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667937615364</updated>
     </task>
-    <option name="localTasksCounter" value="133" />
+    <task id="LOCAL-00133" summary="patrol point">
+      <created>1667938235919</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1667938235920</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -665,7 +669,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value=" tweaking twin blast" />
     <MESSAGE value="ignore grux" />
     <MESSAGE value="enemy class" />
     <MESSAGE value="BulletHit interface class" />
@@ -690,6 +693,7 @@
     <MESSAGE value="adding AI module" />
     <MESSAGE value="initial AI controller" />
     <MESSAGE value="blackboard and behaviour tree uassets" />
-    <option name="LAST_COMMIT_MESSAGE" value="blackboard and behaviour tree uassets" />
+    <MESSAGE value="patrol point" />
+    <option name="LAST_COMMIT_MESSAGE" value="patrol point" />
   </component>
 </project>
