@@ -8,13 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="second patrol point">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/EnemyController/BB_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/EnemyController/BB_Enemy.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/EnemyController/BT_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/EnemyController/BT_Enemy.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" afterDir="false" />
-    </list>
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="create agro sphere for the enemy" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -302,14 +296,7 @@
       <workItem from="1667768478816" duration="2596000" />
       <workItem from="1667859574023" duration="3246000" />
       <workItem from="1667936386960" duration="2973000" />
-      <workItem from="1668024695361" duration="2009000" />
-    </task>
-    <task id="LOCAL-00088" summary="stop aiming when exchanging items">
-      <created>1666895929664</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1666895929665</updated>
+      <workItem from="1668024695361" duration="2449000" />
     </task>
     <task id="LOCAL-00089" summary="updating .gitignore">
       <created>1666897370029</created>
@@ -647,7 +634,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668025907284</updated>
     </task>
-    <option name="localTasksCounter" value="137" />
+    <task id="LOCAL-00137" summary="create agro sphere for the enemy">
+      <created>1668026927796</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1668026927796</updated>
+    </task>
+    <option name="localTasksCounter" value="138" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -668,7 +662,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="BulletHit interface" />
     <MESSAGE value="implementing bullet hit" />
     <MESSAGE value="explosive" />
     <MESSAGE value="regular shot damage" />
@@ -693,6 +686,7 @@
     <MESSAGE value="task sequence -&gt; move to" />
     <MESSAGE value="grux run anim" />
     <MESSAGE value="second patrol point" />
-    <option name="LAST_COMMIT_MESSAGE" value="second patrol point" />
+    <MESSAGE value="create agro sphere for the enemy" />
+    <option name="LAST_COMMIT_MESSAGE" value="create agro sphere for the enemy" />
   </component>
 </project>
