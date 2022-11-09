@@ -8,9 +8,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="task sequence -&gt; move to">
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/GruxAnimInstance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/GruxAnimInstance.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/GruxAnimInstance.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/GruxAnimInstance.h" afterDir="false" />
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -298,14 +299,8 @@
       <workItem from="1667683455787" duration="3076000" />
       <workItem from="1667768478816" duration="2596000" />
       <workItem from="1667859574023" duration="3246000" />
-      <workItem from="1667936386960" duration="2665000" />
-    </task>
-    <task id="LOCAL-00086" summary="pistol glow material">
-      <created>1666894650198</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1666894650198</updated>
+      <workItem from="1667936386960" duration="2973000" />
+      <workItem from="1668024695361" duration="871000" />
     </task>
     <task id="LOCAL-00087" summary="semi automatic fire">
       <created>1666895329054</created>
@@ -643,7 +638,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667939378509</updated>
     </task>
-    <option name="localTasksCounter" value="135" />
+    <task id="LOCAL-00135" summary="grux run anim">
+      <created>1667939955703</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1667939955703</updated>
+    </task>
+    <option name="localTasksCounter" value="136" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -664,7 +666,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="enemy class" />
     <MESSAGE value="BulletHit interface class" />
     <MESSAGE value="BulletHit interface" />
     <MESSAGE value="implementing bullet hit" />
@@ -689,6 +690,7 @@
     <MESSAGE value="blackboard and behaviour tree uassets" />
     <MESSAGE value="patrol point" />
     <MESSAGE value="task sequence -&gt; move to" />
-    <option name="LAST_COMMIT_MESSAGE" value="task sequence -&gt; move to" />
+    <MESSAGE value="grux run anim" />
+    <option name="LAST_COMMIT_MESSAGE" value="grux run anim" />
   </component>
 </project>
