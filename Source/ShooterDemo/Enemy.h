@@ -44,8 +44,7 @@ protected:
 	//called when smth overlaps with the agro sphere
 	UFUNCTION()
 	void AgroSphereOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
-	
-	
+
 private:
 
 	//particles when hit by bullet
@@ -114,7 +113,15 @@ private:
 	//overlap sphere for when the enemy becomes hostile
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat", meta = (AllowPrivateAccess = "true", MakeEditWidget = "true"))
 	class USphereComponent* AgroSphere;
-	
+
+	//true when playing the get hit animation
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Combat", meta = (AllowPrivateAccess = "true", MakeEditWidget = "true"))
+	bool bStunned;
+
+	//chance of the being stunned 0 - no sun chance 1 - 100% stunned
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat", meta = (AllowPrivateAccess = "true", MakeEditWidget = "true"))
+	float StunChance;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;

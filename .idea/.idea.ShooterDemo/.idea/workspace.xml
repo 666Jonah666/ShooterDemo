@@ -8,7 +8,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="create agro sphere for the enemy" />
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -296,14 +300,8 @@
       <workItem from="1667768478816" duration="2596000" />
       <workItem from="1667859574023" duration="3246000" />
       <workItem from="1667936386960" duration="2973000" />
-      <workItem from="1668024695361" duration="2449000" />
-    </task>
-    <task id="LOCAL-00089" summary="updating .gitignore">
-      <created>1666897370029</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1666897370029</updated>
+      <workItem from="1668024695361" duration="2953000" />
+      <workItem from="1668105477463" duration="620000" />
     </task>
     <task id="LOCAL-00090" summary="adding test surfaces">
       <created>1666898570856</created>
@@ -641,7 +639,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668026927796</updated>
     </task>
-    <option name="localTasksCounter" value="138" />
+    <task id="LOCAL-00138" summary="move to actor when overlapping agro sphere">
+      <created>1668027229347</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1668027229347</updated>
+    </task>
+    <option name="localTasksCounter" value="139" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -662,7 +667,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="implementing bullet hit" />
     <MESSAGE value="explosive" />
     <MESSAGE value="regular shot damage" />
     <MESSAGE value="headshot damage" />
@@ -687,6 +691,7 @@
     <MESSAGE value="grux run anim" />
     <MESSAGE value="second patrol point" />
     <MESSAGE value="create agro sphere for the enemy" />
-    <option name="LAST_COMMIT_MESSAGE" value="create agro sphere for the enemy" />
+    <MESSAGE value="move to actor when overlapping agro sphere" />
+    <option name="LAST_COMMIT_MESSAGE" value="move to actor when overlapping agro sphere" />
   </component>
 </project>
