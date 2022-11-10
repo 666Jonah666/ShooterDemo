@@ -8,14 +8,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="stun enemy">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Enemies/ABP_Grux.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Enemies/ABP_Grux.uasset" afterDir="false" />
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="abort task based on stunned condition">
       <change beforePath="$PROJECT_DIR$/Content/_Game/Enemies/BP_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Enemies/BP_Enemy.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/EnemyController/BB_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/EnemyController/BB_Enemy.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/_Game/EnemyController/BT_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/EnemyController/BT_Enemy.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -305,14 +300,7 @@
       <workItem from="1667859574023" duration="3246000" />
       <workItem from="1667936386960" duration="2973000" />
       <workItem from="1668024695361" duration="2953000" />
-      <workItem from="1668105477463" duration="1787000" />
-    </task>
-    <task id="LOCAL-00091" summary="define surface types">
-      <created>1666991844514</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1666991844514</updated>
+      <workItem from="1668105477463" duration="2281000" />
     </task>
     <task id="LOCAL-00092" summary="phys materials">
       <created>1666992470678</created>
@@ -650,7 +638,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668106323164</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="abort task based on stunned condition">
+      <created>1668107304610</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1668107304610</updated>
+    </task>
+    <option name="localTasksCounter" value="141" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -671,7 +666,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="regular shot damage" />
     <MESSAGE value="headshot damage" />
     <MESSAGE value="enemy health bar" />
     <MESSAGE value="hide health bar" />
@@ -696,6 +690,7 @@
     <MESSAGE value="create agro sphere for the enemy" />
     <MESSAGE value="move to actor when overlapping agro sphere" />
     <MESSAGE value="stun enemy" />
-    <option name="LAST_COMMIT_MESSAGE" value="stun enemy" />
+    <MESSAGE value="abort task based on stunned condition" />
+    <option name="LAST_COMMIT_MESSAGE" value="abort task based on stunned condition" />
   </component>
 </project>
