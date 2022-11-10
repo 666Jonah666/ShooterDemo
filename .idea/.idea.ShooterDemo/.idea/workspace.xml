@@ -8,8 +8,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="stun enemy">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Enemies/ABP_Grux.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Enemies/ABP_Grux.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Enemies/BP_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Enemies/BP_Enemy.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/EnemyController/BB_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/EnemyController/BB_Enemy.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/EnemyController/BT_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/EnemyController/BT_Enemy.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" afterDir="false" />
     </list>
@@ -301,14 +305,7 @@
       <workItem from="1667859574023" duration="3246000" />
       <workItem from="1667936386960" duration="2973000" />
       <workItem from="1668024695361" duration="2953000" />
-      <workItem from="1668105477463" duration="620000" />
-    </task>
-    <task id="LOCAL-00090" summary="adding test surfaces">
-      <created>1666898570856</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1666898570856</updated>
+      <workItem from="1668105477463" duration="1787000" />
     </task>
     <task id="LOCAL-00091" summary="define surface types">
       <created>1666991844514</created>
@@ -646,7 +643,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668027229347</updated>
     </task>
-    <option name="localTasksCounter" value="139" />
+    <task id="LOCAL-00139" summary="stun enemy">
+      <created>1668106323164</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1668106323164</updated>
+    </task>
+    <option name="localTasksCounter" value="140" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -667,7 +671,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="explosive" />
     <MESSAGE value="regular shot damage" />
     <MESSAGE value="headshot damage" />
     <MESSAGE value="enemy health bar" />
@@ -692,6 +695,7 @@
     <MESSAGE value="second patrol point" />
     <MESSAGE value="create agro sphere for the enemy" />
     <MESSAGE value="move to actor when overlapping agro sphere" />
-    <option name="LAST_COMMIT_MESSAGE" value="move to actor when overlapping agro sphere" />
+    <MESSAGE value="stun enemy" />
+    <option name="LAST_COMMIT_MESSAGE" value="stun enemy" />
   </component>
 </project>
