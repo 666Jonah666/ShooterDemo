@@ -47,6 +47,12 @@ protected:
 
 	UFUNCTION(BlueprintCallable)
 	void SetStunned(bool bState);
+
+	UFUNCTION()
+	void CombatRangeOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+
+	UFUNCTION()
+	void CombatRangeEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 	
 private:
 
@@ -124,6 +130,14 @@ private:
 	//chance of the being stunned 0 - no sun chance 1 - 100% stunned
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat", meta = (AllowPrivateAccess = "true", MakeEditWidget = "true"))
 	float StunChance;
+
+	//true when enemy in attack range
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Combat", meta = (AllowPrivateAccess = "true", MakeEditWidget = "true"))
+	bool bInAttackRange;
+
+	//sphere for attack range
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat", meta = (AllowPrivateAccess = "true", MakeEditWidget = "true"))
+	USphereComponent* CombatRangeSphere;
 
 public:	
 	// Called every frame

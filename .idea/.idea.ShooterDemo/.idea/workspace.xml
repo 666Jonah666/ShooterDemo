@@ -8,9 +8,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="abort task based on stunned condition">
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Enemies/BP_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Enemies/BP_Enemy.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/EnemyController/BT_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/EnemyController/BT_Enemy.uasset" afterDir="false" />
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="patrol or chase player if in range">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/EnemyController/BB_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/EnemyController/BB_Enemy.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -300,14 +302,7 @@
       <workItem from="1667859574023" duration="3246000" />
       <workItem from="1667936386960" duration="2973000" />
       <workItem from="1668024695361" duration="2953000" />
-      <workItem from="1668105477463" duration="2281000" />
-    </task>
-    <task id="LOCAL-00092" summary="phys materials">
-      <created>1666992470678</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1666992470678</updated>
+      <workItem from="1668105477463" duration="3356000" />
     </task>
     <task id="LOCAL-00093" summary="custom anim notify">
       <created>1666994298271</created>
@@ -645,7 +640,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668107304610</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="patrol or chase player if in range">
+      <created>1668107970883</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1668107970883</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -666,7 +668,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="headshot damage" />
     <MESSAGE value="enemy health bar" />
     <MESSAGE value="hide health bar" />
     <MESSAGE value="death function" />
@@ -691,6 +692,7 @@
     <MESSAGE value="move to actor when overlapping agro sphere" />
     <MESSAGE value="stun enemy" />
     <MESSAGE value="abort task based on stunned condition" />
-    <option name="LAST_COMMIT_MESSAGE" value="abort task based on stunned condition" />
+    <MESSAGE value="patrol or chase player if in range" />
+    <option name="LAST_COMMIT_MESSAGE" value="patrol or chase player if in range" />
   </component>
 </project>

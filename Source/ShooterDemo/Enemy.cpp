@@ -31,6 +31,10 @@ AEnemy::AEnemy() :
 	//create the agro sphere
 	AgroSphere = CreateDefaultSubobject<USphereComponent>(TEXT("Agro Sphere"));
 	AgroSphere->SetupAttachment(GetRootComponent());
+
+	//create the combat range sphere
+	CombatRangeSphere = CreateDefaultSubobject<USphereComponent>(TEXT("CombatRange"));
+	CombatRangeSphere->SetupAttachment(GetRootComponent());
 }
 
 // Called when the game starts or when spawned
@@ -40,6 +44,9 @@ void AEnemy::BeginPlay()
 
 	AgroSphere->OnComponentBeginOverlap.AddDynamic(this, &AEnemy::AgroSphereOverlap);
 
+	CombatRangeSphere->OnComponentBeginOverlap.AddDynamic(this, &AEnemy::CombatRangeOverlap);
+	CombatRangeSphere->OnComponentEndOverlap.AddDynamic(this, &AEnemy::CombatRangeEndOverlap);
+	
 	GetMesh()->SetCollisionResponseToChannel(ECC_Visibility, ECR_Block);
 
 	//get AI controller
@@ -135,6 +142,43 @@ void AEnemy::SetStunned(bool bState) {
 
 	if (EnemyController) {
 		EnemyController->GetBlackboardComponent()->SetValueAsBool(TEXT("Stunned"), bState);
+	}
+}
+
+void AEnemy::CombatRangeOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
+	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult) {
+
+	if (!OtherActor) {
+		return;
+	}
+
+	AShooterCharacter* ShooterCharacter = Cast<AShooterCharacter>(OtherActor);
+
+	if (ShooterCharacter) {
+		bInAttackRange = true;
+
+		if (EnemyController) {
+			EnemyController->GetBlackboardComponent()->SetValueAsBool(TEXT("InAttackRange"), true);
+		}
+	}
+	
+}
+
+void AEnemy::CombatRangeEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
+	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex) {
+
+	if (!OtherActor) {
+		return;
+	}
+
+	AShooterCharacter* ShooterCharacter = Cast<AShooterCharacter>(OtherActor);
+
+	if (ShooterCharacter) {
+		bInAttackRange = false;
+	
+		if (EnemyController) {
+			EnemyController->GetBlackboardComponent()->SetValueAsBool(TEXT("InAttackRange"), false);
+		}
 	}
 }
 
