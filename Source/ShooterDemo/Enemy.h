@@ -59,6 +59,12 @@ protected:
 
 	UFUNCTION(BlueprintPure)
 	FName GetAttackSectionName();
+
+	UFUNCTION()
+	void OnLeftWeaponOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+
+	UFUNCTION()
+	void OnRightWeaponOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 	
 private:
 
@@ -154,6 +160,12 @@ private:
 	FName AttackRFast;
 	FName AttackL;
 	FName AttackR;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Combat", meta = (AllowPrivateAccess = "true"))
+	class UBoxComponent* LeftWeaponCollision;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Combat", meta = (AllowPrivateAccess = "true"))
+	UBoxComponent* RightWeaponCollision;
 
 public:	
 	// Called every frame
