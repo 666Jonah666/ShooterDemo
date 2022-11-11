@@ -8,14 +8,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="attack montage">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="function for randomize section name">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Enemies/Animations/EnemyAttack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Enemies/Animations/EnemyAttack.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Enemies/BP_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Enemies/BP_Enemy.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/EnemyController/BT_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/EnemyController/BT_Enemy.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://D:/UEprojects/ShooterDemo/Source/ShooterDemo/Enemy.cpp" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -301,14 +307,7 @@
       <workItem from="1667936386960" duration="2973000" />
       <workItem from="1668024695361" duration="2953000" />
       <workItem from="1668105477463" duration="3393000" />
-      <workItem from="1668202167907" duration="1328000" />
-    </task>
-    <task id="LOCAL-00095" summary="setting bone name in notifies">
-      <created>1667079994317</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1667079994318</updated>
+      <workItem from="1668202167907" duration="2552000" />
     </task>
     <task id="LOCAL-00096" summary="play sound with anim notify">
       <created>1667168683701</created>
@@ -646,7 +645,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668204769172</updated>
     </task>
-    <option name="localTasksCounter" value="144" />
+    <task id="LOCAL-00144" summary="function for randomize section name">
+      <created>1668205136562</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1668205136562</updated>
+    </task>
+    <option name="localTasksCounter" value="145" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -667,7 +673,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="death function" />
     <MESSAGE value="enemy anim instance" />
     <MESSAGE value="hit montage" />
     <MESSAGE value="hit react delay" />
@@ -692,6 +697,7 @@
     <MESSAGE value="patrol or chase player if in range" />
     <MESSAGE value="add attack range" />
     <MESSAGE value="attack montage" />
-    <option name="LAST_COMMIT_MESSAGE" value="attack montage" />
+    <MESSAGE value="function for randomize section name" />
+    <option name="LAST_COMMIT_MESSAGE" value="function for randomize section name" />
   </component>
 </project>
