@@ -8,9 +8,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="patrol or chase player if in range">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/EnemyController/BB_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/EnemyController/BB_Enemy.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Enemies/ABP_Grux.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Enemies/ABP_Grux.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" afterDir="false" />
     </list>
@@ -302,14 +302,8 @@
       <workItem from="1667859574023" duration="3246000" />
       <workItem from="1667936386960" duration="2973000" />
       <workItem from="1668024695361" duration="2953000" />
-      <workItem from="1668105477463" duration="3356000" />
-    </task>
-    <task id="LOCAL-00093" summary="custom anim notify">
-      <created>1666994298271</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1666994298271</updated>
+      <workItem from="1668105477463" duration="3393000" />
+      <workItem from="1668202167907" duration="1026000" />
     </task>
     <task id="LOCAL-00094" summary="anim notifies">
       <created>1667078284714</created>
@@ -647,7 +641,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668107970883</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="add attack range">
+      <created>1668108882473</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1668108882473</updated>
+    </task>
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -668,7 +669,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="enemy health bar" />
     <MESSAGE value="hide health bar" />
     <MESSAGE value="death function" />
     <MESSAGE value="enemy anim instance" />
@@ -693,6 +693,7 @@
     <MESSAGE value="stun enemy" />
     <MESSAGE value="abort task based on stunned condition" />
     <MESSAGE value="patrol or chase player if in range" />
-    <option name="LAST_COMMIT_MESSAGE" value="patrol or chase player if in range" />
+    <MESSAGE value="add attack range" />
+    <option name="LAST_COMMIT_MESSAGE" value="add attack range" />
   </component>
 </project>
