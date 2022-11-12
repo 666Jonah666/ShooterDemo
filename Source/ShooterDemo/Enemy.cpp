@@ -29,7 +29,8 @@ AEnemy::AEnemy() :
 	AttackLFast(TEXT("AttackLFast")),
 	AttackRFast(TEXT("AttackRFast")),
 	AttackL(TEXT("AttackL")),
-	AttackR(TEXT("AttackR"))
+	AttackR(TEXT("AttackR")),
+	BaseDamage(40.f)
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -249,11 +250,13 @@ FName AEnemy::GetAttackSectionName() {
 
 void AEnemy::OnLeftWeaponOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult) {
-	
+	CauseDamage(OtherActor);
 }
 
 void AEnemy::OnRightWeaponOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
-	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult) {}
+	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult) {
+	CauseDamage(OtherActor);
+}
 
 void AEnemy::ActivateLeftWeapon() {
 	LeftWeaponCollision->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
@@ -266,6 +269,18 @@ void AEnemy::ActivateRightWeapon() {
 }
 void AEnemy::DeactivateRightWeapon() {
 	RightWeaponCollision->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+}
+
+void AEnemy::CauseDamage(AActor* Character) {
+	if (!Character) {
+		return;
+	}
+
+	AShooterCharacter* ShooterCharacter = Cast<AShooterCharacter>(Character);
+
+	if (Character) {
+		UGameplayStatics::ApplyDamage(ShooterCharacter, BaseDamage, EnemyController, this, UDamageType::StaticClass());
+	}
 }
 
 // Called every frame

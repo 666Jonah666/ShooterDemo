@@ -75,6 +75,8 @@ protected:
 	void ActivateRightWeapon();
 	UFUNCTION(BlueprintCallable)
 	void DeactivateRightWeapon();
+
+	void CauseDamage(AActor* Character);
 	
 private:
 
@@ -176,6 +178,9 @@ private:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Combat", meta = (AllowPrivateAccess = "true"))
 	UBoxComponent* RightWeaponCollision;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat", meta = (AllowPrivateAccess = "true", MakeEditWidget = "true"))
+	float BaseDamage;
 
 public:	
 	// Called every frame

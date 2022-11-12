@@ -8,11 +8,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="de/activate collision">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Enemies/Animations/EnemyAttack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Enemies/Animations/EnemyAttack.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Enemies/BP_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Enemies/BP_Enemy.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/EnemyController/BT_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/EnemyController/BT_Enemy.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/HUD/WBP_ShooterHUDOverlay.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/HUD/WBP_ShooterHUDOverlay.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -304,14 +309,7 @@
       <workItem from="1668024695361" duration="2953000" />
       <workItem from="1668105477463" duration="3393000" />
       <workItem from="1668202167907" duration="3839000" />
-      <workItem from="1668288369254" duration="983000" />
-    </task>
-    <task id="LOCAL-00098" summary="grass surface type">
-      <created>1667170312558</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1667170312558</updated>
+      <workItem from="1668288369254" duration="2352000" />
     </task>
     <task id="LOCAL-00099" summary="determine surface type">
       <created>1667171222551</created>
@@ -649,7 +647,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668207584567</updated>
     </task>
-    <option name="localTasksCounter" value="147" />
+    <task id="LOCAL-00147" summary="de/activate collision">
+      <created>1668289507586</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1668289507586</updated>
+    </task>
+    <option name="localTasksCounter" value="148" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -670,7 +675,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="hit react delay" />
     <MESSAGE value="show hit numbers" />
     <MESSAGE value="store hit number locations" />
     <MESSAGE value="remove hit number with timer" />
@@ -695,6 +699,7 @@
     <MESSAGE value="function for randomize section name" />
     <MESSAGE value="custom BT task w/ attack montage" />
     <MESSAGE value="weapon collision volumes &amp; overlap events" />
-    <option name="LAST_COMMIT_MESSAGE" value="weapon collision volumes &amp; overlap events" />
+    <MESSAGE value="de/activate collision" />
+    <option name="LAST_COMMIT_MESSAGE" value="de/activate collision" />
   </component>
 </project>
