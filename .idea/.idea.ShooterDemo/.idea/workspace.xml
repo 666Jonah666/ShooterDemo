@@ -8,16 +8,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="de/activate collision">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Enemies/BP_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Enemies/BP_Enemy.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/EnemyController/BT_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/EnemyController/BT_Enemy.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/HUD/WBP_ShooterHUDOverlay.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/HUD/WBP_ShooterHUDOverlay.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.h" afterDir="false" />
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="player health bar">
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Enemies/Animations/EnemyAttack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Enemies/Animations/EnemyAttack.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -309,21 +301,7 @@
       <workItem from="1668024695361" duration="2953000" />
       <workItem from="1668105477463" duration="3393000" />
       <workItem from="1668202167907" duration="3839000" />
-      <workItem from="1668288369254" duration="2352000" />
-    </task>
-    <task id="LOCAL-00099" summary="determine surface type">
-      <created>1667171222551</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1667171222551</updated>
-    </task>
-    <task id="LOCAL-00100" summary="implement footstep notify">
-      <created>1667244541302</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1667244541303</updated>
+      <workItem from="1668288369254" duration="3014000" />
     </task>
     <task id="LOCAL-00101" summary="jump &amp; land sounds">
       <created>1667245829070</created>
@@ -654,7 +632,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668289507586</updated>
     </task>
-    <option name="localTasksCounter" value="148" />
+    <task id="LOCAL-00148" summary="enemy damage">
+      <created>1668291459183</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1668291459183</updated>
+    </task>
+    <task id="LOCAL-00149" summary="player health bar">
+      <created>1668291482211</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1668291482211</updated>
+    </task>
+    <option name="localTasksCounter" value="150" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -675,8 +667,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="show hit numbers" />
-    <MESSAGE value="store hit number locations" />
     <MESSAGE value="remove hit number with timer" />
     <MESSAGE value="update hit number location" />
     <MESSAGE value="binding damage text to wbp" />
@@ -700,6 +690,8 @@
     <MESSAGE value="custom BT task w/ attack montage" />
     <MESSAGE value="weapon collision volumes &amp; overlap events" />
     <MESSAGE value="de/activate collision" />
-    <option name="LAST_COMMIT_MESSAGE" value="de/activate collision" />
+    <MESSAGE value="enemy damage" />
+    <MESSAGE value="player health bar" />
+    <option name="LAST_COMMIT_MESSAGE" value="player health bar" />
   </component>
 </project>
