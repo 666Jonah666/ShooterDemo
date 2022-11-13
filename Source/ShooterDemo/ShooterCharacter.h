@@ -438,6 +438,10 @@ private:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat", meta = (AllowPrivateAccess = "true"))
 	float MaxHealth;
+
+	//Sound made when character gets hit by a melee attack
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat", meta = (AllowPrivateAccess = "true"))
+	class USoundCue* MeleeImpactSound;
 	
 public:
 	
@@ -450,6 +454,7 @@ public:
 	FORCEINLINE bool ShouldPlayPickupSound() const { return bShouldPlayPickupSound; }
 	FORCEINLINE bool ShouldPlayEquipSound() const { return bShouldPlayEquipSound; }
 	FORCEINLINE AWeapon* GetEquippedWeapon() const { return EquippedWeapon; }
+	FORCEINLINE USoundCue* GetMeleeImpactSound() const { return MeleeImpactSound; }
 	
 	//ufunctions can not be inline
 	UFUNCTION(BlueprintCallable)

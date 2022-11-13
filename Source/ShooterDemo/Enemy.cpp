@@ -281,6 +281,10 @@ void AEnemy::CauseDamage(AActor* Character) {
 	if (Character) {
 		UGameplayStatics::ApplyDamage(ShooterCharacter, BaseDamage, EnemyController, this, UDamageType::StaticClass());
 	}
+
+	if (ShooterCharacter->GetMeleeImpactSound()) {
+		UGameplayStatics::PlaySoundAtLocation(this, ShooterCharacter->GetMeleeImpactSound(), GetActorLocation());
+	}
 }
 
 // Called every frame

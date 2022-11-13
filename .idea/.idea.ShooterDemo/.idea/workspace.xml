@@ -8,8 +8,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="player health bar">
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Enemies/Animations/EnemyAttack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Enemies/Animations/EnemyAttack.uasset" afterDir="false" />
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Character/BP_ShooterCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/BP_ShooterCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -301,14 +304,8 @@
       <workItem from="1668024695361" duration="2953000" />
       <workItem from="1668105477463" duration="3393000" />
       <workItem from="1668202167907" duration="3839000" />
-      <workItem from="1668288369254" duration="3014000" />
-    </task>
-    <task id="LOCAL-00101" summary="jump &amp; land sounds">
-      <created>1667245829070</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1667245829070</updated>
+      <workItem from="1668288369254" duration="3047000" />
+      <workItem from="1668357173947" duration="1061000" />
     </task>
     <task id="LOCAL-00102" summary="turning hips while running">
       <created>1667247291720</created>
@@ -646,7 +643,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668291482211</updated>
     </task>
-    <option name="localTasksCounter" value="150" />
+    <task id="LOCAL-00150" summary="enemy weapon swing sound">
+      <created>1668292672438</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1668292672438</updated>
+    </task>
+    <option name="localTasksCounter" value="151" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -667,7 +671,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="remove hit number with timer" />
     <MESSAGE value="update hit number location" />
     <MESSAGE value="binding damage text to wbp" />
     <MESSAGE value="animate hit numbers" />
@@ -692,6 +695,7 @@
     <MESSAGE value="de/activate collision" />
     <MESSAGE value="enemy damage" />
     <MESSAGE value="player health bar" />
-    <option name="LAST_COMMIT_MESSAGE" value="player health bar" />
+    <MESSAGE value="enemy weapon swing sound" />
+    <option name="LAST_COMMIT_MESSAGE" value="enemy weapon swing sound" />
   </component>
 </project>
