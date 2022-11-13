@@ -8,7 +8,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="melee impact sounds" />
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="ignore FXVillesBloodVFXPack">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.h" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -300,21 +305,7 @@
       <workItem from="1668105477463" duration="3393000" />
       <workItem from="1668202167907" duration="3839000" />
       <workItem from="1668288369254" duration="3047000" />
-      <workItem from="1668357173947" duration="1482000" />
-    </task>
-    <task id="LOCAL-00104" summary="turn hips while running bwd">
-      <created>1667322933743</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1667322933743</updated>
-    </task>
-    <task id="LOCAL-00105" summary="ignore new assets">
-      <created>1667323510023</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
-      <option name="project" value="LOCAL" />
-      <updated>1667323510023</updated>
+      <workItem from="1668357173947" duration="3664000" />
     </task>
     <task id="LOCAL-00106" summary="retargeting anim &amp; setting new character bp">
       <created>1667325305438</created>
@@ -645,7 +636,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668358664462</updated>
     </task>
-    <option name="localTasksCounter" value="153" />
+    <task id="LOCAL-00153" summary="weapon trails">
+      <created>1668359661767</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1668359661767</updated>
+    </task>
+    <task id="LOCAL-00154" summary="ignore FXVillesBloodVFXPack">
+      <created>1668360109848</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1668360109848</updated>
+    </task>
+    <option name="localTasksCounter" value="155" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -666,8 +671,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="animate hit numbers" />
-    <MESSAGE value="change text colour for headshot" />
     <MESSAGE value="adding AI module" />
     <MESSAGE value="initial AI controller" />
     <MESSAGE value="blackboard and behaviour tree uassets" />
@@ -691,6 +694,8 @@
     <MESSAGE value="enemy weapon swing sound" />
     <MESSAGE value="melee impact sound" />
     <MESSAGE value="melee impact sounds" />
-    <option name="LAST_COMMIT_MESSAGE" value="melee impact sounds" />
+    <MESSAGE value="weapon trails" />
+    <MESSAGE value="ignore FXVillesBloodVFXPack" />
+    <option name="LAST_COMMIT_MESSAGE" value="ignore FXVillesBloodVFXPack" />
   </component>
 </project>
