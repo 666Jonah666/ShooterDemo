@@ -8,12 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Character/BP_ShooterCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/BP_ShooterCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.h" afterDir="false" />
-    </list>
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="melee impact sounds" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -305,21 +300,7 @@
       <workItem from="1668105477463" duration="3393000" />
       <workItem from="1668202167907" duration="3839000" />
       <workItem from="1668288369254" duration="3047000" />
-      <workItem from="1668357173947" duration="1061000" />
-    </task>
-    <task id="LOCAL-00102" summary="turning hips while running">
-      <created>1667247291720</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1667247291720</updated>
-    </task>
-    <task id="LOCAL-00103" summary="fixing turning issue">
-      <created>1667321578398</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1667321578399</updated>
+      <workItem from="1668357173947" duration="1482000" />
     </task>
     <task id="LOCAL-00104" summary="turn hips while running bwd">
       <created>1667322933743</created>
@@ -650,7 +631,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668292672438</updated>
     </task>
-    <option name="localTasksCounter" value="151" />
+    <task id="LOCAL-00151" summary="melee impact sound">
+      <created>1668358259115</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1668358259115</updated>
+    </task>
+    <task id="LOCAL-00152" summary="melee impact sounds">
+      <created>1668358664461</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1668358664462</updated>
+    </task>
+    <option name="localTasksCounter" value="153" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -671,8 +666,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="update hit number location" />
-    <MESSAGE value="binding damage text to wbp" />
     <MESSAGE value="animate hit numbers" />
     <MESSAGE value="change text colour for headshot" />
     <MESSAGE value="adding AI module" />
@@ -696,6 +689,8 @@
     <MESSAGE value="enemy damage" />
     <MESSAGE value="player health bar" />
     <MESSAGE value="enemy weapon swing sound" />
-    <option name="LAST_COMMIT_MESSAGE" value="enemy weapon swing sound" />
+    <MESSAGE value="melee impact sound" />
+    <MESSAGE value="melee impact sounds" />
+    <option name="LAST_COMMIT_MESSAGE" value="melee impact sounds" />
   </component>
 </project>
