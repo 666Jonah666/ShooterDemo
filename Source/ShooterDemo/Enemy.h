@@ -81,6 +81,8 @@ protected:
 
 	//attempt to stun character
 	void StunCharacter(AShooterCharacter* Victim);
+
+	void ResetCanAttack();
 	
 private:
 
@@ -191,6 +193,16 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat", meta = (AllowPrivateAccess = "true", MakeEditWidget = "true"))
 	FName RightWeaponSocket;
 
+	//bool to prevent multiple attacks
+	UPROPERTY(VisibleAnywhere, Category = "Combat", meta = (AllowPrivateAccess = "true"))
+	bool bCanAttack;
+
+	FTimerHandle AttackWaitTimer;
+
+	//minimum wait time between attacks
+	UPROPERTY(EditAnywhere, Category = "Combat", meta = (AllowPrivateAccess = "true"))
+	float AttackWaitTime;
+	
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
