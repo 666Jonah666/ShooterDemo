@@ -78,6 +78,9 @@ protected:
 
 	void CauseDamage(class AShooterCharacter* Character);
 	void SpawnBlood(AShooterCharacter* Victim, FName SocketName);
+
+	//attempt to stun character
+	void StunCharacter(AShooterCharacter* Victim);
 	
 private:
 
