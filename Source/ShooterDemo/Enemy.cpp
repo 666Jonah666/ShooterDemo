@@ -373,6 +373,12 @@ void AEnemy::BulletHit_Implementation(FHitResult HitResult) {
 
 float AEnemy::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AController* EventInstigator,
 	AActor* DamageCauser) {
+
+	//set target blackboard key to agro the character
+	if (EnemyController) {
+		EnemyController->GetEnemyBlackboardComponent()->SetValueAsObject(FName("Target"), DamageCauser);
+	}
+
 	Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 
 	if (Health - DamageAmount <= 0.f) {

@@ -8,15 +8,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="prevent enemy to spam the attacks" />
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/EnemyController/BT_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/EnemyController/BT_Enemy.uasset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock://D:/UEprojects/ShooterDemo/Source/ShooterDemo/Enemy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/UEprojects/ShooterDemo/Source/ShooterDemo/ShooterCharacter.cpp" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -305,14 +304,8 @@
       <workItem from="1668202167907" duration="3839000" />
       <workItem from="1668288369254" duration="3047000" />
       <workItem from="1668357173947" duration="3909000" />
-      <workItem from="1668447745118" duration="2888000" />
-    </task>
-    <task id="LOCAL-00111" summary="BulletHit interface class">
-      <created>1667430590546</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1667430590546</updated>
+      <workItem from="1668447745118" duration="3126000" />
+      <workItem from="1668531047243" duration="596000" />
     </task>
     <task id="LOCAL-00112" summary="BulletHit interface">
       <created>1667430625484</created>
@@ -650,7 +643,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668450830123</updated>
     </task>
-    <option name="localTasksCounter" value="160" />
+    <task id="LOCAL-00160" summary="prevent the enemy from spamming attacks">
+      <created>1668450906371</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1668450906371</updated>
+    </task>
+    <option name="localTasksCounter" value="161" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -671,7 +671,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="task sequence -&gt; move to" />
     <MESSAGE value="grux run anim" />
     <MESSAGE value="second patrol point" />
     <MESSAGE value="create agro sphere for the enemy" />
@@ -696,6 +695,7 @@
     <MESSAGE value="stun state" />
     <MESSAGE value="stun player on hit w/ 20% chance" />
     <MESSAGE value="prevent enemy to spam the attacks" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="prevent the enemy from spamming attacks" />
+    <option name="LAST_COMMIT_MESSAGE" value="prevent the enemy from spamming attacks" />
   </component>
 </project>
