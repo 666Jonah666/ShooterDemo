@@ -83,6 +83,9 @@ protected:
 	void StunCharacter(AShooterCharacter* Victim);
 
 	void ResetCanAttack();
+
+	UFUNCTION(BlueprintCallable)
+	void FinishDeath();
 	
 private:
 
@@ -205,6 +208,8 @@ private:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat", meta = (AllowPrivateAccess = "true", MakeEditWidget = "true"))
 	UAnimMontage* DeathMontage;
+
+	bool bDying;
 	
 public:	
 	// Called every frame

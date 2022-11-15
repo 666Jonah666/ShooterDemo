@@ -8,10 +8,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="chase delay &amp; agro when shot">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="enemy death montage">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/_Game/Enemies/ABP_Grux.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Enemies/ABP_Grux.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/EnemyController/BB_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/EnemyController/BB_Enemy.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Enemies/Animations/EnemyDeath.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Enemies/Animations/EnemyDeath.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" afterDir="false" />
     </list>
@@ -308,21 +309,7 @@
       <workItem from="1668288369254" duration="3047000" />
       <workItem from="1668357173947" duration="3909000" />
       <workItem from="1668447745118" duration="3126000" />
-      <workItem from="1668531047243" duration="1462000" />
-    </task>
-    <task id="LOCAL-00113" summary="implementing bullet hit">
-      <created>1667432020359</created>
-      <option name="number" value="00113" />
-      <option name="presentableId" value="LOCAL-00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1667432020359</updated>
-    </task>
-    <task id="LOCAL-00114" summary="explosive">
-      <created>1667433083120</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1667433083120</updated>
+      <workItem from="1668531047243" duration="2183000" />
     </task>
     <task id="LOCAL-00115" summary="regular shot damage">
       <created>1667503799686</created>
@@ -653,7 +640,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668533690337</updated>
     </task>
-    <option name="localTasksCounter" value="162" />
+    <task id="LOCAL-00162" summary="enemydeath montage">
+      <created>1668534553223</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1668534553223</updated>
+    </task>
+    <task id="LOCAL-00163" summary="enemy death montage">
+      <created>1668534565725</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1668534565725</updated>
+    </task>
+    <option name="localTasksCounter" value="164" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -674,8 +675,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="second patrol point" />
-    <MESSAGE value="create agro sphere for the enemy" />
     <MESSAGE value="move to actor when overlapping agro sphere" />
     <MESSAGE value="stun enemy" />
     <MESSAGE value="abort task based on stunned condition" />
@@ -699,6 +698,8 @@
     <MESSAGE value="prevent enemy to spam the attacks" />
     <MESSAGE value="prevent the enemy from spamming attacks" />
     <MESSAGE value="chase delay &amp; agro when shot" />
-    <option name="LAST_COMMIT_MESSAGE" value="chase delay &amp; agro when shot" />
+    <MESSAGE value="enemydeath montage" />
+    <MESSAGE value="enemy death montage" />
+    <option name="LAST_COMMIT_MESSAGE" value="enemy death montage" />
   </component>
 </project>
