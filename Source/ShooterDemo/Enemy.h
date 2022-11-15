@@ -202,6 +202,9 @@ private:
 	//minimum wait time between attacks
 	UPROPERTY(EditAnywhere, Category = "Combat", meta = (AllowPrivateAccess = "true"))
 	float AttackWaitTime;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat", meta = (AllowPrivateAccess = "true", MakeEditWidget = "true"))
+	UAnimMontage* DeathMontage;
 	
 public:	
 	// Called every frame

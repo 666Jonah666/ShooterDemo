@@ -8,9 +8,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="chase delay &amp; agro when shot">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/EnemyController/BT_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/EnemyController/BT_Enemy.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Enemies/ABP_Grux.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Enemies/ABP_Grux.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/EnemyController/BB_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/EnemyController/BB_Enemy.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -305,14 +308,7 @@
       <workItem from="1668288369254" duration="3047000" />
       <workItem from="1668357173947" duration="3909000" />
       <workItem from="1668447745118" duration="3126000" />
-      <workItem from="1668531047243" duration="596000" />
-    </task>
-    <task id="LOCAL-00112" summary="BulletHit interface">
-      <created>1667430625484</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1667430625484</updated>
+      <workItem from="1668531047243" duration="1462000" />
     </task>
     <task id="LOCAL-00113" summary="implementing bullet hit">
       <created>1667432020359</created>
@@ -650,7 +646,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668450906371</updated>
     </task>
-    <option name="localTasksCounter" value="161" />
+    <task id="LOCAL-00161" summary="chase delay &amp; agro when shot">
+      <created>1668533690337</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1668533690337</updated>
+    </task>
+    <option name="localTasksCounter" value="162" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -671,7 +674,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="grux run anim" />
     <MESSAGE value="second patrol point" />
     <MESSAGE value="create agro sphere for the enemy" />
     <MESSAGE value="move to actor when overlapping agro sphere" />
@@ -696,6 +698,7 @@
     <MESSAGE value="stun player on hit w/ 20% chance" />
     <MESSAGE value="prevent enemy to spam the attacks" />
     <MESSAGE value="prevent the enemy from spamming attacks" />
-    <option name="LAST_COMMIT_MESSAGE" value="prevent the enemy from spamming attacks" />
+    <MESSAGE value="chase delay &amp; agro when shot" />
+    <option name="LAST_COMMIT_MESSAGE" value="chase delay &amp; agro when shot" />
   </component>
 </project>
