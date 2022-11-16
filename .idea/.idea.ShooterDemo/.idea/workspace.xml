@@ -8,12 +8,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="prevent enemy to be stunned after death">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="player death">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Character/BP_TwinBlastCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/BP_TwinBlastCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/Character/Twinblast/ABP_ShooterAnim.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Character/Twinblast/ABP_ShooterAnim.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/EnemyController/BB_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/EnemyController/BB_Enemy.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/EnemyController/BT_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/EnemyController/BT_Enemy.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -312,14 +312,7 @@
       <workItem from="1668357173947" duration="3909000" />
       <workItem from="1668447745118" duration="3126000" />
       <workItem from="1668531047243" duration="2237000" />
-      <workItem from="1668622296151" duration="3792000" />
-    </task>
-    <task id="LOCAL-00117" summary="enemy health bar">
-      <created>1667505238067</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1667505238067</updated>
+      <workItem from="1668622296151" duration="4499000" />
     </task>
     <task id="LOCAL-00118" summary="hide health bar">
       <created>1667505807594</created>
@@ -657,7 +650,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668624986616</updated>
     </task>
-    <option name="localTasksCounter" value="166" />
+    <task id="LOCAL-00166" summary="player death">
+      <created>1668627268717</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1668627268717</updated>
+    </task>
+    <option name="localTasksCounter" value="167" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -678,7 +678,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="abort task based on stunned condition" />
     <MESSAGE value="patrol or chase player if in range" />
     <MESSAGE value="add attack range" />
     <MESSAGE value="attack montage" />
@@ -703,6 +702,7 @@
     <MESSAGE value="enemy death montage" />
     <MESSAGE value="destroy enemy on death" />
     <MESSAGE value="prevent enemy to be stunned after death" />
-    <option name="LAST_COMMIT_MESSAGE" value="prevent enemy to be stunned after death" />
+    <MESSAGE value="player death" />
+    <option name="LAST_COMMIT_MESSAGE" value="player death" />
   </component>
 </project>

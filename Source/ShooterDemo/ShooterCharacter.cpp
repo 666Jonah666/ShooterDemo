@@ -7,6 +7,7 @@
 #include "BulletHitInterface.h"
 #include "DrawDebugHelpers.h"
 #include "Enemy.h"
+#include "EnemyController.h"
 #include "Item.h"
 #include "Weapon.h"
 #include "Camera/CameraComponent.h"
@@ -19,6 +20,7 @@
 #include "Particles/ParticleSystemComponent.h"
 #include "PhysicalMaterials/PhysicalMaterial.h"
 #include "ShooterDemo.h"
+#include "BehaviorTree/BlackboardComponent.h"
 #include "Sound/SoundCue.h"
 
 // Sets default values
@@ -149,6 +151,11 @@ float AShooterCharacter::TakeDamage(float DamageAmount, FDamageEvent const& Dama
 	if (Health - DamageAmount <= 0.f) {
 		Health = 0.f;
 		Die();
+
+		AEnemyController* EnemyController = Cast<AEnemyController>(EventInstigator);
+		if (EnemyController) {
+			EnemyController->GetBlackboardComponent()->SetValueAsBool(FName("CharacterDead"), true);
+		}
 	} else {
 		Health -= DamageAmount;
 	}
