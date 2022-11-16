@@ -83,7 +83,8 @@ AShooterCharacter::AShooterCharacter() :
 	HighlightedSlot(-1),
 	Health(100.f),
 	MaxHealth(100.f),
-	StunChance(.20f)
+	StunChance(.20f),
+	bDying(false)
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -147,6 +148,7 @@ float AShooterCharacter::TakeDamage(float DamageAmount, FDamageEvent const& Dama
 
 	if (Health - DamageAmount <= 0.f) {
 		Health = 0.f;
+		Die();
 	} else {
 		Health -= DamageAmount;
 	}
@@ -1146,12 +1148,35 @@ void AShooterCharacter::EndStun() {
 	}
 }
 
+void AShooterCharacter::Die() {
+	if (bDying) {
+		return;
+	}
+	bDying = true;
+	UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
+
+	if (AnimInstance && DeathMontage) {
+		AnimInstance->Montage_Play(DeathMontage);
+	}
+}
+
+void AShooterCharacter::FinishDeath() {
+	GetMesh()->bPauseAnims = true;
+	APlayerController* PC = UGameplayStatics::GetPlayerController(this, 0);
+	if (PC) {
+		DisableInput(PC);
+	}
+}
+
 void AShooterCharacter::UnHighlightInventorySlot() {
 	HighlightIconDelegate.Broadcast(HighlightedSlot, false);
 	HighlightedSlot = -1;
 }
 
 void AShooterCharacter::Stun() {
+	if (Health <= 0.f) {
+		return;
+	}
 	CombatState = ECombatState::ECS_Stunned;
 
 	UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();

@@ -359,8 +359,7 @@ void AEnemy::FinishDeath() {
 	GetMesh()->bPauseAnims = true;
 
 	GetWorldTimerManager().SetTimer(DeathTimer, this, &AEnemy::DestroyEnemy, DeathTime);
-
-	Destroy();
+	
 }
 
 void AEnemy::DestroyEnemy() {
