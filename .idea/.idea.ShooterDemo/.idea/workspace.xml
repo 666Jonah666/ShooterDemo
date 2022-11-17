@@ -8,20 +8,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="player death">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/_Game/EnemyController/BB_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/EnemyController/BB_Enemy.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/_Game/EnemyController/BT_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/EnemyController/BT_Enemy.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock://D:/UEprojects/ShooterDemo/Source/ShooterDemo/Enemy.cpp" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -312,14 +309,8 @@
       <workItem from="1668357173947" duration="3909000" />
       <workItem from="1668447745118" duration="3126000" />
       <workItem from="1668531047243" duration="2237000" />
-      <workItem from="1668622296151" duration="4499000" />
-    </task>
-    <task id="LOCAL-00118" summary="hide health bar">
-      <created>1667505807594</created>
-      <option name="number" value="00118" />
-      <option name="presentableId" value="LOCAL-00118" />
-      <option name="project" value="LOCAL" />
-      <updated>1667505807594</updated>
+      <workItem from="1668622296151" duration="4644000" />
+      <workItem from="1668708609238" duration="1181000" />
     </task>
     <task id="LOCAL-00119" summary="death function">
       <created>1667598906260</created>
@@ -657,7 +648,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668627268717</updated>
     </task>
-    <option name="localTasksCounter" value="167" />
+    <task id="LOCAL-00167" summary="fixing issue when enemy continues attacking the player after death">
+      <created>1668627922924</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1668627922924</updated>
+    </task>
+    <option name="localTasksCounter" value="168" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -678,7 +676,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="patrol or chase player if in range" />
     <MESSAGE value="add attack range" />
     <MESSAGE value="attack montage" />
     <MESSAGE value="function for randomize section name" />
@@ -703,6 +700,7 @@
     <MESSAGE value="destroy enemy on death" />
     <MESSAGE value="prevent enemy to be stunned after death" />
     <MESSAGE value="player death" />
-    <option name="LAST_COMMIT_MESSAGE" value="player death" />
+    <MESSAGE value="fixing issue when enemy continues attacking the player after death" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing issue when enemy continues attacking the player after death" />
   </component>
 </project>

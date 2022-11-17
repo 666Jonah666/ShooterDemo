@@ -159,7 +159,7 @@ float AShooterCharacter::TakeDamage(float DamageAmount, FDamageEvent const& Dama
 	} else {
 		Health -= DamageAmount;
 	}
-
+	
 	return DamageAmount;
 }
 
