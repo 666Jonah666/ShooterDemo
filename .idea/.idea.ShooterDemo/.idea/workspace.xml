@@ -8,8 +8,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="khaimera attack montage notifies">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="khaimera hit react and death montages">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/_Game/Enemies/Khaimera/ABP_Khaimera.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Enemies/Khaimera/ABP_Khaimera.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Enemies/Khaimera/BP_Khaimera.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Enemies/Khaimera/BP_Khaimera.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -307,14 +310,7 @@
       <workItem from="1668531047243" duration="2237000" />
       <workItem from="1668622296151" duration="4644000" />
       <workItem from="1668708609238" duration="2716000" />
-      <workItem from="1668804264460" duration="1854000" />
-    </task>
-    <task id="LOCAL-00124" summary="store hit number locations">
-      <created>1667686142338</created>
-      <option name="number" value="00124" />
-      <option name="presentableId" value="LOCAL-00124" />
-      <option name="project" value="LOCAL" />
-      <updated>1667686142338</updated>
+      <workItem from="1668804264460" duration="3157000" />
     </task>
     <task id="LOCAL-00125" summary="remove hit number with timer">
       <created>1667686751028</created>
@@ -652,7 +648,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668806105732</updated>
     </task>
-    <option name="localTasksCounter" value="173" />
+    <task id="LOCAL-00173" summary="khaimera hit react and death montages">
+      <created>1668806526733</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1668806526734</updated>
+    </task>
+    <option name="localTasksCounter" value="174" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -673,7 +676,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="weapon collision volumes &amp; overlap events" />
     <MESSAGE value="de/activate collision" />
     <MESSAGE value="enemy damage" />
     <MESSAGE value="player health bar" />
@@ -698,6 +700,7 @@
     <MESSAGE value="ignore Khaimera asset" />
     <MESSAGE value="khaimera bp &amp; abp" />
     <MESSAGE value="khaimera attack montage notifies" />
-    <option name="LAST_COMMIT_MESSAGE" value="khaimera attack montage notifies" />
+    <MESSAGE value="khaimera hit react and death montages" />
+    <option name="LAST_COMMIT_MESSAGE" value="khaimera hit react and death montages" />
   </component>
 </project>
