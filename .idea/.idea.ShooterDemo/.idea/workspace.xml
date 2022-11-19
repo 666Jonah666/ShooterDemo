@@ -8,10 +8,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="">
+    <list default="true" id="0bccefa2-faf4-490b-8113-dc5d8b984297" name="Changes" comment="explosive components">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Explosives/BP_Explosive.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Explosives/BP_Explosive.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/_Game/Maps/DefaultMap.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/BulletHitInterface.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/BulletHitInterface.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Enemy.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Explosive.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Explosive.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/Explosive.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/Explosive.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterDemo/ShooterCharacter.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -310,14 +316,7 @@
       <workItem from="1668622296151" duration="4644000" />
       <workItem from="1668708609238" duration="2716000" />
       <workItem from="1668804264460" duration="3349000" />
-      <workItem from="1668895744788" duration="748000" />
-    </task>
-    <task id="LOCAL-00126" summary="update hit number location">
-      <created>1667769259430</created>
-      <option name="number" value="00126" />
-      <option name="presentableId" value="LOCAL-00126" />
-      <option name="project" value="LOCAL" />
-      <updated>1667769259431</updated>
+      <workItem from="1668895744788" duration="2593000" />
     </task>
     <task id="LOCAL-00127" summary="binding damage text to wbp">
       <created>1667769470499</created>
@@ -655,7 +654,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668808297504</updated>
     </task>
-    <option name="localTasksCounter" value="175" />
+    <task id="LOCAL-00175" summary="explosive components">
+      <created>1668898606216</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
+      <option name="project" value="LOCAL" />
+      <updated>1668898606216</updated>
+    </task>
+    <option name="localTasksCounter" value="176" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -676,7 +682,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="enemy damage" />
     <MESSAGE value="player health bar" />
     <MESSAGE value="enemy weapon swing sound" />
     <MESSAGE value="melee impact sound" />
@@ -701,6 +706,7 @@
     <MESSAGE value="khaimera attack montage notifies" />
     <MESSAGE value="khaimera hit react and death montages" />
     <MESSAGE value="finishing khaimera" />
-    <option name="LAST_COMMIT_MESSAGE" value="finishing khaimera" />
+    <MESSAGE value="explosive components" />
+    <option name="LAST_COMMIT_MESSAGE" value="explosive components" />
   </component>
 </project>

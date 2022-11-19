@@ -4,11 +4,13 @@
 #include "Explosive.h"
 
 #include "Components/SphereComponent.h"
+#include "GameFramework/Character.h"
 #include "Kismet/GameplayStatics.h"
 #include "Sound/SoundCue.h"
 
 // Sets default values
-AExplosive::AExplosive()
+AExplosive::AExplosive() :
+	Damage(60.f)
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -35,8 +37,8 @@ void AExplosive::Tick(float DeltaTime)
 
 }
 
-void AExplosive::BulletHit_Implementation(FHitResult HitResult) {
-	IBulletHitInterface::BulletHit_Implementation(HitResult);
+void AExplosive::BulletHit_Implementation(FHitResult HitResult, AActor* Shooter, AController* ShooterController) {
+	IBulletHitInterface::BulletHit_Implementation(HitResult, Shooter, ShooterController);
 	
 	if(ImpactSound) {
 		UGameplayStatics::PlaySoundAtLocation(this, ImpactSound, GetActorLocation());
@@ -47,6 +49,13 @@ void AExplosive::BulletHit_Implementation(FHitResult HitResult) {
 	}
 
 	//TODO: Apply explosive damage
+	TArray<AActor*> OverlappingActors;
+	GetOverlappingActors(OverlappingActors, ACharacter::StaticClass());
+
+	for (auto Actor : OverlappingActors) {
+		UE_LOG(LogTemp, Warning, TEXT("Actor Damaged by explosive: %s"), *Actor->GetName());
+		UGameplayStatics::ApplyDamage(Actor, Damage, ShooterController, Shooter, UDamageType::StaticClass());
+	}
 
 	Destroy();
 }

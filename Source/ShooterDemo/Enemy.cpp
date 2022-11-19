@@ -192,8 +192,12 @@ void AEnemy::AgroSphereOverlap(UPrimitiveComponent* OverlappedComponent, AActor*
 	AShooterCharacter* Character = Cast<AShooterCharacter>(OtherActor);
 
 	if(Character) {
-		//set the value of the target blackboard key
-		EnemyController->GetBlackboardComponent()->SetValueAsObject(TEXT("Target"), Character);
+		if (EnemyController) {
+			if (EnemyController->GetBlackboardComponent()) {
+				//set the value of the target blackboard key
+				EnemyController->GetBlackboardComponent()->SetValueAsObject(TEXT("Target"), Character);
+			}
+		}
 	}
 }
 
@@ -377,8 +381,8 @@ void AEnemy::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 }
 
-void AEnemy::BulletHit_Implementation(FHitResult HitResult) {
-	IBulletHitInterface::BulletHit_Implementation(HitResult);
+void AEnemy::BulletHit_Implementation(FHitResult HitResult, AActor* Shooter, AController* ShooterController) {
+	IBulletHitInterface::BulletHit_Implementation(HitResult, Shooter, ShooterController);
 
 	if(ImpactSound) {
 		UGameplayStatics::PlaySoundAtLocation(this, ImpactSound, GetActorLocation());
@@ -386,20 +390,6 @@ void AEnemy::BulletHit_Implementation(FHitResult HitResult) {
 
 	if(ImpactParticles) {
 		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactParticles, HitResult.Location, FRotator::ZeroRotator, true);
-	}
-
-	if (bDying) {
-		return;
-	}
-	
-	ShowHealthBar();
-
-	//determine if stuns
-	const float Stunned{FMath::FRandRange(0, 1.f)};
-	if (Stunned <= StunChance) {
-		//stun the enemy
-		PlayHitMontage(FName("HitReactFront")); 
-		SetStunned(true);		
 	}
 	
 }
@@ -419,6 +409,20 @@ float AEnemy::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AC
 		Die();
 	} else {
 		Health -= DamageAmount;
+	}
+
+	if (bDying) {
+		return DamageAmount;
+	}
+	
+	ShowHealthBar();
+
+	//determine if stuns
+	const float Stunned{FMath::FRandRange(0, 1.f)};
+	if (Stunned <= StunChance) {
+		//stun the enemy
+		PlayHitMontage(FName("HitReactFront")); 
+		SetStunned(true);		
 	}
 
 	return DamageAmount;
