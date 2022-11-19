@@ -48,12 +48,10 @@ void AExplosive::BulletHit_Implementation(FHitResult HitResult, AActor* Shooter,
 		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ExplodeParticles, HitResult.Location, FRotator::ZeroRotator, true);
 	}
 
-	//TODO: Apply explosive damage
 	TArray<AActor*> OverlappingActors;
 	GetOverlappingActors(OverlappingActors, ACharacter::StaticClass());
 
 	for (auto Actor : OverlappingActors) {
-		UE_LOG(LogTemp, Warning, TEXT("Actor Damaged by explosive: %s"), *Actor->GetName());
 		UGameplayStatics::ApplyDamage(Actor, Damage, ShooterController, Shooter, UDamageType::StaticClass());
 	}
 
