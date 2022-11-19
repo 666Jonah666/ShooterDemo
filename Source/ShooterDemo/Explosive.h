@@ -28,7 +28,14 @@ private:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat", meta = (AllowPrivateAccess = "true"))
 	class USoundCue* ImpactSound;
-	
+
+	//used to determine what actors overlap during explosion
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat", meta = (AllowPrivateAccess = "true"))
+	class USphereComponent* OverlapSphere;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Combat", meta = (AllowPrivateAccess = "true"))
+	UStaticMeshComponent* ExplosiveMesh;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
